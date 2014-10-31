@@ -1,0 +1,272 @@
+{
+  "exts": [
+    {
+      "ext": " name",
+      "bus_factor": [
+        [
+          "belenrolandi",
+          100
+        ]
+      ]
+    },
+    {
+      "ext": " xml",
+      "bus_factor": [
+        [
+          "belenrolandi",
+          100
+        ]
+      ]
+    },
+    {
+      "ext": " container",
+      "bus_factor": [
+        [
+          "belenrolandi",
+          100
+        ]
+      ]
+    },
+    {
+      "ext": "jar",
+      "bus_factor": [
+        [
+          "belenrolandi",
+          100
+        ]
+      ]
+    },
+    {
+      "ext": "jpg",
+      "bus_factor": [
+        [
+          "belenrolandi",
+          100
+        ]
+      ]
+    },
+    {
+      "ext": "js",
+      "bus_factor": [
+        [
+          "belenrolandi",
+          56.62
+        ],
+        [
+          "jlcanovas",
+          41.67
+        ]
+      ]
+    },
+    {
+      "ext": "jsdtscope",
+      "bus_factor": [
+        [
+          "belenrolandi",
+          100
+        ]
+      ]
+    },
+    {
+      "ext": "sql",
+      "bus_factor": [
+        [
+          "jlcanovas",
+          68.48
+        ]
+      ]
+    },
+    {
+      "ext": " prefs",
+      "bus_factor": [
+        [
+          "belenrolandi",
+          100
+        ]
+      ]
+    },
+    {
+      "ext": " css",
+      "bus_factor": [
+        [
+          "jlcanovas",
+          57.14
+        ]
+      ]
+    },
+    {
+      "ext": "txt",
+      "bus_factor": [
+        [
+          "belenrolandi",
+          83.33
+        ]
+      ]
+    },
+    {
+      "ext": "png",
+      "bus_factor": [
+        [
+          "jlcanovas",
+          92.58
+        ]
+      ]
+    },
+    {
+      "ext": "gitignore",
+      "bus_factor": [
+        [
+          "Belen Rolandi",
+          50
+        ],
+        [
+          "belenrolandi",
+          50
+        ]
+      ]
+    },
+    {
+      "ext": "xml",
+      "bus_factor": [
+        [
+          "belenrolandi",
+          100
+        ]
+      ]
+    },
+    {
+      "ext": "md",
+      "bus_factor": [
+        [
+          "belenrolandi",
+          100
+        ]
+      ]
+    },
+    {
+      "ext": "mf",
+      "bus_factor": [
+        [
+          "belenrolandi",
+          100
+        ]
+      ]
+    },
+    {
+      "ext": "java",
+      "bus_factor": [
+        [
+          "belenrolandi",
+          90.95
+        ]
+      ]
+    },
+    {
+      "ext": " map",
+      "bus_factor": [
+        [
+          "jlcanovas",
+          100
+        ]
+      ]
+    },
+    {
+      "ext": "svg",
+      "bus_factor": [
+        [
+          "jlcanovas",
+          100
+        ]
+      ]
+    },
+    {
+      "ext": "py",
+      "bus_factor": [
+        [
+          "valeriocos",
+          100
+        ]
+      ]
+    },
+    {
+      "ext": "classpath",
+      "bus_factor": [
+        [
+          "belenrolandi",
+          62.5
+        ],
+        [
+          "jlcanovas",
+          37.5
+        ]
+      ]
+    },
+    {
+      "ext": " js",
+      "bus_factor": [
+        [
+          "jlcanovas",
+          87.76
+        ]
+      ]
+    },
+    {
+      "ext": " component",
+      "bus_factor": [
+        [
+          "belenrolandi",
+          100
+        ]
+      ]
+    },
+    {
+      "ext": "project",
+      "bus_factor": [
+        [
+          "belenrolandi",
+          100
+        ]
+      ]
+    },
+    {
+      "ext": "gif",
+      "bus_factor": [
+        [
+          "jlcanovas",
+          75
+        ]
+      ]
+    },
+    {
+      "ext": "html",
+      "bus_factor": [
+        [
+          "belenrolandi",
+          47.51
+        ],
+        [
+          "jlcanovas",
+          36.25
+        ]
+      ]
+    },
+    {
+      "ext": "csv",
+      "bus_factor": [
+        [
+          "belenrolandi",
+          100
+        ]
+      ]
+    },
+    {
+      "ext": "css",
+      "bus_factor": [
+        [
+          "jlcanovas",
+          87.15
+        ]
+      ]
+    }
+  ]
+}

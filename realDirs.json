@@ -1,0 +1,435 @@
+{
+  "dirs": [
+    {
+      "bus_factor": [
+        [
+          "jlcanovas",
+          90.32
+        ]
+      ],
+      "name": "css\/jQWidgets\/images\/darkness\/"
+    },
+    {
+      "bus_factor": [
+        [
+          "belenrolandi",
+          93.97
+        ]
+      ],
+      "name": "web-server\/labelAnalysisServer\/"
+    },
+    {
+      "bus_factor": [
+        [
+          "jlcanovas",
+          94.4
+        ]
+      ],
+      "name": "css\/jQWidgets\/"
+    },
+    {
+      "bus_factor": [
+        [
+          "belenrolandi",
+          100
+        ]
+      ],
+      "name": "web-server\/labelAnalysisServer\/src\/fr\/inria\/atlanmod\/labelanalysis\/data\/"
+    },
+    {
+      "bus_factor": [
+        [
+          "jlcanovas",
+          100
+        ]
+      ],
+      "name": "js\/bootstrap\/"
+    },
+    {
+      "bus_factor": [
+        [
+          "jlcanovas",
+          75.04
+        ]
+      ],
+      "name": "js\/"
+    },
+    {
+      "bus_factor": [
+        [
+          "belenrolandi",
+          90.95
+        ]
+      ],
+      "name": "web-server\/labelAnalysisServer\/src\/fr\/"
+    },
+    {
+      "bus_factor": [
+        [
+          "jlcanovas",
+          100
+        ]
+      ],
+      "name": "js\/sigma.js\/"
+    },
+    {
+      "bus_factor": [
+        [
+          "belenrolandi",
+          100
+        ]
+      ],
+      "name": "web-server\/labelAnalysisServer\/web\/WEB-INF\/lib\/"
+    },
+    {
+      "bus_factor": [
+        [
+          "jlcanovas",
+          89.66
+        ]
+      ],
+      "name": "css\/jQWidgets\/images\/smoothness\/"
+    },
+    {
+      "bus_factor": [
+        [
+          "jlcanovas",
+          94.93
+        ]
+      ],
+      "name": "css\/jQWidgets\/images\/"
+    },
+    {
+      "bus_factor": [
+        [
+          "belenrolandi",
+          90.95
+        ]
+      ],
+      "name": "web-server\/labelAnalysisServer\/src\/fr\/inria\/atlanmod\/labelanalysis\/"
+    },
+    {
+      "bus_factor": [
+        [
+          "jlcanovas",
+          100
+        ]
+      ],
+      "name": "css\/foundation\/"
+    },
+    {
+      "bus_factor": [
+        [
+          "jlcanovas",
+          91.43
+        ]
+      ],
+      "name": "css\/jQWidgets\/images\/sunny\/"
+    },
+    {
+      "bus_factor": [
+        [
+          "jlcanovas",
+          100
+        ]
+      ],
+      "name": "css\/bootstrap\/"
+    },
+    {
+      "bus_factor": [
+        [
+          "belenrolandi",
+          100
+        ]
+      ],
+      "name": "web-server\/labelAnalysisServer\/web\/WEB-INF\/"
+    },
+    {
+      "bus_factor": [
+        [
+          "belenrolandi",
+          100
+        ]
+      ],
+      "name": "js\/jQWidgets\/"
+    },
+    {
+      "bus_factor": [
+        [
+          "belenrolandi",
+          90.95
+        ]
+      ],
+      "name": "web-server\/labelAnalysisServer\/src\/"
+    },
+    {
+      "bus_factor": [
+        [
+          "jlcanovas",
+          100
+        ]
+      ],
+      "name": "js\/foundation\/"
+    },
+    {
+      "bus_factor": [
+        [
+          "jlcanovas",
+          65.81
+        ]
+      ],
+      "name": "database\/"
+    },
+    {
+      "bus_factor": [
+        [
+          "jlcanovas",
+          73.77
+        ]
+      ],
+      "name": "database\/old-scripts\/"
+    },
+    {
+      "bus_factor": [
+        [
+          "jlcanovas",
+          91.43
+        ]
+      ],
+      "name": "css\/jQWidgets\/images\/start\/"
+    },
+    {
+      "bus_factor": [
+        [
+          "jlcanovas",
+          90.32
+        ]
+      ],
+      "name": "css\/jQWidgets\/images\/overcast\/"
+    },
+    {
+      "bus_factor": [
+        [
+          "belenrolandi",
+          100
+        ]
+      ],
+      "name": "web-server\/labelAnalysisServer\/src\/fr\/inria\/atlanmod\/labelanalysis\/model\/"
+    },
+    {
+      "bus_factor": [
+        [
+          "belenrolandi",
+          90.95
+        ]
+      ],
+      "name": "web-server\/labelAnalysisServer\/src\/fr\/inria\/"
+    },
+    {
+      "bus_factor": [
+        [
+          "belenrolandi",
+          44.47
+        ],
+        [
+          "jlcanovas",
+          40.24
+        ]
+      ],
+      "name": "imgs\/"
+    },
+    {
+      "bus_factor": [
+        [
+          "jlcanovas",
+          91.43
+        ]
+      ],
+      "name": "css\/jQWidgets\/images\/lightness\/"
+    },
+    {
+      "bus_factor": [
+        [
+          "belenrolandi",
+          93.18
+        ]
+      ],
+      "name": "web-server\/labelAnalysisServer\/web\/"
+    },
+    {
+      "bus_factor": [
+        [
+          "belenrolandi",
+          100
+        ]
+      ],
+      "name": "web-server\/labelAnalysisServer\/labelAnalysisServer\/"
+    },
+    {
+      "bus_factor": [
+        [
+          "belenrolandi",
+          93.97
+        ]
+      ],
+      "name": "web-server\/"
+    },
+    {
+      "bus_factor": [
+        [
+          "valeriocos",
+          100
+        ]
+      ],
+      "name": "jquery-sticky-notes\/script\/"
+    },
+    {
+      "bus_factor": [
+        [
+          "jlcanovas",
+          91.89
+        ]
+      ],
+      "name": "css\/jQWidgets\/images\/redmond\/"
+    },
+    {
+      "bus_factor": [
+        [
+          "jlcanovas",
+          89.66
+        ]
+      ],
+      "name": "css\/jQWidgets\/images\/le-frog\/"
+    },
+    {
+      "bus_factor": [
+        [
+          "valeriocos",
+          100
+        ]
+      ],
+      "name": "database\/current-scripts\/"
+    },
+    {
+      "bus_factor": [
+        [
+          "jlcanovas",
+          100
+        ]
+      ],
+      "name": "js\/vendor\/"
+    },
+    {
+      "bus_factor": [
+        [
+          "jlcanovas",
+          94.3
+        ]
+      ],
+      "name": "css\/"
+    },
+    {
+      "bus_factor": [
+        [
+          "valeriocos",
+          100
+        ]
+      ],
+      "name": "jquery-sticky-notes\/css\/"
+    },
+    {
+      "bus_factor": [
+        [
+          "valeriocos",
+          100
+        ]
+      ],
+      "name": "jquery-sticky-notes\/images\/"
+    },
+    {
+      "bus_factor": [
+        [
+          "jlcanovas",
+          76.92
+        ]
+      ],
+      "name": "css\/jQWidgets\/images\/colorpicker\/"
+    },
+    {
+      "bus_factor": [
+        [
+          "valeriocos",
+          100
+        ]
+      ],
+      "name": "jquery-sticky-notes\/"
+    },
+    {
+      "bus_factor": [
+        [
+          "belenrolandi",
+          100
+        ]
+      ],
+      "name": "web-server\/labelAnalysisServer\/web\/data\/"
+    },
+    {
+      "bus_factor": [
+        [
+          "belenrolandi",
+          100
+        ]
+      ],
+      "name": "web-server\/labelAnalysisServer\/web\/META-INF\/"
+    },
+    {
+      "bus_factor": [
+        [
+          "belenrolandi",
+          56.45
+        ]
+      ],
+      "name": "repository_root"
+    },
+    {
+      "bus_factor": [
+        [
+          "belenrolandi",
+          90.95
+        ]
+      ],
+      "name": "web-server\/labelAnalysisServer\/src\/fr\/inria\/atlanmod\/"
+    },
+    {
+      "bus_factor": [
+        [
+          "belenrolandi",
+          100
+        ]
+      ],
+      "name": "web-server\/labelAnalysisServer\/.settings\/"
+    },
+    {
+      "bus_factor": [
+        [
+          "belenrolandi",
+          56.25
+        ],
+        [
+          "valeriocos",
+          43.75
+        ]
+      ],
+      "name": "web-server\/labelAnalysisServer\/src\/fr\/inria\/atlanmod\/labelanalysis\/servlets\/"
+    },
+    {
+      "bus_factor": [
+        [
+          "valeriocos",
+          100
+        ]
+      ],
+      "name": "database\/current-scripts\/python\/"
+    }
+  ]
+}

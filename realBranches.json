@@ -1,0 +1,26 @@
+{
+  "branches": [
+    {
+      "bus_factor": [
+        [
+          "belenrolandi",
+          47.77
+        ],
+        [
+          "jlcanovas",
+          33.93
+        ]
+      ],
+      "name": "master"
+    },
+    {
+      "bus_factor": [
+        [
+          "jlcanovas",
+          81.29
+        ]
+      ],
+      "name": "gh-pages"
+    }
+  ]
+}
