@@ -1,7 +1,7 @@
 {
   "exts": [
     {
-      "ext": " name",
+      "type" : "ext", "name": " name",
       "bus_factor": [
         [
           "belenrolandi",
@@ -10,7 +10,7 @@
       ]
     },
     {
-      "ext": " xml",
+      "type" : "ext", "name": " xml",
       "bus_factor": [
         [
           "belenrolandi",
@@ -19,7 +19,7 @@
       ]
     },
     {
-      "ext": " container",
+      "type" : "ext", "name": " container",
       "bus_factor": [
         [
           "belenrolandi",
@@ -28,7 +28,7 @@
       ]
     },
     {
-      "ext": "jar",
+      "type" : "ext", "name": "jar",
       "bus_factor": [
         [
           "belenrolandi",
@@ -37,7 +37,7 @@
       ]
     },
     {
-      "ext": "jpg",
+      "type" : "ext", "name": "jpg",
       "bus_factor": [
         [
           "belenrolandi",
@@ -46,7 +46,7 @@
       ]
     },
     {
-      "ext": "js",
+      "type" : "ext", "name": "js",
       "bus_factor": [
         [
           "belenrolandi",
@@ -59,7 +59,7 @@
       ]
     },
     {
-      "ext": "jsdtscope",
+      "type" : "ext", "name": "jsdtscope",
       "bus_factor": [
         [
           "belenrolandi",
@@ -68,7 +68,7 @@
       ]
     },
     {
-      "ext": "sql",
+      "type" : "ext", "name": "sql",
       "bus_factor": [
         [
           "jlcanovas",
@@ -77,7 +77,7 @@
       ]
     },
     {
-      "ext": " prefs",
+      "type" : "ext", "name": " prefs",
       "bus_factor": [
         [
           "belenrolandi",
@@ -86,7 +86,7 @@
       ]
     },
     {
-      "ext": " css",
+      "type" : "ext", "name": " css",
       "bus_factor": [
         [
           "jlcanovas",
@@ -95,7 +95,7 @@
       ]
     },
     {
-      "ext": "txt",
+      "type" : "ext", "name": "txt",
       "bus_factor": [
         [
           "belenrolandi",
@@ -104,7 +104,7 @@
       ]
     },
     {
-      "ext": "png",
+      "type" : "ext", "name": "png",
       "bus_factor": [
         [
           "jlcanovas",
@@ -113,7 +113,7 @@
       ]
     },
     {
-      "ext": "gitignore",
+      "type" : "ext", "name": "gitignore",
       "bus_factor": [
         [
           "Belen Rolandi",
@@ -126,7 +126,7 @@
       ]
     },
     {
-      "ext": "xml",
+      "type" : "ext", "name": "xml",
       "bus_factor": [
         [
           "belenrolandi",
@@ -135,7 +135,7 @@
       ]
     },
     {
-      "ext": "md",
+      "type" : "ext", "name": "md",
       "bus_factor": [
         [
           "belenrolandi",
@@ -144,7 +144,7 @@
       ]
     },
     {
-      "ext": "mf",
+      "type" : "ext", "name": "mf",
       "bus_factor": [
         [
           "belenrolandi",
@@ -153,7 +153,7 @@
       ]
     },
     {
-      "ext": "java",
+      "type" : "ext", "name": "java",
       "bus_factor": [
         [
           "belenrolandi",
@@ -162,7 +162,7 @@
       ]
     },
     {
-      "ext": " map",
+      "type" : "ext", "name": " map",
       "bus_factor": [
         [
           "jlcanovas",
@@ -171,7 +171,7 @@
       ]
     },
     {
-      "ext": "svg",
+      "type" : "ext", "name": "svg",
       "bus_factor": [
         [
           "jlcanovas",
@@ -180,7 +180,7 @@
       ]
     },
     {
-      "ext": "py",
+      "type" : "ext", "name": "py",
       "bus_factor": [
         [
           "valeriocos",
@@ -189,7 +189,7 @@
       ]
     },
     {
-      "ext": "classpath",
+      "type" : "ext", "name": "classpath",
       "bus_factor": [
         [
           "belenrolandi",
@@ -202,7 +202,7 @@
       ]
     },
     {
-      "ext": " js",
+      "type" : "ext", "name": " js",
       "bus_factor": [
         [
           "jlcanovas",
@@ -211,7 +211,7 @@
       ]
     },
     {
-      "ext": " component",
+      "type" : "ext", "name": " component",
       "bus_factor": [
         [
           "belenrolandi",
@@ -220,7 +220,7 @@
       ]
     },
     {
-      "ext": "project",
+      "type" : "ext", "name": "project",
       "bus_factor": [
         [
           "belenrolandi",
@@ -229,7 +229,7 @@
       ]
     },
     {
-      "ext": "gif",
+      "type" : "ext", "name": "gif",
       "bus_factor": [
         [
           "jlcanovas",
@@ -238,7 +238,7 @@
       ]
     },
     {
-      "ext": "html",
+      "type" : "ext", "name": "html",
       "bus_factor": [
         [
           "belenrolandi",
@@ -251,7 +251,7 @@
       ]
     },
     {
-      "ext": "csv",
+      "type" : "ext", "name": "csv",
       "bus_factor": [
         [
           "belenrolandi",
@@ -260,7 +260,7 @@
       ]
     },
     {
-      "ext": "css",
+      "type" : "ext", "name": "css",
       "bus_factor": [
         [
           "jlcanovas",

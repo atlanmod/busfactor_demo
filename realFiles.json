@@ -11,7 +11,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "README.md",
+      "type" : "file", "name": "README.md",
       "branch": "gh-pages"
     },
     {
@@ -25,7 +25,7 @@
           "author": "Belen Rolandi"
         }
       ],
-      "name": ".gitignore",
+      "type" : "file", "name": ".gitignore",
       "branch": "gh-pages"
     },
     {
@@ -39,7 +39,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "index.html",
+      "type" : "file", "name": "index.html",
       "branch": "gh-pages"
     },
     {
@@ -53,7 +53,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "contact.html",
+      "type" : "file", "name": "contact.html",
       "branch": "gh-pages"
     },
     {
@@ -67,7 +67,7 @@
           "author": "valeriocos"
         }
       ],
-      "name": "example.html",
+      "type" : "file", "name": "example.html",
       "branch": "gh-pages"
     },
     {
@@ -85,7 +85,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "project.html",
+      "type" : "file", "name": "project.html",
       "branch": "gh-pages"
     },
     {
@@ -99,7 +99,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "error_page.html",
+      "type" : "file", "name": "error_page.html",
       "branch": "gh-pages"
     },
     {
@@ -113,7 +113,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "index.html.orig",
+      "type" : "file", "name": "index.html.orig",
       "branch": "gh-pages"
     },
     {
@@ -127,7 +127,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "rq1.js",
+      "type" : "file", "name": "rq1.js",
       "branch": "gh-pages"
     },
     {
@@ -141,7 +141,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "rq2.js",
+      "type" : "file", "name": "rq2.js",
       "branch": "gh-pages"
     },
     {
@@ -159,7 +159,7 @@
           "author": "valeriocos"
         }
       ],
-      "name": "rq3.js",
+      "type" : "file", "name": "rq3.js",
       "branch": "gh-pages"
     },
     {
@@ -173,7 +173,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "rq1.png",
+      "type" : "file", "name": "rq1.png",
       "branch": "gh-pages"
     },
     {
@@ -187,7 +187,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "rq1.svg",
+      "type" : "file", "name": "rq1.svg",
       "branch": "gh-pages"
     },
     {
@@ -201,7 +201,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "rq2.png",
+      "type" : "file", "name": "rq2.png",
       "branch": "gh-pages"
     },
     {
@@ -215,7 +215,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "rq2.svg",
+      "type" : "file", "name": "rq2.svg",
       "branch": "gh-pages"
     },
     {
@@ -229,7 +229,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "rq3.png",
+      "type" : "file", "name": "rq3.png",
       "branch": "gh-pages"
     },
     {
@@ -243,7 +243,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "rq3.svg",
+      "type" : "file", "name": "rq3.svg",
       "branch": "gh-pages"
     },
     {
@@ -257,7 +257,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "style.css",
+      "type" : "file", "name": "style.css",
       "branch": "gh-pages"
     },
     {
@@ -271,7 +271,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "icon.png",
+      "type" : "file", "name": "icon.png",
       "branch": "gh-pages"
     },
     {
@@ -285,7 +285,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "icon.svg",
+      "type" : "file", "name": "icon.svg",
       "branch": "gh-pages"
     },
     {
@@ -307,7 +307,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ltex.png",
+      "type" : "file", "name": "ltex.png",
       "branch": "gh-pages"
     },
     {
@@ -329,7 +329,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "luex.png",
+      "type" : "file", "name": "luex.png",
       "branch": "gh-pages"
     },
     {
@@ -351,7 +351,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "uiex.png",
+      "type" : "file", "name": "uiex.png",
       "branch": "gh-pages"
     },
     {
@@ -365,7 +365,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "combobox.js",
+      "type" : "file", "name": "combobox.js",
       "branch": "gh-pages"
     },
     {
@@ -379,7 +379,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "icon15.png",
+      "type" : "file", "name": "icon15.png",
       "branch": "gh-pages"
     },
     {
@@ -393,7 +393,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "icon20.png",
+      "type" : "file", "name": "icon20.png",
       "branch": "gh-pages"
     },
     {
@@ -407,7 +407,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "jcabot.jpg",
+      "type" : "file", "name": "jcabot.jpg",
       "branch": "gh-pages"
     },
     {
@@ -421,7 +421,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "d3.v3.min.js",
+      "type" : "file", "name": "d3.v3.min.js",
       "branch": "gh-pages"
     },
     {
@@ -435,7 +435,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "initIndex.js",
+      "type" : "file", "name": "initIndex.js",
       "branch": "gh-pages"
     },
     {
@@ -449,7 +449,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "gh-icon.png",
+      "type" : "file", "name": "gh-icon.png",
       "branch": "gh-pages"
     },
     {
@@ -463,7 +463,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "brolandi.jpg",
+      "type" : "file", "name": "brolandi.jpg",
       "branch": "gh-pages"
     },
     {
@@ -477,7 +477,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "initProject.js",
+      "type" : "file", "name": "initProject.js",
       "branch": "gh-pages"
     },
     {
@@ -491,7 +491,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "icon90x82.png",
+      "type" : "file", "name": "icon90x82.png",
       "branch": "gh-pages"
     },
     {
@@ -505,7 +505,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "jlcanovas.jpg",
+      "type" : "file", "name": "jlcanovas.jpg",
       "branch": "gh-pages"
     },
     {
@@ -519,7 +519,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "vcosentino.JPG",
+      "type" : "file", "name": "vcosentino.JPG",
       "branch": "gh-pages"
     },
     {
@@ -533,7 +533,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ajax-loader.gif",
+      "type" : "file", "name": "ajax-loader.gif",
       "branch": "gh-pages"
     },
     {
@@ -547,7 +547,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "example_img.png",
+      "type" : "file", "name": "example_img.png",
       "branch": "gh-pages"
     },
     {
@@ -561,7 +561,7 @@
           "author": "valeriocos"
         }
       ],
-      "name": "help_icon14.png",
+      "type" : "file", "name": "help_icon14.png",
       "branch": "gh-pages"
     },
     {
@@ -575,7 +575,7 @@
           "author": "valeriocos"
         }
       ],
-      "name": "warningimage.png",
+      "type" : "file", "name": "warningimage.png",
       "branch": "gh-pages"
     },
     {
@@ -589,7 +589,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "jquery-1.11.1.min.js",
+      "type" : "file", "name": "jquery-1.11.1.min.js",
       "branch": "gh-pages"
     },
     {
@@ -603,7 +603,7 @@
           "author": "valeriocos"
         }
       ],
-      "name": "loading_project.gif",
+      "type" : "file", "name": "loading_project.gif",
       "branch": "gh-pages"
     },
     {
@@ -617,7 +617,7 @@
           "author": "valeriocos"
         }
       ],
-      "name": "README.TXT",
+      "type" : "file", "name": "README.TXT",
       "branch": "gh-pages"
     },
     {
@@ -631,7 +631,7 @@
           "author": "valeriocos"
         }
       ],
-      "name": "LICENSE.TXT",
+      "type" : "file", "name": "LICENSE.TXT",
       "branch": "gh-pages"
     },
     {
@@ -645,7 +645,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "glyphicons_social_21_github.png",
+      "type" : "file", "name": "glyphicons_social_21_github.png",
       "branch": "gh-pages"
     },
     {
@@ -659,7 +659,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "glyphicons_social_31_twitter.png",
+      "type" : "file", "name": "glyphicons_social_31_twitter.png",
       "branch": "gh-pages"
     },
     {
@@ -673,7 +673,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "glyphicons_social_30_facebook.png",
+      "type" : "file", "name": "glyphicons_social_30_facebook.png",
       "branch": "gh-pages"
     },
     {
@@ -687,7 +687,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "glyphicons_social_17_linked_in.png",
+      "type" : "file", "name": "glyphicons_social_17_linked_in.png",
       "branch": "gh-pages"
     },
     {
@@ -702,7 +702,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "jquery.js",
+      "type" : "file", "name": "jquery.js",
       "branch": "gh-pages"
     },
     {
@@ -717,7 +717,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "script.js",
+      "type" : "file", "name": "script.js",
       "branch": "gh-pages"
     },
     {
@@ -732,7 +732,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "fastclick.js",
+      "type" : "file", "name": "fastclick.js",
       "branch": "gh-pages"
     },
     {
@@ -747,7 +747,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "modernizr.js",
+      "type" : "file", "name": "modernizr.js",
       "branch": "gh-pages"
     },
     {
@@ -762,7 +762,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "jqxcore.js",
+      "type" : "file", "name": "jqxcore.js",
       "branch": "gh-pages"
     },
     {
@@ -777,7 +777,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "jqxdata.js",
+      "type" : "file", "name": "jqxdata.js",
       "branch": "gh-pages"
     },
     {
@@ -792,7 +792,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "style.css",
+      "type" : "file", "name": "style.css",
       "branch": "gh-pages"
     },
     {
@@ -807,7 +807,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "sigma.min.js",
+      "type" : "file", "name": "sigma.min.js",
       "branch": "gh-pages"
     },
     {
@@ -822,7 +822,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "placeholder.js",
+      "type" : "file", "name": "placeholder.js",
       "branch": "gh-pages"
     },
     {
@@ -837,7 +837,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "bootstrap.js",
+      "type" : "file", "name": "bootstrap.js",
       "branch": "gh-pages"
     },
     {
@@ -852,7 +852,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "jqx.base.css",
+      "type" : "file", "name": "jqx.base.css",
       "branch": "gh-pages"
     },
     {
@@ -867,7 +867,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "bootstrap.js",
+      "type" : "file", "name": "bootstrap.js",
       "branch": "gh-pages"
     },
     {
@@ -882,7 +882,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "jqxbuttons.js",
+      "type" : "file", "name": "jqxbuttons.js",
       "branch": "gh-pages"
     },
     {
@@ -897,7 +897,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "jqxlistbox.js",
+      "type" : "file", "name": "jqxlistbox.js",
       "branch": "gh-pages"
     },
     {
@@ -912,7 +912,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "jquery.cookie.js",
+      "type" : "file", "name": "jquery.cookie.js",
       "branch": "gh-pages"
     },
     {
@@ -927,7 +927,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "bootstrap.css",
+      "type" : "file", "name": "bootstrap.css",
       "branch": "gh-pages"
     },
     {
@@ -942,7 +942,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "foundation.js",
+      "type" : "file", "name": "foundation.js",
       "branch": "gh-pages"
     },
     {
@@ -957,7 +957,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "jqxcombobox.js",
+      "type" : "file", "name": "jqxcombobox.js",
       "branch": "gh-pages"
     },
     {
@@ -972,7 +972,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "normalize.css",
+      "type" : "file", "name": "normalize.css",
       "branch": "gh-pages"
     },
     {
@@ -987,7 +987,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "jqxscrollbar.js",
+      "type" : "file", "name": "jqxscrollbar.js",
       "branch": "gh-pages"
     },
     {
@@ -1002,7 +1002,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "foundation.css",
+      "type" : "file", "name": "foundation.css",
       "branch": "gh-pages"
     },
     {
@@ -1017,7 +1017,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "bootstrap.min.js",
+      "type" : "file", "name": "bootstrap.min.js",
       "branch": "gh-pages"
     },
     {
@@ -1032,7 +1032,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "custom.modernizr.js",
+      "type" : "file", "name": "custom.modernizr.js",
       "branch": "gh-pages"
     },
     {
@@ -1047,7 +1047,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "bootstrap.min.js",
+      "type" : "file", "name": "bootstrap.min.js",
       "branch": "gh-pages"
     },
     {
@@ -1062,7 +1062,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "bootstrap.css.map",
+      "type" : "file", "name": "bootstrap.css.map",
       "branch": "gh-pages"
     },
     {
@@ -1077,7 +1077,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "bootstrap.min.css",
+      "type" : "file", "name": "bootstrap.min.css",
       "branch": "gh-pages"
     },
     {
@@ -1092,7 +1092,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "foundation.min.js",
+      "type" : "file", "name": "foundation.min.js",
       "branch": "gh-pages"
     },
     {
@@ -1107,7 +1107,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "foundation.tab.js",
+      "type" : "file", "name": "foundation.tab.js",
       "branch": "gh-pages"
     },
     {
@@ -1122,7 +1122,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "jquery.autocomplete.js",
+      "type" : "file", "name": "jquery.autocomplete.js",
       "branch": "gh-pages"
     },
     {
@@ -1137,7 +1137,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "bootstrap-theme.css",
+      "type" : "file", "name": "bootstrap-theme.css",
       "branch": "gh-pages"
     },
     {
@@ -1152,7 +1152,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "foundation.min.css",
+      "type" : "file", "name": "foundation.min.css",
       "branch": "gh-pages"
     },
     {
@@ -1167,7 +1167,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "foundation.abide.js",
+      "type" : "file", "name": "foundation.abide.js",
       "branch": "gh-pages"
     },
     {
@@ -1182,7 +1182,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "foundation.alert.js",
+      "type" : "file", "name": "foundation.alert.js",
       "branch": "gh-pages"
     },
     {
@@ -1197,7 +1197,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "foundation.orbit.js",
+      "type" : "file", "name": "foundation.orbit.js",
       "branch": "gh-pages"
     },
     {
@@ -1212,7 +1212,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "foundation.reveal.js",
+      "type" : "file", "name": "foundation.reveal.js",
       "branch": "gh-pages"
     },
     {
@@ -1227,7 +1227,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "foundation.slider.js",
+      "type" : "file", "name": "foundation.slider.js",
       "branch": "gh-pages"
     },
     {
@@ -1242,7 +1242,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "foundation.topbar.js",
+      "type" : "file", "name": "foundation.topbar.js",
       "branch": "gh-pages"
     },
     {
@@ -1257,7 +1257,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "foundation.joyride.js",
+      "type" : "file", "name": "foundation.joyride.js",
       "branch": "gh-pages"
     },
     {
@@ -1272,7 +1272,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "foundation.tooltip.js",
+      "type" : "file", "name": "foundation.tooltip.js",
       "branch": "gh-pages"
     },
     {
@@ -1287,7 +1287,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "foundation.clearing.js",
+      "type" : "file", "name": "foundation.clearing.js",
       "branch": "gh-pages"
     },
     {
@@ -1302,7 +1302,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "foundation.dropdown.js",
+      "type" : "file", "name": "foundation.dropdown.js",
       "branch": "gh-pages"
     },
     {
@@ -1317,7 +1317,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "foundation.magellan.js",
+      "type" : "file", "name": "foundation.magellan.js",
       "branch": "gh-pages"
     },
     {
@@ -1332,7 +1332,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "bootstrap-theme.css.map",
+      "type" : "file", "name": "bootstrap-theme.css.map",
       "branch": "gh-pages"
     },
     {
@@ -1347,7 +1347,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "bootstrap-theme.min.css",
+      "type" : "file", "name": "bootstrap-theme.min.css",
       "branch": "gh-pages"
     },
     {
@@ -1362,7 +1362,7 @@
           "author": "valeriocos"
         }
       ],
-      "name": "delete.png",
+      "type" : "file", "name": "delete.png",
       "branch": "gh-pages"
     },
     {
@@ -1377,7 +1377,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "foundation.accordion.js",
+      "type" : "file", "name": "foundation.accordion.js",
       "branch": "gh-pages"
     },
     {
@@ -1392,7 +1392,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "foundation.equalizer.js",
+      "type" : "file", "name": "foundation.equalizer.js",
       "branch": "gh-pages"
     },
     {
@@ -1407,7 +1407,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "foundation.offcanvas.js",
+      "type" : "file", "name": "foundation.offcanvas.js",
       "branch": "gh-pages"
     },
     {
@@ -1422,7 +1422,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "sigma.parsers.gexf.min.js",
+      "type" : "file", "name": "sigma.parsers.gexf.min.js",
       "branch": "gh-pages"
     },
     {
@@ -1437,7 +1437,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "sigma.parsers.json.min.js",
+      "type" : "file", "name": "sigma.parsers.json.min.js",
       "branch": "gh-pages"
     },
     {
@@ -1452,7 +1452,7 @@
           "author": "valeriocos"
         }
       ],
-      "name": "bg_netty.png",
+      "type" : "file", "name": "bg_netty.png",
       "branch": "gh-pages"
     },
     {
@@ -1467,7 +1467,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "foundation.interchange.js",
+      "type" : "file", "name": "foundation.interchange.js",
       "branch": "gh-pages"
     },
     {
@@ -1482,7 +1482,7 @@
           "author": "valeriocos"
         }
       ],
-      "name": "sticky-bg.png",
+      "type" : "file", "name": "sticky-bg.png",
       "branch": "gh-pages"
     },
     {
@@ -1497,7 +1497,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "sigma.plugins.animate.min.js",
+      "type" : "file", "name": "sigma.plugins.animate.min.js",
       "branch": "gh-pages"
     },
     {
@@ -1512,7 +1512,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "sigma.plugins.dragNodes.min.js",
+      "type" : "file", "name": "sigma.plugins.dragNodes.min.js",
       "branch": "gh-pages"
     },
     {
@@ -1527,7 +1527,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "sigma.layout.forceAtlas2.min.js",
+      "type" : "file", "name": "sigma.layout.forceAtlas2.min.js",
       "branch": "gh-pages"
     },
     {
@@ -1542,7 +1542,7 @@
           "author": "valeriocos"
         }
       ],
-      "name": "jquery.stickynotes.css",
+      "type" : "file", "name": "jquery.stickynotes.css",
       "branch": "gh-pages"
     },
     {
@@ -1557,7 +1557,7 @@
           "author": "valeriocos"
         }
       ],
-      "name": "jquery-1.3.2.min.js",
+      "type" : "file", "name": "jquery-1.3.2.min.js",
       "branch": "gh-pages"
     },
     {
@@ -1572,7 +1572,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "sigma.plugins.neighborhoods.min.js",
+      "type" : "file", "name": "sigma.plugins.neighborhoods.min.js",
       "branch": "gh-pages"
     },
     {
@@ -1587,7 +1587,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "sigma.renderers.customShapes.min.js",
+      "type" : "file", "name": "sigma.renderers.customShapes.min.js",
       "branch": "gh-pages"
     },
     {
@@ -1602,7 +1602,7 @@
           "author": "valeriocos"
         }
       ],
-      "name": "jquery.stickynotes.js",
+      "type" : "file", "name": "jquery.stickynotes.js",
       "branch": "gh-pages"
     },
     {
@@ -1617,7 +1617,7 @@
           "author": "valeriocos"
         }
       ],
-      "name": "jquery-ui-1.7.2.custom.min.js",
+      "type" : "file", "name": "jquery-ui-1.7.2.custom.min.js",
       "branch": "gh-pages"
     },
     {
@@ -1633,7 +1633,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "drag.png",
+      "type" : "file", "name": "drag.png",
       "branch": "gh-pages"
     },
     {
@@ -1649,7 +1649,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "plus.png",
+      "type" : "file", "name": "plus.png",
       "branch": "gh-pages"
     },
     {
@@ -1665,7 +1665,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "star.png",
+      "type" : "file", "name": "star.png",
       "branch": "gh-pages"
     },
     {
@@ -1681,7 +1681,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "tick.png",
+      "type" : "file", "name": "tick.png",
       "branch": "gh-pages"
     },
     {
@@ -1697,7 +1697,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "close.png",
+      "type" : "file", "name": "close.png",
       "branch": "gh-pages"
     },
     {
@@ -1713,7 +1713,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "filter.png",
+      "type" : "file", "name": "filter.png",
       "branch": "gh-pages"
     },
     {
@@ -1729,7 +1729,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "loader.gif",
+      "type" : "file", "name": "loader.gif",
       "branch": "gh-pages"
     },
     {
@@ -1745,7 +1745,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "search.png",
+      "type" : "file", "name": "search.png",
       "branch": "gh-pages"
     },
     {
@@ -1761,7 +1761,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "icon-up.png",
+      "type" : "file", "name": "icon-up.png",
       "branch": "gh-pages"
     },
     {
@@ -1777,7 +1777,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "pointer.png",
+      "type" : "file", "name": "pointer.png",
       "branch": "gh-pages"
     },
     {
@@ -1793,7 +1793,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "sortasc.png",
+      "type" : "file", "name": "sortasc.png",
       "branch": "gh-pages"
     },
     {
@@ -1809,7 +1809,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "bg_black.png",
+      "type" : "file", "name": "bg_black.png",
       "branch": "gh-pages"
     },
     {
@@ -1825,7 +1825,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "sortdesc.png",
+      "type" : "file", "name": "sortdesc.png",
       "branch": "gh-pages"
     },
     {
@@ -1841,7 +1841,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "backImage.png",
+      "type" : "file", "name": "backImage.png",
       "branch": "gh-pages"
     },
     {
@@ -1857,7 +1857,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "crosshair.png",
+      "type" : "file", "name": "crosshair.png",
       "branch": "gh-pages"
     },
     {
@@ -1873,7 +1873,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "icon-down.png",
+      "type" : "file", "name": "icon-down.png",
       "branch": "gh-pages"
     },
     {
@@ -1889,7 +1889,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "icon-edit.png",
+      "type" : "file", "name": "icon-edit.png",
       "branch": "gh-pages"
     },
     {
@@ -1905,7 +1905,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "icon-last.png",
+      "type" : "file", "name": "icon-last.png",
       "branch": "gh-pages"
     },
     {
@@ -1921,7 +1921,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "icon-left.png",
+      "type" : "file", "name": "icon-left.png",
       "branch": "gh-pages"
     },
     {
@@ -1937,7 +1937,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "icon-save.png",
+      "type" : "file", "name": "icon-save.png",
       "branch": "gh-pages"
     },
     {
@@ -1953,7 +1953,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "check_blue.png",
+      "type" : "file", "name": "check_blue.png",
       "branch": "gh-pages"
     },
     {
@@ -1969,7 +1969,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "close_blue.png",
+      "type" : "file", "name": "close_blue.png",
       "branch": "gh-pages"
     },
     {
@@ -1985,7 +1985,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "dragcancel.png",
+      "type" : "file", "name": "dragcancel.png",
       "branch": "gh-pages"
     },
     {
@@ -2001,7 +2001,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "icon-first.png",
+      "type" : "file", "name": "icon-first.png",
       "branch": "gh-pages"
     },
     {
@@ -2017,7 +2017,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "icon-right.png",
+      "type" : "file", "name": "icon-right.png",
       "branch": "gh-pages"
     },
     {
@@ -2033,7 +2033,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "menubutton.png",
+      "type" : "file", "name": "menubutton.png",
       "branch": "gh-pages"
     },
     {
@@ -2049,7 +2049,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "plus_white.png",
+      "type" : "file", "name": "plus_white.png",
       "branch": "gh-pages"
     },
     {
@@ -2065,7 +2065,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "sortremove.png",
+      "type" : "file", "name": "sortremove.png",
       "branch": "gh-pages"
     },
     {
@@ -2081,7 +2081,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "star_hover.png",
+      "type" : "file", "name": "star_hover.png",
       "branch": "gh-pages"
     },
     {
@@ -2097,7 +2097,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "bg_darkblue.png",
+      "type" : "file", "name": "bg_darkblue.png",
       "branch": "gh-pages"
     },
     {
@@ -2113,7 +2113,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "check_black.png",
+      "type" : "file", "name": "check_black.png",
       "branch": "gh-pages"
     },
     {
@@ -2129,7 +2129,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "check_white.png",
+      "type" : "file", "name": "check_white.png",
       "branch": "gh-pages"
     },
     {
@@ -2145,7 +2145,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "close_white.png",
+      "type" : "file", "name": "close_white.png",
       "branch": "gh-pages"
     },
     {
@@ -2161,7 +2161,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "html_editor.png",
+      "type" : "file", "name": "html_editor.png",
       "branch": "gh-pages"
     },
     {
@@ -2177,7 +2177,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "icon-cancel.png",
+      "type" : "file", "name": "icon-cancel.png",
       "branch": "gh-pages"
     },
     {
@@ -2193,7 +2193,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "icon-delete.png",
+      "type" : "file", "name": "icon-delete.png",
       "branch": "gh-pages"
     },
     {
@@ -2209,7 +2209,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "multi-arrow.gif",
+      "type" : "file", "name": "multi-arrow.gif",
       "branch": "gh-pages"
     },
     {
@@ -2225,7 +2225,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "icon-up-blue.png",
+      "type" : "file", "name": "icon-up-blue.png",
       "branch": "gh-pages"
     },
     {
@@ -2241,7 +2241,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "red_arrow_up.png",
+      "type" : "file", "name": "red_arrow_up.png",
       "branch": "gh-pages"
     },
     {
@@ -2257,7 +2257,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "red_gradient.png",
+      "type" : "file", "name": "red_gradient.png",
       "branch": "gh-pages"
     },
     {
@@ -2273,7 +2273,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "search_white.png",
+      "type" : "file", "name": "search_white.png",
       "branch": "gh-pages"
     },
     {
@@ -2289,7 +2289,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "track_summer.png",
+      "type" : "file", "name": "track_summer.png",
       "branch": "gh-pages"
     },
     {
@@ -2305,7 +2305,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "backgroundTop.png",
+      "type" : "file", "name": "backgroundTop.png",
       "branch": "gh-pages"
     },
     {
@@ -2321,7 +2321,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "bg_blackhover.png",
+      "type" : "file", "name": "bg_blackhover.png",
       "branch": "gh-pages"
     },
     {
@@ -2337,7 +2337,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "bg_blueenergy.png",
+      "type" : "file", "name": "bg_blueenergy.png",
       "branch": "gh-pages"
     },
     {
@@ -2353,7 +2353,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "icon-calendar.png",
+      "type" : "file", "name": "icon-calendar.png",
       "branch": "gh-pages"
     },
     {
@@ -2369,7 +2369,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "icon-up-white.png",
+      "type" : "file", "name": "icon-up-white.png",
       "branch": "gh-pages"
     },
     {
@@ -2385,7 +2385,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "metro-icon-up.png",
+      "type" : "file", "name": "metro-icon-up.png",
       "branch": "gh-pages"
     },
     {
@@ -2401,7 +2401,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "sortascbutton.png",
+      "type" : "file", "name": "sortascbutton.png",
       "branch": "gh-pages"
     },
     {
@@ -2417,7 +2417,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "star_disabled.png",
+      "type" : "file", "name": "star_disabled.png",
       "branch": "gh-pages"
     },
     {
@@ -2433,7 +2433,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "track_classic.png",
+      "type" : "file", "name": "track_classic.png",
       "branch": "gh-pages"
     },
     {
@@ -2449,7 +2449,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "black_gradient.png",
+      "type" : "file", "name": "black_gradient.png",
       "branch": "gh-pages"
     },
     {
@@ -2465,7 +2465,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "check_disabled.png",
+      "type" : "file", "name": "check_disabled.png",
       "branch": "gh-pages"
     },
     {
@@ -2481,7 +2481,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "icon-down-blue.png",
+      "type" : "file", "name": "icon-down-blue.png",
       "branch": "gh-pages"
     },
     {
@@ -2497,7 +2497,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "icon-last-blue.png",
+      "type" : "file", "name": "icon-last-blue.png",
       "branch": "gh-pages"
     },
     {
@@ -2513,7 +2513,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "icon-left-blue.png",
+      "type" : "file", "name": "icon-left-blue.png",
       "branch": "gh-pages"
     },
     {
@@ -2529,7 +2529,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "office-icon-up.png",
+      "type" : "file", "name": "office-icon-up.png",
       "branch": "gh-pages"
     },
     {
@@ -2545,7 +2545,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "red_arrow_down.png",
+      "type" : "file", "name": "red_arrow_down.png",
       "branch": "gh-pages"
     },
     {
@@ -2561,7 +2561,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "sortdescbutton.png",
+      "type" : "file", "name": "sortdescbutton.png",
       "branch": "gh-pages"
     },
     {
@@ -2577,7 +2577,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "track_darkblue.png",
+      "type" : "file", "name": "track_darkblue.png",
       "branch": "gh-pages"
     },
     {
@@ -2593,7 +2593,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "wp_check_white.png",
+      "type" : "file", "name": "wp_check_white.png",
       "branch": "gh-pages"
     },
     {
@@ -2609,7 +2609,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "bg_blackpressed.png",
+      "type" : "file", "name": "bg_blackpressed.png",
       "branch": "gh-pages"
     },
     {
@@ -2625,7 +2625,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "blackbackground.png",
+      "type" : "file", "name": "blackbackground.png",
       "branch": "gh-pages"
     },
     {
@@ -2641,7 +2641,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "check_lightblue.png",
+      "type" : "file", "name": "check_lightblue.png",
       "branch": "gh-pages"
     },
     {
@@ -2657,7 +2657,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "crosshair-white.png",
+      "type" : "file", "name": "crosshair-white.png",
       "branch": "gh-pages"
     },
     {
@@ -2673,7 +2673,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "icon-down-white.png",
+      "type" : "file", "name": "icon-down-white.png",
       "branch": "gh-pages"
     },
     {
@@ -2689,7 +2689,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "icon-edit-white.png",
+      "type" : "file", "name": "icon-edit-white.png",
       "branch": "gh-pages"
     },
     {
@@ -2705,7 +2705,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "icon-first-blue.png",
+      "type" : "file", "name": "icon-first-blue.png",
       "branch": "gh-pages"
     },
     {
@@ -2721,7 +2721,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "icon-last-white.png",
+      "type" : "file", "name": "icon-last-white.png",
       "branch": "gh-pages"
     },
     {
@@ -2737,7 +2737,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "icon-left-white.png",
+      "type" : "file", "name": "icon-left-white.png",
       "branch": "gh-pages"
     },
     {
@@ -2753,7 +2753,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "icon-right-blue.png",
+      "type" : "file", "name": "icon-right-blue.png",
       "branch": "gh-pages"
     },
     {
@@ -2769,7 +2769,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "icon-save-white.png",
+      "type" : "file", "name": "icon-save-white.png",
       "branch": "gh-pages"
     },
     {
@@ -2785,7 +2785,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "metro-icon-down.png",
+      "type" : "file", "name": "metro-icon-down.png",
       "branch": "gh-pages"
     },
     {
@@ -2801,7 +2801,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "metro-icon-last.png",
+      "type" : "file", "name": "metro-icon-last.png",
       "branch": "gh-pages"
     },
     {
@@ -2817,7 +2817,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "metro-icon-left.png",
+      "type" : "file", "name": "metro-icon-left.png",
       "branch": "gh-pages"
     },
     {
@@ -2833,7 +2833,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "rangebar_summer.png",
+      "type" : "file", "name": "rangebar_summer.png",
       "branch": "gh-pages"
     },
     {
@@ -2849,7 +2849,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "bg_darkbluehover.png",
+      "type" : "file", "name": "bg_darkbluehover.png",
       "branch": "gh-pages"
     },
     {
@@ -2865,7 +2865,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "darkred_gradient.png",
+      "type" : "file", "name": "darkred_gradient.png",
       "branch": "gh-pages"
     },
     {
@@ -2881,7 +2881,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "icon-first-white.png",
+      "type" : "file", "name": "icon-first-white.png",
       "branch": "gh-pages"
     },
     {
@@ -2897,7 +2897,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "icon-right-white.png",
+      "type" : "file", "name": "icon-right-white.png",
       "branch": "gh-pages"
     },
     {
@@ -2913,7 +2913,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "metro-icon-first.png",
+      "type" : "file", "name": "metro-icon-first.png",
       "branch": "gh-pages"
     },
     {
@@ -2929,7 +2929,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "metro-icon-right.png",
+      "type" : "file", "name": "metro-icon-right.png",
       "branch": "gh-pages"
     },
     {
@@ -2945,7 +2945,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "office-icon-down.png",
+      "type" : "file", "name": "office-icon-down.png",
       "branch": "gh-pages"
     },
     {
@@ -2961,7 +2961,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "office-icon-last.png",
+      "type" : "file", "name": "office-icon-last.png",
       "branch": "gh-pages"
     },
     {
@@ -2977,7 +2977,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "office-icon-left.png",
+      "type" : "file", "name": "office-icon-left.png",
       "branch": "gh-pages"
     },
     {
@@ -2993,7 +2993,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "rangebar_classic.png",
+      "type" : "file", "name": "rangebar_classic.png",
       "branch": "gh-pages"
     },
     {
@@ -3009,7 +3009,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "roundbg_disabled.png",
+      "type" : "file", "name": "roundbg_disabled.png",
       "branch": "gh-pages"
     },
     {
@@ -3025,7 +3025,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "track_shinyblack.png",
+      "type" : "file", "name": "track_shinyblack.png",
       "branch": "gh-pages"
     },
     {
@@ -3041,7 +3041,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "html_editor_white.png",
+      "type" : "file", "name": "html_editor_white.png",
       "branch": "gh-pages"
     },
     {
@@ -3057,7 +3057,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "icon-cancel-white.png",
+      "type" : "file", "name": "icon-cancel-white.png",
       "branch": "gh-pages"
     },
     {
@@ -3073,7 +3073,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "icon-delete-white.png",
+      "type" : "file", "name": "icon-delete-white.png",
       "branch": "gh-pages"
     },
     {
@@ -3089,7 +3089,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "icon-showpassword.png",
+      "type" : "file", "name": "icon-showpassword.png",
       "branch": "gh-pages"
     },
     {
@@ -3105,7 +3105,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "office-icon-first.png",
+      "type" : "file", "name": "office-icon-first.png",
       "branch": "gh-pages"
     },
     {
@@ -3121,7 +3121,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "office-icon-right.png",
+      "type" : "file", "name": "office-icon-right.png",
       "branch": "gh-pages"
     },
     {
@@ -3137,7 +3137,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "rangebar_darkblue.png",
+      "type" : "file", "name": "rangebar_darkblue.png",
       "branch": "gh-pages"
     },
     {
@@ -3153,7 +3153,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "bg_darkbluepressed.png",
+      "type" : "file", "name": "bg_darkbluepressed.png",
       "branch": "gh-pages"
     },
     {
@@ -3169,7 +3169,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "bg_black_horizontal.png",
+      "type" : "file", "name": "bg_black_horizontal.png",
       "branch": "gh-pages"
     },
     {
@@ -3185,7 +3185,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "icon-calendar-white.png",
+      "type" : "file", "name": "icon-calendar-white.png",
       "branch": "gh-pages"
     },
     {
@@ -3201,7 +3201,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "icon-menu-minimized.png",
+      "type" : "file", "name": "icon-menu-minimized.png",
       "branch": "gh-pages"
     },
     {
@@ -3217,7 +3217,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "icon-up-transparent.png",
+      "type" : "file", "name": "icon-up-transparent.png",
       "branch": "gh-pages"
     },
     {
@@ -3233,7 +3233,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "metro-icon-up-white.png",
+      "type" : "file", "name": "metro-icon-up-white.png",
       "branch": "gh-pages"
     },
     {
@@ -3249,7 +3249,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "rangebar_shinyblack.png",
+      "type" : "file", "name": "rangebar_shinyblack.png",
       "branch": "gh-pages"
     },
     {
@@ -3265,7 +3265,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "roundbg_check_black.png",
+      "type" : "file", "name": "roundbg_check_black.png",
       "branch": "gh-pages"
     },
     {
@@ -3281,7 +3281,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "roundbg_check_white.png",
+      "type" : "file", "name": "roundbg_check_white.png",
       "branch": "gh-pages"
     },
     {
@@ -3297,7 +3297,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "icon-down-transparent.png",
+      "type" : "file", "name": "icon-down-transparent.png",
       "branch": "gh-pages"
     },
     {
@@ -3313,7 +3313,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "icon-last-transparent.png",
+      "type" : "file", "name": "icon-last-transparent.png",
       "branch": "gh-pages"
     },
     {
@@ -3329,7 +3329,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "icon-left-transparent.png",
+      "type" : "file", "name": "icon-left-transparent.png",
       "branch": "gh-pages"
     },
     {
@@ -3345,7 +3345,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "metro-icon-down-white.png",
+      "type" : "file", "name": "metro-icon-down-white.png",
       "branch": "gh-pages"
     },
     {
@@ -3361,7 +3361,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "metro-icon-last-white.png",
+      "type" : "file", "name": "metro-icon-last-white.png",
       "branch": "gh-pages"
     },
     {
@@ -3377,7 +3377,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "metro-icon-left-white.png",
+      "type" : "file", "name": "metro-icon-left-white.png",
       "branch": "gh-pages"
     },
     {
@@ -3393,7 +3393,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "roundbg_classic_hover.png",
+      "type" : "file", "name": "roundbg_classic_hover.png",
       "branch": "gh-pages"
     },
     {
@@ -3409,7 +3409,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "icon-first-transparent.png",
+      "type" : "file", "name": "icon-first-transparent.png",
       "branch": "gh-pages"
     },
     {
@@ -3425,7 +3425,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "icon-right-transparent.png",
+      "type" : "file", "name": "icon-right-transparent.png",
       "branch": "gh-pages"
     },
     {
@@ -3441,7 +3441,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "metro-icon-first-white.png",
+      "type" : "file", "name": "metro-icon-first-white.png",
       "branch": "gh-pages"
     },
     {
@@ -3457,7 +3457,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "metro-icon-right-white.png",
+      "type" : "file", "name": "metro-icon-right-white.png",
       "branch": "gh-pages"
     },
     {
@@ -3473,7 +3473,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "roundbg_check_disabled.png",
+      "type" : "file", "name": "roundbg_check_disabled.png",
       "branch": "gh-pages"
     },
     {
@@ -3489,7 +3489,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "roundbg_classic_normal.png",
+      "type" : "file", "name": "roundbg_classic_normal.png",
       "branch": "gh-pages"
     },
     {
@@ -3505,7 +3505,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "icon-showpassword-white.png",
+      "type" : "file", "name": "icon-showpassword-white.png",
       "branch": "gh-pages"
     },
     {
@@ -3521,7 +3521,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "metro-icon-right - Copy.png",
+      "type" : "file", "name": "metro-icon-right - Copy.png",
       "branch": "gh-pages"
     },
     {
@@ -3537,7 +3537,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "bg_blackhover_horizontal.png",
+      "type" : "file", "name": "bg_blackhover_horizontal.png",
       "branch": "gh-pages"
     },
     {
@@ -3553,7 +3553,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "check_blue_indeterminate.png",
+      "type" : "file", "name": "check_blue_indeterminate.png",
       "branch": "gh-pages"
     },
     {
@@ -3569,7 +3569,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "check_indeterminate_black.png",
+      "type" : "file", "name": "check_indeterminate_black.png",
       "branch": "gh-pages"
     },
     {
@@ -3585,7 +3585,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "check_indeterminate_white.png",
+      "type" : "file", "name": "check_indeterminate_white.png",
       "branch": "gh-pages"
     },
     {
@@ -3601,7 +3601,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "icon-menu-minimized-white.png",
+      "type" : "file", "name": "icon-menu-minimized-white.png",
       "branch": "gh-pages"
     },
     {
@@ -3617,7 +3617,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "bg_blackpressed_horizontal.png",
+      "type" : "file", "name": "bg_blackpressed_horizontal.png",
       "branch": "gh-pages"
     },
     {
@@ -3633,7 +3633,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "roundbg_check_indeterminate.png",
+      "type" : "file", "name": "roundbg_check_indeterminate.png",
       "branch": "gh-pages"
     },
     {
@@ -3649,7 +3649,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "check_indeterminate_disabled.png",
+      "type" : "file", "name": "check_indeterminate_disabled.png",
       "branch": "gh-pages"
     },
     {
@@ -3665,7 +3665,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "wp_check_indeterminate_white.png",
+      "type" : "file", "name": "wp_check_indeterminate_white.png",
       "branch": "gh-pages"
     },
     {
@@ -3681,7 +3681,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "check_lightblue_indeterminate.png",
+      "type" : "file", "name": "check_lightblue_indeterminate.png",
       "branch": "gh-pages"
     },
     {
@@ -3698,7 +3698,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "ReadMe.txt",
+      "type" : "file", "name": "ReadMe.txt",
       "branch": "gh-pages"
     },
     {
@@ -3715,7 +3715,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "ReadMe.txt",
+      "type" : "file", "name": "ReadMe.txt",
       "branch": "gh-pages"
     },
     {
@@ -3732,7 +3732,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "ReadMe.txt",
+      "type" : "file", "name": "ReadMe.txt",
       "branch": "gh-pages"
     },
     {
@@ -3749,7 +3749,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "ReadMe.txt",
+      "type" : "file", "name": "ReadMe.txt",
       "branch": "gh-pages"
     },
     {
@@ -3766,7 +3766,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "ReadMe.txt",
+      "type" : "file", "name": "ReadMe.txt",
       "branch": "gh-pages"
     },
     {
@@ -3783,7 +3783,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "ReadMe.txt",
+      "type" : "file", "name": "ReadMe.txt",
       "branch": "gh-pages"
     },
     {
@@ -3800,7 +3800,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "ReadMe.txt",
+      "type" : "file", "name": "ReadMe.txt",
       "branch": "gh-pages"
     },
     {
@@ -3817,7 +3817,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "icon-last.png",
+      "type" : "file", "name": "icon-last.png",
       "branch": "gh-pages"
     },
     {
@@ -3834,7 +3834,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "ReadMe.txt",
+      "type" : "file", "name": "ReadMe.txt",
       "branch": "gh-pages"
     },
     {
@@ -3851,7 +3851,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "ReadMe.txt",
+      "type" : "file", "name": "ReadMe.txt",
       "branch": "gh-pages"
     },
     {
@@ -3868,7 +3868,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "icon-first.png",
+      "type" : "file", "name": "icon-first.png",
       "branch": "gh-pages"
     },
     {
@@ -3885,7 +3885,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "bar-hue.png",
+      "type" : "file", "name": "bar-hue.png",
       "branch": "gh-pages"
     },
     {
@@ -3902,7 +3902,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "map-hue.png",
+      "type" : "file", "name": "map-hue.png",
       "branch": "gh-pages"
     },
     {
@@ -3919,7 +3919,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "icon-last.png",
+      "type" : "file", "name": "icon-last.png",
       "branch": "gh-pages"
     },
     {
@@ -3936,7 +3936,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "icon-first.png",
+      "type" : "file", "name": "icon-first.png",
       "branch": "gh-pages"
     },
     {
@@ -3953,7 +3953,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "bar-saturation.png",
+      "type" : "file", "name": "bar-saturation.png",
       "branch": "gh-pages"
     },
     {
@@ -3970,7 +3970,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "map-saturation.png",
+      "type" : "file", "name": "map-saturation.png",
       "branch": "gh-pages"
     },
     {
@@ -3987,7 +3987,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-icons_0078ae_256x240.png",
+      "type" : "file", "name": "ui-icons_0078ae_256x240.png",
       "branch": "gh-pages"
     },
     {
@@ -4004,7 +4004,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-icons_056b93_256x240.png",
+      "type" : "file", "name": "ui-icons_056b93_256x240.png",
       "branch": "gh-pages"
     },
     {
@@ -4021,7 +4021,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-icons_d8e7f3_256x240.png",
+      "type" : "file", "name": "ui-icons_d8e7f3_256x240.png",
       "branch": "gh-pages"
     },
     {
@@ -4038,7 +4038,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-icons_e0fdff_256x240.png",
+      "type" : "file", "name": "ui-icons_e0fdff_256x240.png",
       "branch": "gh-pages"
     },
     {
@@ -4055,7 +4055,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-icons_f5e175_256x240.png",
+      "type" : "file", "name": "ui-icons_f5e175_256x240.png",
       "branch": "gh-pages"
     },
     {
@@ -4072,7 +4072,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-icons_f7a50d_256x240.png",
+      "type" : "file", "name": "ui-icons_f7a50d_256x240.png",
       "branch": "gh-pages"
     },
     {
@@ -4089,7 +4089,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-icons_fcd113_256x240.png",
+      "type" : "file", "name": "ui-icons_fcd113_256x240.png",
       "branch": "gh-pages"
     },
     {
@@ -4106,7 +4106,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-icons_3d3d3d_256x240.png",
+      "type" : "file", "name": "ui-icons_3d3d3d_256x240.png",
       "branch": "gh-pages"
     },
     {
@@ -4123,7 +4123,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-icons_bd7b00_256x240.png",
+      "type" : "file", "name": "ui-icons_bd7b00_256x240.png",
       "branch": "gh-pages"
     },
     {
@@ -4140,7 +4140,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-icons_d19405_256x240.png",
+      "type" : "file", "name": "ui-icons_d19405_256x240.png",
       "branch": "gh-pages"
     },
     {
@@ -4157,7 +4157,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-icons_eb990f_256x240.png",
+      "type" : "file", "name": "ui-icons_eb990f_256x240.png",
       "branch": "gh-pages"
     },
     {
@@ -4174,7 +4174,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-icons_ed9f26_256x240.png",
+      "type" : "file", "name": "ui-icons_ed9f26_256x240.png",
       "branch": "gh-pages"
     },
     {
@@ -4191,7 +4191,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-icons_fadc7a_256x240.png",
+      "type" : "file", "name": "ui-icons_fadc7a_256x240.png",
       "branch": "gh-pages"
     },
     {
@@ -4208,7 +4208,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-icons_ffe180_256x240.png",
+      "type" : "file", "name": "ui-icons_ffe180_256x240.png",
       "branch": "gh-pages"
     },
     {
@@ -4225,7 +4225,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-icons_4eb305_256x240.png",
+      "type" : "file", "name": "ui-icons_4eb305_256x240.png",
       "branch": "gh-pages"
     },
     {
@@ -4242,7 +4242,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-icons_72b42d_256x240.png",
+      "type" : "file", "name": "ui-icons_72b42d_256x240.png",
       "branch": "gh-pages"
     },
     {
@@ -4259,7 +4259,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-icons_cd0a0a_256x240.png",
+      "type" : "file", "name": "ui-icons_cd0a0a_256x240.png",
       "branch": "gh-pages"
     },
     {
@@ -4276,7 +4276,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-icons_ffffff_256x240.png",
+      "type" : "file", "name": "ui-icons_ffffff_256x240.png",
       "branch": "gh-pages"
     },
     {
@@ -4293,7 +4293,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-icons_217bc0_256x240.png",
+      "type" : "file", "name": "ui-icons_217bc0_256x240.png",
       "branch": "gh-pages"
     },
     {
@@ -4310,7 +4310,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-icons_2e83ff_256x240.png",
+      "type" : "file", "name": "ui-icons_2e83ff_256x240.png",
       "branch": "gh-pages"
     },
     {
@@ -4327,7 +4327,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-icons_469bdd_256x240.png",
+      "type" : "file", "name": "ui-icons_469bdd_256x240.png",
       "branch": "gh-pages"
     },
     {
@@ -4344,7 +4344,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-icons_6da8d5_256x240.png",
+      "type" : "file", "name": "ui-icons_6da8d5_256x240.png",
       "branch": "gh-pages"
     },
     {
@@ -4361,7 +4361,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-icons_cd0a0a_256x240.png",
+      "type" : "file", "name": "ui-icons_cd0a0a_256x240.png",
       "branch": "gh-pages"
     },
     {
@@ -4378,7 +4378,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-icons_d8e7f3_256x240.png",
+      "type" : "file", "name": "ui-icons_d8e7f3_256x240.png",
       "branch": "gh-pages"
     },
     {
@@ -4395,7 +4395,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-icons_f9bd01_256x240.png",
+      "type" : "file", "name": "ui-icons_f9bd01_256x240.png",
       "branch": "gh-pages"
     },
     {
@@ -4412,7 +4412,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-icons_222222_256x240.png",
+      "type" : "file", "name": "ui-icons_222222_256x240.png",
       "branch": "gh-pages"
     },
     {
@@ -4429,7 +4429,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-icons_4b8e0b_256x240.png",
+      "type" : "file", "name": "ui-icons_4b8e0b_256x240.png",
       "branch": "gh-pages"
     },
     {
@@ -4446,7 +4446,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-icons_a83300_256x240.png",
+      "type" : "file", "name": "ui-icons_a83300_256x240.png",
       "branch": "gh-pages"
     },
     {
@@ -4463,7 +4463,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-icons_cccccc_256x240.png",
+      "type" : "file", "name": "ui-icons_cccccc_256x240.png",
       "branch": "gh-pages"
     },
     {
@@ -4480,7 +4480,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-icons_ffffff_256x240.png",
+      "type" : "file", "name": "ui-icons_ffffff_256x240.png",
       "branch": "gh-pages"
     },
     {
@@ -4497,7 +4497,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-icons_3383bb_256x240.png",
+      "type" : "file", "name": "ui-icons_3383bb_256x240.png",
       "branch": "gh-pages"
     },
     {
@@ -4514,7 +4514,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-icons_454545_256x240.png",
+      "type" : "file", "name": "ui-icons_454545_256x240.png",
       "branch": "gh-pages"
     },
     {
@@ -4531,7 +4531,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-icons_70b2e1_256x240.png",
+      "type" : "file", "name": "ui-icons_70b2e1_256x240.png",
       "branch": "gh-pages"
     },
     {
@@ -4548,7 +4548,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-icons_999999_256x240.png",
+      "type" : "file", "name": "ui-icons_999999_256x240.png",
       "branch": "gh-pages"
     },
     {
@@ -4565,7 +4565,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-icons_fbc856_256x240.png",
+      "type" : "file", "name": "ui-icons_fbc856_256x240.png",
       "branch": "gh-pages"
     },
     {
@@ -4582,7 +4582,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-icons_222222_256x240.png",
+      "type" : "file", "name": "ui-icons_222222_256x240.png",
       "branch": "gh-pages"
     },
     {
@@ -4599,7 +4599,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-icons_228ef1_256x240.png",
+      "type" : "file", "name": "ui-icons_228ef1_256x240.png",
       "branch": "gh-pages"
     },
     {
@@ -4616,7 +4616,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-icons_ef8c08_256x240.png",
+      "type" : "file", "name": "ui-icons_ef8c08_256x240.png",
       "branch": "gh-pages"
     },
     {
@@ -4633,7 +4633,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-icons_ffd27a_256x240.png",
+      "type" : "file", "name": "ui-icons_ffd27a_256x240.png",
       "branch": "gh-pages"
     },
     {
@@ -4650,7 +4650,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-icons_ffffff_256x240.png",
+      "type" : "file", "name": "ui-icons_ffffff_256x240.png",
       "branch": "gh-pages"
     },
     {
@@ -4667,7 +4667,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_flat_55_999999_40x100.png",
+      "type" : "file", "name": "ui-bg_flat_55_999999_40x100.png",
       "branch": "gh-pages"
     },
     {
@@ -4684,7 +4684,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_flat_75_aaaaaa_40x100.png",
+      "type" : "file", "name": "ui-bg_flat_75_aaaaaa_40x100.png",
       "branch": "gh-pages"
     },
     {
@@ -4701,7 +4701,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_glass_45_0078ae_1x400.png",
+      "type" : "file", "name": "ui-bg_glass_45_0078ae_1x400.png",
       "branch": "gh-pages"
     },
     {
@@ -4718,7 +4718,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_glass_55_f8da4e_1x400.png",
+      "type" : "file", "name": "ui-bg_glass_55_f8da4e_1x400.png",
       "branch": "gh-pages"
     },
     {
@@ -4735,7 +4735,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_glass_75_79c9ec_1x400.png",
+      "type" : "file", "name": "ui-bg_glass_75_79c9ec_1x400.png",
       "branch": "gh-pages"
     },
     {
@@ -4752,7 +4752,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_flat_30_cccccc_40x100.png",
+      "type" : "file", "name": "ui-bg_flat_30_cccccc_40x100.png",
       "branch": "gh-pages"
     },
     {
@@ -4769,7 +4769,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_flat_50_5c5c5c_40x100.png",
+      "type" : "file", "name": "ui-bg_flat_50_5c5c5c_40x100.png",
       "branch": "gh-pages"
     },
     {
@@ -4786,7 +4786,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "map-saturation-overlay.png",
+      "type" : "file", "name": "map-saturation-overlay.png",
       "branch": "gh-pages"
     },
     {
@@ -4803,7 +4803,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_flat_0_aaaaaa_40x100.png",
+      "type" : "file", "name": "ui-bg_flat_0_aaaaaa_40x100.png",
       "branch": "gh-pages"
     },
     {
@@ -4820,7 +4820,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-icons_222222_256x240.png",
+      "type" : "file", "name": "ui-icons_222222_256x240.png",
       "branch": "gh-pages"
     },
     {
@@ -4837,7 +4837,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-icons_2e83ff_256x240.png",
+      "type" : "file", "name": "ui-icons_2e83ff_256x240.png",
       "branch": "gh-pages"
     },
     {
@@ -4854,7 +4854,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-icons_454545_256x240.png",
+      "type" : "file", "name": "ui-icons_454545_256x240.png",
       "branch": "gh-pages"
     },
     {
@@ -4871,7 +4871,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-icons_888888_256x240.png",
+      "type" : "file", "name": "ui-icons_888888_256x240.png",
       "branch": "gh-pages"
     },
     {
@@ -4888,7 +4888,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-icons_cd0a0a_256x240.png",
+      "type" : "file", "name": "ui-icons_cd0a0a_256x240.png",
       "branch": "gh-pages"
     },
     {
@@ -4905,7 +4905,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_glass_55_fbf5d0_1x400.png",
+      "type" : "file", "name": "ui-bg_glass_55_fbf5d0_1x400.png",
       "branch": "gh-pages"
     },
     {
@@ -4922,7 +4922,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_flat_0_aaaaaa_40x100.png",
+      "type" : "file", "name": "ui-bg_flat_0_aaaaaa_40x100.png",
       "branch": "gh-pages"
     },
     {
@@ -4939,7 +4939,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_flat_0_eeeeee_40x100.png",
+      "type" : "file", "name": "ui-bg_flat_0_eeeeee_40x100.png",
       "branch": "gh-pages"
     },
     {
@@ -4956,7 +4956,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_flat_55_fbec88_40x100.png",
+      "type" : "file", "name": "ui-bg_flat_55_fbec88_40x100.png",
       "branch": "gh-pages"
     },
     {
@@ -4973,7 +4973,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_glass_75_d0e5f5_1x400.png",
+      "type" : "file", "name": "ui-bg_glass_75_d0e5f5_1x400.png",
       "branch": "gh-pages"
     },
     {
@@ -4990,7 +4990,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_glass_85_dfeffc_1x400.png",
+      "type" : "file", "name": "ui-bg_glass_85_dfeffc_1x400.png",
       "branch": "gh-pages"
     },
     {
@@ -5007,7 +5007,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_glass_95_fef1ec_1x400.png",
+      "type" : "file", "name": "ui-bg_glass_95_fef1ec_1x400.png",
       "branch": "gh-pages"
     },
     {
@@ -5024,7 +5024,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_flat_30_cccccc_40x100.png",
+      "type" : "file", "name": "ui-bg_flat_30_cccccc_40x100.png",
       "branch": "gh-pages"
     },
     {
@@ -5041,7 +5041,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_flat_50_5c5c5c_40x100.png",
+      "type" : "file", "name": "ui-bg_flat_50_5c5c5c_40x100.png",
       "branch": "gh-pages"
     },
     {
@@ -5058,7 +5058,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_glass_20_555555_1x400.png",
+      "type" : "file", "name": "ui-bg_glass_20_555555_1x400.png",
       "branch": "gh-pages"
     },
     {
@@ -5075,7 +5075,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_glass_40_0078a3_1x400.png",
+      "type" : "file", "name": "ui-bg_glass_40_0078a3_1x400.png",
       "branch": "gh-pages"
     },
     {
@@ -5092,7 +5092,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_glass_40_ffc73d_1x400.png",
+      "type" : "file", "name": "ui-bg_glass_40_ffc73d_1x400.png",
       "branch": "gh-pages"
     },
     {
@@ -5109,7 +5109,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_flat_55_c0402a_40x100.png",
+      "type" : "file", "name": "ui-bg_flat_55_c0402a_40x100.png",
       "branch": "gh-pages"
     },
     {
@@ -5126,7 +5126,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_flat_55_eeeeee_40x100.png",
+      "type" : "file", "name": "ui-bg_flat_55_eeeeee_40x100.png",
       "branch": "gh-pages"
     },
     {
@@ -5143,7 +5143,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_glass_35_dddddd_1x400.png",
+      "type" : "file", "name": "ui-bg_glass_35_dddddd_1x400.png",
       "branch": "gh-pages"
     },
     {
@@ -5160,7 +5160,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_glass_60_eeeeee_1x400.png",
+      "type" : "file", "name": "ui-bg_glass_60_eeeeee_1x400.png",
       "branch": "gh-pages"
     },
     {
@@ -5177,7 +5177,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_flat_10_000000_40x100.png",
+      "type" : "file", "name": "ui-bg_flat_10_000000_40x100.png",
       "branch": "gh-pages"
     },
     {
@@ -5194,7 +5194,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_glass_65_ffffff_1x400.png",
+      "type" : "file", "name": "ui-bg_glass_65_ffffff_1x400.png",
       "branch": "gh-pages"
     },
     {
@@ -5211,7 +5211,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_glass_100_f8f8f8_1x400.png",
+      "type" : "file", "name": "ui-bg_glass_100_f8f8f8_1x400.png",
       "branch": "gh-pages"
     },
     {
@@ -5228,7 +5228,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_flat_0_aaaaaa_40x100.png",
+      "type" : "file", "name": "ui-bg_flat_0_aaaaaa_40x100.png",
       "branch": "gh-pages"
     },
     {
@@ -5245,7 +5245,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_glass_100_f6f6f6_1x400.png",
+      "type" : "file", "name": "ui-bg_glass_100_f6f6f6_1x400.png",
       "branch": "gh-pages"
     },
     {
@@ -5262,7 +5262,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_glass_100_fdf5ce_1x400.png",
+      "type" : "file", "name": "ui-bg_glass_100_fdf5ce_1x400.png",
       "branch": "gh-pages"
     },
     {
@@ -5279,7 +5279,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_flat_75_ffffff_40x100.png",
+      "type" : "file", "name": "ui-bg_flat_75_ffffff_40x100.png",
       "branch": "gh-pages"
     },
     {
@@ -5296,7 +5296,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_glass_55_fbf9ee_1x400.png",
+      "type" : "file", "name": "ui-bg_glass_55_fbf9ee_1x400.png",
       "branch": "gh-pages"
     },
     {
@@ -5313,7 +5313,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_glass_65_ffffff_1x400.png",
+      "type" : "file", "name": "ui-bg_glass_65_ffffff_1x400.png",
       "branch": "gh-pages"
     },
     {
@@ -5330,7 +5330,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_glass_75_dadada_1x400.png",
+      "type" : "file", "name": "ui-bg_glass_75_dadada_1x400.png",
       "branch": "gh-pages"
     },
     {
@@ -5347,7 +5347,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_glass_75_e6e6e6_1x400.png",
+      "type" : "file", "name": "ui-bg_glass_75_e6e6e6_1x400.png",
       "branch": "gh-pages"
     },
     {
@@ -5364,7 +5364,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_glass_95_fef1ec_1x400.png",
+      "type" : "file", "name": "ui-bg_glass_95_fef1ec_1x400.png",
       "branch": "gh-pages"
     },
     {
@@ -5381,7 +5381,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_inset-soft_30_ffffff_1x100.png",
+      "type" : "file", "name": "ui-bg_inset-soft_30_ffffff_1x100.png",
       "branch": "gh-pages"
     },
     {
@@ -5398,7 +5398,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_inset-hard_100_fcfdfd_1x100.png",
+      "type" : "file", "name": "ui-bg_inset-hard_100_fcfdfd_1x100.png",
       "branch": "gh-pages"
     },
     {
@@ -5415,7 +5415,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_inset-soft_10_285c00_1x100.png",
+      "type" : "file", "name": "ui-bg_inset-soft_10_285c00_1x100.png",
       "branch": "gh-pages"
     },
     {
@@ -5432,7 +5432,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_gloss-wave_45_e14f1c_500x100.png",
+      "type" : "file", "name": "ui-bg_gloss-wave_45_e14f1c_500x100.png",
       "branch": "gh-pages"
     },
     {
@@ -5449,7 +5449,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_gloss-wave_50_6eac2c_500x100.png",
+      "type" : "file", "name": "ui-bg_gloss-wave_50_6eac2c_500x100.png",
       "branch": "gh-pages"
     },
     {
@@ -5466,7 +5466,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_gloss-wave_75_2191c0_500x100.png",
+      "type" : "file", "name": "ui-bg_gloss-wave_75_2191c0_500x100.png",
       "branch": "gh-pages"
     },
     {
@@ -5483,7 +5483,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_gloss-wave_45_817865_500x100.png",
+      "type" : "file", "name": "ui-bg_gloss-wave_45_817865_500x100.png",
       "branch": "gh-pages"
     },
     {
@@ -5500,7 +5500,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_gloss-wave_60_fece2f_500x100.png",
+      "type" : "file", "name": "ui-bg_gloss-wave_60_fece2f_500x100.png",
       "branch": "gh-pages"
     },
     {
@@ -5517,7 +5517,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_gloss-wave_70_ffdd57_500x100.png",
+      "type" : "file", "name": "ui-bg_gloss-wave_70_ffdd57_500x100.png",
       "branch": "gh-pages"
     },
     {
@@ -5534,7 +5534,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_gloss-wave_90_fff9e5_500x100.png",
+      "type" : "file", "name": "ui-bg_gloss-wave_90_fff9e5_500x100.png",
       "branch": "gh-pages"
     },
     {
@@ -5551,7 +5551,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_inset-soft_25_000000_1x100.png",
+      "type" : "file", "name": "ui-bg_inset-soft_25_000000_1x100.png",
       "branch": "gh-pages"
     },
     {
@@ -5568,7 +5568,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_inset-soft_30_f58400_1x100.png",
+      "type" : "file", "name": "ui-bg_inset-soft_30_f58400_1x100.png",
       "branch": "gh-pages"
     },
     {
@@ -5585,7 +5585,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_inset-hard_75_999999_1x100.png",
+      "type" : "file", "name": "ui-bg_inset-hard_75_999999_1x100.png",
       "branch": "gh-pages"
     },
     {
@@ -5602,7 +5602,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_inset-soft_50_c9c9c9_1x100.png",
+      "type" : "file", "name": "ui-bg_inset-soft_50_c9c9c9_1x100.png",
       "branch": "gh-pages"
     },
     {
@@ -5619,7 +5619,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_inset-hard_100_f5f8f9_1x100.png",
+      "type" : "file", "name": "ui-bg_inset-hard_100_f5f8f9_1x100.png",
       "branch": "gh-pages"
     },
     {
@@ -5636,7 +5636,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_inset-hard_100_fcfdfd_1x100.png",
+      "type" : "file", "name": "ui-bg_inset-hard_100_fcfdfd_1x100.png",
       "branch": "gh-pages"
     },
     {
@@ -5653,7 +5653,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_gloss-wave_55_5c9ccc_500x100.png",
+      "type" : "file", "name": "ui-bg_gloss-wave_55_5c9ccc_500x100.png",
       "branch": "gh-pages"
     },
     {
@@ -5670,7 +5670,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_gloss-wave_25_333333_500x100.png",
+      "type" : "file", "name": "ui-bg_gloss-wave_25_333333_500x100.png",
       "branch": "gh-pages"
     },
     {
@@ -5687,7 +5687,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_highlight-soft_100_feeebd_1x100.png",
+      "type" : "file", "name": "ui-bg_highlight-soft_100_feeebd_1x100.png",
       "branch": "gh-pages"
     },
     {
@@ -5704,7 +5704,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_diagonals-small_0_aaaaaa_40x40.png",
+      "type" : "file", "name": "ui-bg_diagonals-small_0_aaaaaa_40x40.png",
       "branch": "gh-pages"
     },
     {
@@ -5721,7 +5721,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_highlight-hard_30_285c00_1x100.png",
+      "type" : "file", "name": "ui-bg_highlight-hard_30_285c00_1x100.png",
       "branch": "gh-pages"
     },
     {
@@ -5738,7 +5738,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_highlight-soft_33_3a8104_1x100.png",
+      "type" : "file", "name": "ui-bg_highlight-soft_33_3a8104_1x100.png",
       "branch": "gh-pages"
     },
     {
@@ -5755,7 +5755,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_highlight-soft_50_4eb305_1x100.png",
+      "type" : "file", "name": "ui-bg_highlight-soft_50_4eb305_1x100.png",
       "branch": "gh-pages"
     },
     {
@@ -5772,7 +5772,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_highlight-soft_60_4ca20b_1x100.png",
+      "type" : "file", "name": "ui-bg_highlight-soft_60_4ca20b_1x100.png",
       "branch": "gh-pages"
     },
     {
@@ -5789,7 +5789,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_gloss-wave_35_f6a828_500x100.png",
+      "type" : "file", "name": "ui-bg_gloss-wave_35_f6a828_500x100.png",
       "branch": "gh-pages"
     },
     {
@@ -5806,7 +5806,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_diagonals-medium_20_d34d17_40x40.png",
+      "type" : "file", "name": "ui-bg_diagonals-medium_20_d34d17_40x40.png",
       "branch": "gh-pages"
     },
     {
@@ -5823,7 +5823,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_highlight-soft_80_eeeeee_1x100.png",
+      "type" : "file", "name": "ui-bg_highlight-soft_80_eeeeee_1x100.png",
       "branch": "gh-pages"
     },
     {
@@ -5840,7 +5840,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_diagonals-thick_15_444444_40x40.png",
+      "type" : "file", "name": "ui-bg_diagonals-thick_15_444444_40x40.png",
       "branch": "gh-pages"
     },
     {
@@ -5857,7 +5857,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_diagonals-thick_95_ffdc2e_40x40.png",
+      "type" : "file", "name": "ui-bg_diagonals-thick_95_ffdc2e_40x40.png",
       "branch": "gh-pages"
     },
     {
@@ -5874,7 +5874,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_highlight-soft_75_ffe45c_1x100.png",
+      "type" : "file", "name": "ui-bg_highlight-soft_75_ffe45c_1x100.png",
       "branch": "gh-pages"
     },
     {
@@ -5891,7 +5891,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_diagonals-thick_18_b81900_40x40.png",
+      "type" : "file", "name": "ui-bg_diagonals-thick_18_b81900_40x40.png",
       "branch": "gh-pages"
     },
     {
@@ -5908,7 +5908,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_diagonals-thick_20_666666_40x40.png",
+      "type" : "file", "name": "ui-bg_diagonals-thick_20_666666_40x40.png",
       "branch": "gh-pages"
     },
     {
@@ -5925,7 +5925,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_highlight-soft_100_eeeeee_1x100.png",
+      "type" : "file", "name": "ui-bg_highlight-soft_100_eeeeee_1x100.png",
       "branch": "gh-pages"
     },
     {
@@ -5942,7 +5942,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "ui-bg_highlight-soft_75_cccccc_1x100.png",
+      "type" : "file", "name": "ui-bg_highlight-soft_75_cccccc_1x100.png",
       "branch": "gh-pages"
     },
     {
@@ -5956,7 +5956,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "README.md",
+      "type" : "file", "name": "README.md",
       "branch": "master"
     },
     {
@@ -5974,7 +5974,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": ".gitignore",
+      "type" : "file", "name": ".gitignore",
       "branch": "master"
     },
     {
@@ -5989,7 +5989,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": ".project",
+      "type" : "file", "name": ".project",
       "branch": "master"
     },
     {
@@ -6004,7 +6004,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "lb_label_issues.sql",
+      "type" : "file", "name": "lb_label_issues.sql",
       "branch": "master"
     },
     {
@@ -6023,7 +6023,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": ".classpath",
+      "type" : "file", "name": ".classpath",
       "branch": "master"
     },
     {
@@ -6038,7 +6038,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": ".gitignore",
+      "type" : "file", "name": ".gitignore",
       "branch": "master"
     },
     {
@@ -6053,7 +6053,7 @@
           "author": "Belen Rolandi"
         }
       ],
-      "name": "_issue_resolution.sql",
+      "type" : "file", "name": "_issue_resolution.sql",
       "branch": "master"
     },
     {
@@ -6068,7 +6068,7 @@
           "author": "Belen Rolandi"
         }
       ],
-      "name": "_issue_contribution.sql",
+      "type" : "file", "name": "_issue_contribution.sql",
       "branch": "master"
     },
     {
@@ -6083,7 +6083,7 @@
           "author": "Belen Rolandi"
         }
       ],
-      "name": "_issue_reaction_time.sql",
+      "type" : "file", "name": "_issue_reaction_time.sql",
       "branch": "master"
     },
     {
@@ -6098,7 +6098,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "issue label comments.sql",
+      "type" : "file", "name": "issue label comments.sql",
       "branch": "master"
     },
     {
@@ -6113,7 +6113,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "lb_label_basic_stats.sql",
+      "type" : "file", "name": "lb_label_basic_stats.sql",
       "branch": "master"
     },
     {
@@ -6128,7 +6128,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "lb_label_max_creators.sql",
+      "type" : "file", "name": "lb_label_max_creators.sql",
       "branch": "master"
     },
     {
@@ -6143,7 +6143,7 @@
           "author": "valeriocos"
         }
       ],
-      "name": "scripts-all-in-one.sql",
+      "type" : "file", "name": "scripts-all-in-one.sql",
       "branch": "master"
     },
     {
@@ -6158,7 +6158,7 @@
           "author": "Belen Rolandi"
         }
       ],
-      "name": "_issue_resolution_time.sql",
+      "type" : "file", "name": "_issue_resolution_time.sql",
       "branch": "master"
     },
     {
@@ -6173,7 +6173,7 @@
           "author": "Belen Rolandi"
         }
       ],
-      "name": "create project_user_role.sql",
+      "type" : "file", "name": "create project_user_role.sql",
       "branch": "master"
     },
     {
@@ -6188,7 +6188,7 @@
           "author": "Belen Rolandi"
         }
       ],
-      "name": "issue_contribution_stats.sql",
+      "type" : "file", "name": "issue_contribution_stats.sql",
       "branch": "master"
     },
     {
@@ -6203,7 +6203,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "lb_label_max_contributor.sql",
+      "type" : "file", "name": "lb_label_max_contributor.sql",
       "branch": "master"
     },
     {
@@ -6218,7 +6218,7 @@
           "author": "valeriocos"
         }
       ],
-      "name": "community-composition.sql",
+      "type" : "file", "name": "community-composition.sql",
       "branch": "master"
     },
     {
@@ -6233,7 +6233,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "lb_label_avg_contributors.sql",
+      "type" : "file", "name": "lb_label_avg_contributors.sql",
       "branch": "master"
     },
     {
@@ -6248,7 +6248,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "lb_label_count_resolution.sql",
+      "type" : "file", "name": "lb_label_count_resolution.sql",
       "branch": "master"
     },
     {
@@ -6263,7 +6263,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "lb_max_first_comment_user.sql",
+      "type" : "file", "name": "lb_max_first_comment_user.sql",
       "branch": "master"
     },
     {
@@ -6278,7 +6278,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "lb_label_num_issues_solved.sql",
+      "type" : "file", "name": "lb_label_num_issues_solved.sql",
       "branch": "master"
     },
     {
@@ -6293,7 +6293,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "lb_num_first_comments_user.sql",
+      "type" : "file", "name": "lb_num_first_comments_user.sql",
       "branch": "master"
     },
     {
@@ -6308,7 +6308,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "lb_user_label_collaboration.sql",
+      "type" : "file", "name": "lb_user_label_collaboration.sql",
       "branch": "master"
     },
     {
@@ -6323,7 +6323,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "lb_max_first_response_collab.sql",
+      "type" : "file", "name": "lb_max_first_response_collab.sql",
       "branch": "master"
     },
     {
@@ -6338,7 +6338,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "lb_num_first_comments_collab.sql",
+      "type" : "file", "name": "lb_num_first_comments_collab.sql",
       "branch": "master"
     },
     {
@@ -6353,7 +6353,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "label average resolution time.sql",
+      "type" : "file", "name": "label average resolution time.sql",
       "branch": "master"
     },
     {
@@ -6368,7 +6368,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "lb_label_avg_first_response_time.sql",
+      "type" : "file", "name": "lb_label_avg_first_response_time.sql",
       "branch": "master"
     },
     {
@@ -6383,7 +6383,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "lb_num_created_label_issues_user.sql",
+      "type" : "file", "name": "lb_num_created_label_issues_user.sql",
       "branch": "master"
     },
     {
@@ -6398,7 +6398,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "lb_count_user_label_collaboration.sql",
+      "type" : "file", "name": "lb_count_user_label_collaboration.sql",
       "branch": "master"
     },
     {
@@ -6414,7 +6414,7 @@
           "author": "jlcanovas"
         }
       ],
-      "name": "index.html",
+      "type" : "file", "name": "index.html",
       "branch": "master"
     },
     {
@@ -6430,7 +6430,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": ".jsdtscope",
+      "type" : "file", "name": ".jsdtscope",
       "branch": "master"
     },
     {
@@ -6446,7 +6446,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": ".project",
+      "type" : "file", "name": ".project",
       "branch": "master"
     },
     {
@@ -6462,7 +6462,7 @@
           "author": "valeriocos"
         }
       ],
-      "name": "insert_statistics_for_labels.py",
+      "type" : "file", "name": "insert_statistics_for_labels.py",
       "branch": "master"
     },
     {
@@ -6478,7 +6478,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "org.eclipse.jdt.core.prefs",
+      "type" : "file", "name": "org.eclipse.jdt.core.prefs",
       "branch": "master"
     },
     {
@@ -6494,7 +6494,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "org.eclipse.wst.common.component",
+      "type" : "file", "name": "org.eclipse.wst.common.component",
       "branch": "master"
     },
     {
@@ -6510,7 +6510,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "org.eclipse.wst.jsdt.ui.superType.name",
+      "type" : "file", "name": "org.eclipse.wst.jsdt.ui.superType.name",
       "branch": "master"
     },
     {
@@ -6526,7 +6526,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "org.eclipse.wst.jsdt.ui.superType.container",
+      "type" : "file", "name": "org.eclipse.wst.jsdt.ui.superType.container",
       "branch": "master"
     },
     {
@@ -6542,7 +6542,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "org.eclipse.wst.common.project.facet.core.xml",
+      "type" : "file", "name": "org.eclipse.wst.common.project.facet.core.xml",
       "branch": "master"
     },
     {
@@ -6559,7 +6559,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "rq3.csv",
+      "type" : "file", "name": "rq3.csv",
       "branch": "master"
     },
     {
@@ -6576,7 +6576,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "data.txt",
+      "type" : "file", "name": "data.txt",
       "branch": "master"
     },
     {
@@ -6593,7 +6593,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "web.xml",
+      "type" : "file", "name": "web.xml",
       "branch": "master"
     },
     {
@@ -6610,7 +6610,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "MANIFEST.MF",
+      "type" : "file", "name": "MANIFEST.MF",
       "branch": "master"
     },
     {
@@ -6627,7 +6627,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "rq2feature_label.csv",
+      "type" : "file", "name": "rq2feature_label.csv",
       "branch": "master"
     },
     {
@@ -6644,7 +6644,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "rq2feature_links.csv",
+      "type" : "file", "name": "rq2feature_links.csv",
       "branch": "master"
     },
     {
@@ -6661,7 +6661,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "rq2feature_users.csv",
+      "type" : "file", "name": "rq2feature_users.csv",
       "branch": "master"
     },
     {
@@ -6678,7 +6678,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "rq2feature_max_values.csv",
+      "type" : "file", "name": "rq2feature_max_values.csv",
       "branch": "master"
     },
     {
@@ -6696,7 +6696,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "javax.json-1.0.2.jar",
+      "type" : "file", "name": "javax.json-1.0.2.jar",
       "branch": "master"
     },
     {
@@ -6714,7 +6714,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "mysql-connector-java-5.1.32-bin.jar",
+      "type" : "file", "name": "mysql-connector-java-5.1.32-bin.jar",
       "branch": "master"
     },
     {
@@ -6735,7 +6735,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "LabelDAO.java",
+      "type" : "file", "name": "LabelDAO.java",
       "branch": "master"
     },
     {
@@ -6756,7 +6756,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "ProjectDAO.java",
+      "type" : "file", "name": "ProjectDAO.java",
       "branch": "master"
     },
     {
@@ -6777,7 +6777,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "LabelAnalyzer.java",
+      "type" : "file", "name": "LabelAnalyzer.java",
       "branch": "master"
     },
     {
@@ -6802,7 +6802,7 @@
           "author": "valeriocos"
         }
       ],
-      "name": "LabelAnalysisServlet.java",
+      "type" : "file", "name": "LabelAnalysisServlet.java",
       "branch": "master"
     },
     {
@@ -6823,7 +6823,7 @@
           "author": "belenrolandi"
         }
       ],
-      "name": "LabelAnalysisRequestHandler.java",
+      "type" : "file", "name": "LabelAnalysisRequestHandler.java",
       "branch": "master"
     }
   ]

@@ -7,7 +7,7 @@
           90.32
         ]
       ],
-      "name": "css\/jQWidgets\/images\/darkness\/"
+      "type" : "dir", "name": "css\/jQWidgets\/images\/darkness\/"
     },
     {
       "bus_factor": [
@@ -16,7 +16,7 @@
           93.97
         ]
       ],
-      "name": "web-server\/labelAnalysisServer\/"
+      "type" : "dir", "name": "web-server\/labelAnalysisServer\/"
     },
     {
       "bus_factor": [
@@ -25,7 +25,7 @@
           94.4
         ]
       ],
-      "name": "css\/jQWidgets\/"
+      "type" : "dir", "name": "css\/jQWidgets\/"
     },
     {
       "bus_factor": [
@@ -34,7 +34,7 @@
           100
         ]
       ],
-      "name": "web-server\/labelAnalysisServer\/src\/fr\/inria\/atlanmod\/labelanalysis\/data\/"
+      "type" : "dir", "name": "web-server\/labelAnalysisServer\/src\/fr\/inria\/atlanmod\/labelanalysis\/data\/"
     },
     {
       "bus_factor": [
@@ -43,7 +43,7 @@
           100
         ]
       ],
-      "name": "js\/bootstrap\/"
+      "type" : "dir", "name": "js\/bootstrap\/"
     },
     {
       "bus_factor": [
@@ -52,7 +52,7 @@
           75.04
         ]
       ],
-      "name": "js\/"
+      "type" : "dir", "name": "js\/"
     },
     {
       "bus_factor": [
@@ -61,7 +61,7 @@
           90.95
         ]
       ],
-      "name": "web-server\/labelAnalysisServer\/src\/fr\/"
+      "type" : "dir", "name": "web-server\/labelAnalysisServer\/src\/fr\/"
     },
     {
       "bus_factor": [
@@ -70,7 +70,7 @@
           100
         ]
       ],
-      "name": "js\/sigma.js\/"
+      "type" : "dir", "name": "js\/sigma.js\/"
     },
     {
       "bus_factor": [
@@ -79,7 +79,7 @@
           100
         ]
       ],
-      "name": "web-server\/labelAnalysisServer\/web\/WEB-INF\/lib\/"
+      "type" : "dir", "name": "web-server\/labelAnalysisServer\/web\/WEB-INF\/lib\/"
     },
     {
       "bus_factor": [
@@ -88,7 +88,7 @@
           89.66
         ]
       ],
-      "name": "css\/jQWidgets\/images\/smoothness\/"
+      "type" : "dir", "name": "css\/jQWidgets\/images\/smoothness\/"
     },
     {
       "bus_factor": [
@@ -97,7 +97,7 @@
           94.93
         ]
       ],
-      "name": "css\/jQWidgets\/images\/"
+      "type" : "dir", "name": "css\/jQWidgets\/images\/"
     },
     {
       "bus_factor": [
@@ -106,7 +106,7 @@
           90.95
         ]
       ],
-      "name": "web-server\/labelAnalysisServer\/src\/fr\/inria\/atlanmod\/labelanalysis\/"
+      "type" : "dir", "name": "web-server\/labelAnalysisServer\/src\/fr\/inria\/atlanmod\/labelanalysis\/"
     },
     {
       "bus_factor": [
@@ -115,7 +115,7 @@
           100
         ]
       ],
-      "name": "css\/foundation\/"
+      "type" : "dir", "name": "css\/foundation\/"
     },
     {
       "bus_factor": [
@@ -124,7 +124,7 @@
           91.43
         ]
       ],
-      "name": "css\/jQWidgets\/images\/sunny\/"
+      "type" : "dir", "name": "css\/jQWidgets\/images\/sunny\/"
     },
     {
       "bus_factor": [
@@ -133,7 +133,7 @@
           100
         ]
       ],
-      "name": "css\/bootstrap\/"
+      "type" : "dir", "name": "css\/bootstrap\/"
     },
     {
       "bus_factor": [
@@ -142,7 +142,7 @@
           100
         ]
       ],
-      "name": "web-server\/labelAnalysisServer\/web\/WEB-INF\/"
+      "type" : "dir", "name": "web-server\/labelAnalysisServer\/web\/WEB-INF\/"
     },
     {
       "bus_factor": [
@@ -151,7 +151,7 @@
           100
         ]
       ],
-      "name": "js\/jQWidgets\/"
+      "type" : "dir", "name": "js\/jQWidgets\/"
     },
     {
       "bus_factor": [
@@ -160,7 +160,7 @@
           90.95
         ]
       ],
-      "name": "web-server\/labelAnalysisServer\/src\/"
+      "type" : "dir", "name": "web-server\/labelAnalysisServer\/src\/"
     },
     {
       "bus_factor": [
@@ -169,7 +169,7 @@
           100
         ]
       ],
-      "name": "js\/foundation\/"
+      "type" : "dir", "name": "js\/foundation\/"
     },
     {
       "bus_factor": [
@@ -178,7 +178,7 @@
           65.81
         ]
       ],
-      "name": "database\/"
+      "type" : "dir", "name": "database\/"
     },
     {
       "bus_factor": [
@@ -187,7 +187,7 @@
           73.77
         ]
       ],
-      "name": "database\/old-scripts\/"
+      "type" : "dir", "name": "database\/old-scripts\/"
     },
     {
       "bus_factor": [
@@ -196,7 +196,7 @@
           91.43
         ]
       ],
-      "name": "css\/jQWidgets\/images\/start\/"
+      "type" : "dir", "name": "css\/jQWidgets\/images\/start\/"
     },
     {
       "bus_factor": [
@@ -205,7 +205,7 @@
           90.32
         ]
       ],
-      "name": "css\/jQWidgets\/images\/overcast\/"
+      "type" : "dir", "name": "css\/jQWidgets\/images\/overcast\/"
     },
     {
       "bus_factor": [
@@ -214,7 +214,7 @@
           100
         ]
       ],
-      "name": "web-server\/labelAnalysisServer\/src\/fr\/inria\/atlanmod\/labelanalysis\/model\/"
+      "type" : "dir", "name": "web-server\/labelAnalysisServer\/src\/fr\/inria\/atlanmod\/labelanalysis\/model\/"
     },
     {
       "bus_factor": [
@@ -223,7 +223,7 @@
           90.95
         ]
       ],
-      "name": "web-server\/labelAnalysisServer\/src\/fr\/inria\/"
+      "type" : "dir", "name": "web-server\/labelAnalysisServer\/src\/fr\/inria\/"
     },
     {
       "bus_factor": [
@@ -236,7 +236,7 @@
           40.24
         ]
       ],
-      "name": "imgs\/"
+      "type" : "dir", "name": "imgs\/"
     },
     {
       "bus_factor": [
@@ -245,7 +245,7 @@
           91.43
         ]
       ],
-      "name": "css\/jQWidgets\/images\/lightness\/"
+      "type" : "dir", "name": "css\/jQWidgets\/images\/lightness\/"
     },
     {
       "bus_factor": [
@@ -254,7 +254,7 @@
           93.18
         ]
       ],
-      "name": "web-server\/labelAnalysisServer\/web\/"
+      "type" : "dir", "name": "web-server\/labelAnalysisServer\/web\/"
     },
     {
       "bus_factor": [
@@ -263,7 +263,7 @@
           100
         ]
       ],
-      "name": "web-server\/labelAnalysisServer\/labelAnalysisServer\/"
+      "type" : "dir", "name": "web-server\/labelAnalysisServer\/labelAnalysisServer\/"
     },
     {
       "bus_factor": [
@@ -272,7 +272,7 @@
           93.97
         ]
       ],
-      "name": "web-server\/"
+      "type" : "dir", "name": "web-server\/"
     },
     {
       "bus_factor": [
@@ -281,7 +281,7 @@
           100
         ]
       ],
-      "name": "jquery-sticky-notes\/script\/"
+      "type" : "dir", "name": "jquery-sticky-notes\/script\/"
     },
     {
       "bus_factor": [
@@ -290,7 +290,7 @@
           91.89
         ]
       ],
-      "name": "css\/jQWidgets\/images\/redmond\/"
+      "type" : "dir", "name": "css\/jQWidgets\/images\/redmond\/"
     },
     {
       "bus_factor": [
@@ -299,7 +299,7 @@
           89.66
         ]
       ],
-      "name": "css\/jQWidgets\/images\/le-frog\/"
+      "type" : "dir", "name": "css\/jQWidgets\/images\/le-frog\/"
     },
     {
       "bus_factor": [
@@ -308,7 +308,7 @@
           100
         ]
       ],
-      "name": "database\/current-scripts\/"
+      "type" : "dir", "name": "database\/current-scripts\/"
     },
     {
       "bus_factor": [
@@ -317,7 +317,7 @@
           100
         ]
       ],
-      "name": "js\/vendor\/"
+      "type" : "dir", "name": "js\/vendor\/"
     },
     {
       "bus_factor": [
@@ -326,7 +326,7 @@
           94.3
         ]
       ],
-      "name": "css\/"
+      "type" : "dir", "name": "css\/"
     },
     {
       "bus_factor": [
@@ -335,7 +335,7 @@
           100
         ]
       ],
-      "name": "jquery-sticky-notes\/css\/"
+      "type" : "dir", "name": "jquery-sticky-notes\/css\/"
     },
     {
       "bus_factor": [
@@ -344,7 +344,7 @@
           100
         ]
       ],
-      "name": "jquery-sticky-notes\/images\/"
+      "type" : "dir", "name": "jquery-sticky-notes\/images\/"
     },
     {
       "bus_factor": [
@@ -353,7 +353,7 @@
           76.92
         ]
       ],
-      "name": "css\/jQWidgets\/images\/colorpicker\/"
+      "type" : "dir", "name": "css\/jQWidgets\/images\/colorpicker\/"
     },
     {
       "bus_factor": [
@@ -362,7 +362,7 @@
           100
         ]
       ],
-      "name": "jquery-sticky-notes\/"
+      "type" : "dir", "name": "jquery-sticky-notes\/"
     },
     {
       "bus_factor": [
@@ -371,7 +371,7 @@
           100
         ]
       ],
-      "name": "web-server\/labelAnalysisServer\/web\/data\/"
+      "type" : "dir", "name": "web-server\/labelAnalysisServer\/web\/data\/"
     },
     {
       "bus_factor": [
@@ -380,7 +380,7 @@
           100
         ]
       ],
-      "name": "web-server\/labelAnalysisServer\/web\/META-INF\/"
+      "type" : "dir", "name": "web-server\/labelAnalysisServer\/web\/META-INF\/"
     },
     {
       "bus_factor": [
@@ -389,7 +389,7 @@
           56.45
         ]
       ],
-      "name": "repository_root"
+      "type" : "dir", "name": "repository_root"
     },
     {
       "bus_factor": [
@@ -398,7 +398,7 @@
           90.95
         ]
       ],
-      "name": "web-server\/labelAnalysisServer\/src\/fr\/inria\/atlanmod\/"
+      "type" : "dir", "name": "web-server\/labelAnalysisServer\/src\/fr\/inria\/atlanmod\/"
     },
     {
       "bus_factor": [
@@ -407,7 +407,7 @@
           100
         ]
       ],
-      "name": "web-server\/labelAnalysisServer\/.settings\/"
+      "type" : "dir", "name": "web-server\/labelAnalysisServer\/.settings\/"
     },
     {
       "bus_factor": [
@@ -420,7 +420,7 @@
           43.75
         ]
       ],
-      "name": "web-server\/labelAnalysisServer\/src\/fr\/inria\/atlanmod\/labelanalysis\/servlets\/"
+      "type" : "dir", "name": "web-server\/labelAnalysisServer\/src\/fr\/inria\/atlanmod\/labelanalysis\/servlets\/"
     },
     {
       "bus_factor": [
@@ -429,7 +429,7 @@
           100
         ]
       ],
-      "name": "database\/current-scripts\/python\/"
+      "type" : "dir", "name": "database\/current-scripts\/python\/"
     }
   ]
 }
