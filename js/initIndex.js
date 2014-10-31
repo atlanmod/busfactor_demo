@@ -176,46 +176,6 @@ function drawDetails(projectElement, pieData, busFactor) {
 
 }
 
-function drawFileGraph2(element, width) {
-    var diameter = 960,
-    format = d3.format(",d");
-
-    var scaleColor = d3.scale.category10();
-
-    var pack = d3.layout.pack()
-        .size([diameter - 4, diameter - 4])
-        .value(function(d) { return d.factor; });
-
-    var svg = element.append("g")
-        .attr("width", diameter)
-        .attr("height", diameter)
-      .append("g")
-        .attr("transform", "translate(10,10)");
-
-    d3.json("files.json", function(error, root) {
-      var node = svg.datum(root).selectAll(".node")
-          .data(pack.nodes)
-        .enter().append("g")
-          .attr("class", function(d) { return d.children ? "node" : "leaf node"; })
-          .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
-
-      node.append("title")
-          .text(function(d) { return d.name + (d.children ? "" : ": " + format(d.factor)); });
-
-      node.append("circle")
-          .attr("r", function(d) { return d.r; })
-          .style("fill", function(d) { return scaleColor(d.factor); });
-
-      node.filter(function(d) { return !d.children; }).append("text")
-          .attr("dy", ".3em")
-          .style("text-anchor", "middle")
-          .text(function(d) { return d.name.substring(0, d.r / 3); });
-    });
-
-    d3.select(self.frameElement).style("height", diameter + "px");
-
-}
-
 function drawLanguageGraph(element, totalFiles, width) {
     var scaleWidth = d3.scale.linear()
         .range([0, width])
