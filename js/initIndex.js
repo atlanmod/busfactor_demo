@@ -81,9 +81,9 @@ function drawUsers(element, file, width) {
 
     rects.append("text")
       .attr("dy", "1.65em")
-      .attr("dx", scaleWidth.rangeBand()/3.25)
+      .attr("dx", scaleWidth.rangeBand()/2 - 5)
       .style("fill", d3.rgb("black"))
-      .style("text-anchor", "right")
+      .style("text-anchor", "middle")
       .style("font-size", "0.85em")
       .text(function(d) { return d.name; });
 
@@ -101,6 +101,9 @@ function drawUsers(element, file, width) {
         .style("stroke", d3.rgb("purple"));
 
       selectedUser = d3.select(this).select("rect");
+
+      // Updating users
+      users = d3.selectAll("rect#user").style("stroke", d3.rgb("white"));
 
       // Updating branches
       branches = d3.selectAll("rect#branches").style("stroke", d3.rgb("white"));
@@ -391,7 +394,7 @@ function drawElementLine(element, elementId, subArray, width, line) {
       } else if(d.elem.type == "ext") {
         // Updating users
         users = d3.selectAll("rect#user").style("stroke", d3.rgb("white"));
-        
+
         // Updating branches
         branches = d3.selectAll("rect#branches").style("stroke", d3.rgb("white"));
 
