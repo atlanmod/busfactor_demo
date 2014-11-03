@@ -72,6 +72,7 @@ function drawUsers(element, file, width) {
         .attr("transform", function(d) { return "translate(" + (scaleWidth(d.name)) + ", 5)"; })
 
     rects.append("rect")
+      .attr("id", "user")
       .attr("width", scaleWidth.rangeBand() - 10)
       .attr("height", 30)
       .style("stroke", d3.rgb("white"))
@@ -279,6 +280,20 @@ function drawElementLine(element, elementId, subArray, width, line) {
 
       // Highlighting the other elements
       if(d.elem.type == "branch") {
+        // Updating users
+        users = d3.selectAll("rect#user").style("stroke", d3.rgb("white"));
+        users = d3.selectAll("rect#user").filter(function(user) { 
+          var found = false;
+          if(d.elem.bus_factor == undefined) return false;
+          d.elem.bus_factor.forEach(function(factor) { 
+            if(factor.author == user.name){
+              found = true;
+            }
+          });
+          return found;
+        });
+        users.style("stroke", hightlightColor);
+
         // Updating branches
         branches = d3.selectAll("rect#branches").style("stroke", d3.rgb("white"));
         
@@ -295,6 +310,20 @@ function drawElementLine(element, elementId, subArray, width, line) {
         // Updating extensions
         exts = d3.selectAll("rect#exts").style("stroke", d3.rgb("white"));       
       } else if(d.elem.type == "dir") {
+        // Updating users
+        users = d3.selectAll("rect#user").style("stroke", d3.rgb("white"));
+        users = d3.selectAll("rect#user").filter(function(user) { 
+          var found = false;
+          if(d.elem.bus_factor == undefined) return false;
+          d.elem.bus_factor.forEach(function(factor) { 
+            if(factor.author == user.name){
+              found = true;
+            }
+          });
+          return found;
+        });
+        users.style("stroke", hightlightColor);
+
         // Updating branches
         branches = d3.selectAll("rect#branches").style("stroke", d3.rgb("white"));
         branches = d3.selectAll("rect#branches").filter(function(branch) { return d.elem.branch == branch.elem.name; });
@@ -320,6 +349,20 @@ function drawElementLine(element, elementId, subArray, width, line) {
         // Updating extensions
         exts = d3.selectAll("rect#exts").style("stroke", d3.rgb("white"));    
       } else if(d.elem.type == "file") {
+        // Updating users
+        users = d3.selectAll("rect#user").style("stroke", d3.rgb("white"));
+        users = d3.selectAll("rect#user").filter(function(user) { 
+          var found = false;
+          if(d.elem.bus_factor == undefined) return false;
+          d.elem.bus_factor.forEach(function(factor) { 
+            if(factor.author == user.name){
+              found = true;
+            }
+          });
+          return found;
+        });
+        users.style("stroke", hightlightColor);
+
         // Updating branches
         branches = d3.selectAll("rect#branches").style("stroke", d3.rgb("white"));
         branches = d3.selectAll("rect#branches").filter(function(branch) { return d.elem.branch == branch.elem.name; });
@@ -346,6 +389,9 @@ function drawElementLine(element, elementId, subArray, width, line) {
         exts = d3.selectAll("rect#exts").filter(function(ext) { return d.elem.ext == ext.elem.name; });
         exts.style("stroke", hightlightColor); 
       } else if(d.elem.type == "ext") {
+        // Updating users
+        users = d3.selectAll("rect#user").style("stroke", d3.rgb("white"));
+        
         // Updating branches
         branches = d3.selectAll("rect#branches").style("stroke", d3.rgb("white"));
 
