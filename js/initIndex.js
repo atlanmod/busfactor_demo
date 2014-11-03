@@ -2,6 +2,8 @@
 
 var margin = { top: 20, right: 20, bottom: 20, left: 20 };
 
+var hightlightColor = d3.rgb("#6A5ACD");
+
 var fileGraphHeight = 1024;
 var margin = 10;
 
@@ -10,8 +12,20 @@ var languageGraphHeight = 200;
 
 var chunk = 20;
 var selectedElement = undefined;
+var selectedUser = undefined;
+
+var infoTooltip = undefined;
 
 window.onload = function() {
+  infoTooltip = d3.select("body").append("div")
+    .attr("class", "infoTooltip")
+    .style("opacity", 1e-6);
+
+
+  var userWidth = $(".userGraph").width();
+  var userElement = d3.select(".userGraph").append("svg")
+  drawUsers(userElement, "realUsers.json", userWidth);
+
   var branchWidth = $(".branchGraph").width();
   var branchElement = d3.select(".branchGraph").append("svg")
   drawElementGraph(branchElement, "realBranches.json", "branches", branchWidth - 2 * margin);
@@ -24,27 +38,135 @@ window.onload = function() {
   var fileElement = d3.select(".fileGraph").append("svg")
   drawElementGraph(fileElement, "realFiles.json", "files", fileWidth - 2 * margin);
 
-
   var extensionWidth = $(".extensionGraph").width();
   var extensionElement = d3.select(".extensionGraph").append("svg")
   drawElementGraph(extensionElement, "realExtensions.json", "exts", extensionWidth - 2 * margin);
 
+  initDetails();
+};
 
+function initDetails() {
+  $("#detailInstance").remove();
   var detailWidth = $(".detailGraph").width();
   var detailElement = d3.select(".detailGraph").append("svg").attr("id", "detailInstance");
   detailElement.append("text")
     .attr("transform", "translate(" + (detailWidth / 7) + ",50)")
     .text("(Click on an element to see the details)")
     .style("font-size", "0.75em");
+}
 
-};
+function drawUsers(element, file, width) {
+  element
+        .attr("width", width)
+        .attr("height", 35);        
 
+  svg = element.append("g");
+
+  d3.json(file, function(error, jsonData) {
+    var scaleWidth = d3.scale.ordinal()
+      .domain(jsonData.map(function(d) { return d.name; }))
+      .rangeBands([0, width]);
+
+    var rects = svg.selectAll("g")
+      .data(jsonData).enter().append("g").attr("id", "user")
+        .attr("transform", function(d) { return "translate(" + (scaleWidth(d.name)) + ", 5)"; })
+
+    rects.append("rect")
+      .attr("width", scaleWidth.rangeBand() - 10)
+      .attr("height", 30)
+      .style("stroke", d3.rgb("white"))
+      .style("stroke-width", 3)
+      .style("fill", function(d) { return "#EEEEEE" } );
+
+    rects.append("text")
+      .attr("dy", "1.65em")
+      .attr("dx", scaleWidth.rangeBand()/3.25)
+      .style("fill", d3.rgb("black"))
+      .style("text-anchor", "right")
+      .style("font-size", "0.85em")
+      .text(function(d) { return d.name; });
+
+    rects.on("click", function(d, index, elem) {
+      initDetails();
+
+      // Highliting the selected element
+      if(selectedElement)
+        d3.select(selectedElement).style("stroke", d3.rgb("white"));
+      if(selectedUser)
+        selectedUser.style("stroke", d3.rgb("white"));
+
+      d3.select(this).select("rect")
+        .attr("id", "selected")
+        .style("stroke", d3.rgb("purple"));
+
+      selectedUser = d3.select(this).select("rect");
+
+      // Updating branches
+      branches = d3.selectAll("rect#branches").style("stroke", d3.rgb("white"));
+      branches = d3.selectAll("rect#branches").filter(function(branch) { 
+          var found = false;
+          if(branch.elem.bus_factor == undefined) return false;
+          branch.elem.bus_factor.forEach(function(person) { 
+            if(person.author == d.name){
+              found = true;
+            }
+          });
+          return found;
+        });
+      branches.style("stroke", hightlightColor);
+
+      // Updating dirs
+      dirs = d3.selectAll("rect#dirs").style("stroke", d3.rgb("white"));
+      dirs = d3.selectAll("rect#dirs").filter(function(dir) { 
+          var found = false;
+          if(dir.elem.bus_factor == undefined) return false;
+          dir.elem.bus_factor.forEach(function(person) { 
+            if(person.author == d.name){
+              found = true;
+            }
+          });
+          return found;
+        });
+      dirs.style("stroke", hightlightColor);
+
+      // Updating files
+      files = d3.selectAll("rect#files").style("stroke", d3.rgb("white"));
+      files = d3.selectAll("rect#files").filter(function(file) { 
+          var found = false;
+          if(file.elem.bus_factor == undefined) return false;
+          file.elem.bus_factor.forEach(function(person) { 
+            if(person.author == d.name){
+              found = true;
+            }
+          });
+          return found;
+        });
+      files.style("stroke", hightlightColor);
+
+      // Updating extensions
+      exts = d3.selectAll("rect#exts").style("stroke", d3.rgb("white")); 
+    });
+
+  });
+}
 
 
 function drawElementGraph(element, file, fileAttr, width) {
   d3.json(file, function(error, jsonData) {
     var root = jsonData[fileAttr];
 
+    // Updating the counters
+    if(fileAttr == "branches") {
+      $(".numBranches").text(root.length);
+    } else if (fileAttr == "dirs") {
+      $(".numDirs").text(root.length);
+    } else if (fileAttr == "files") {
+      $(".numFiles").text(root.length);
+    } else if (fileAttr == "exts") {
+      $(".numExts").text(root.length);
+    }
+
+    // Setting the dimension of the container
     element
         .attr("width", width)
         .attr("height", ((root.length / chunk) + 1) * (width / chunk));
@@ -52,6 +174,7 @@ function drawElementGraph(element, file, fileAttr, width) {
     svg = element.append("g")
       .attr("transform", "translate(5, 5)");
 
+    // Drawing line by line
     var line = 0;
     var i, j;
     for(i = 0; i < root.length; i += chunk) {
@@ -101,11 +224,37 @@ function drawElementLine(element, elementId, subArray, width, line) {
       .style("z-index", -4)
       .style("opacity", 1e-6);
 
+  // Tooltip
+  rects.on("mousemove", function(d, index, element) {    
+    infoTooltip.selectAll("p").remove();
+    infoTooltip
+        .style("left", (d3.event.pageX+15) + "px")
+        .style("top", (d3.event.pageY-10) + "px");
+
+    infoTooltip.append("p").text(d.elem.name);
+  });    
+
+  rects.on("mouseover", function(d, index, element) {     
+      infoTooltip.transition()
+        .duration(200)
+        .style("opacity", 1);
+  });    
+
+  rects.on("mouseout", function(d, index, element) {
+      infoTooltip.transition()
+        .duration(500)
+        .style("opacity", 1e-6);
+  });
+
+  // Updating highlighted elements
   rects.on("click", function(d, index, elem) {
     if(d.elem.bus_factor.length != 0) {
       // Highliting the selected element
       if(selectedElement)
         d3.select(selectedElement).style("stroke", d3.rgb("white"));
+
+      if(selectedUser)
+        selectedUser.style("stroke", d3.rgb("white"));
 
       d3.select(this)
         .attr("id", "selected")
@@ -135,17 +284,21 @@ function drawElementLine(element, elementId, subArray, width, line) {
         
         // Updating dirs
         dirs = d3.selectAll("rect#dirs").style("stroke", d3.rgb("white"));
+        dirs = d3.selectAll("rect#dirs").filter(function(file) { return d.elem.name == file.elem.branch; });
+        dirs.style("stroke", hightlightColor);
 
         // Updating files
         files = d3.selectAll("rect#files").style("stroke", d3.rgb("white"));
         files = d3.selectAll("rect#files").filter(function(file) { return d.elem.name == file.elem.branch; });
-        files.style("stroke", d3.rgb("black"));
+        files.style("stroke", hightlightColor);
 
         // Updating extensions
         exts = d3.selectAll("rect#exts").style("stroke", d3.rgb("white"));       
       } else if(d.elem.type == "dir") {
         // Updating branches
         branches = d3.selectAll("rect#branches").style("stroke", d3.rgb("white"));
+        branches = d3.selectAll("rect#branches").filter(function(branch) { return d.elem.branch == branch.elem.name; });
+        branches.style("stroke", hightlightColor);
 
         // Updating dirs
         dirs = d3.selectAll("rect#dirs").style("stroke", d3.rgb("white"));
@@ -162,7 +315,7 @@ function drawElementLine(element, elementId, subArray, width, line) {
           });
           return found;
         });
-        files.style("stroke", d3.rgb("black"));
+        files.style("stroke", hightlightColor);
 
         // Updating extensions
         exts = d3.selectAll("rect#exts").style("stroke", d3.rgb("white"));    
@@ -170,7 +323,7 @@ function drawElementLine(element, elementId, subArray, width, line) {
         // Updating branches
         branches = d3.selectAll("rect#branches").style("stroke", d3.rgb("white"));
         branches = d3.selectAll("rect#branches").filter(function(branch) { return d.elem.branch == branch.elem.name; });
-        branches.style("stroke", d3.rgb("black"));
+        branches.style("stroke", hightlightColor);
 
         // Updating dirs
         dirs = d3.selectAll("rect#dirs").style("stroke", d3.rgb("white"));
@@ -183,7 +336,7 @@ function drawElementLine(element, elementId, subArray, width, line) {
           });
           return found;
         });
-        dirs.style("stroke", d3.rgb("black"));
+        dirs.style("stroke", hightlightColor);
 
         // Updating files
         files = d3.selectAll("rect#files").style("stroke", d3.rgb("white"));
@@ -191,7 +344,7 @@ function drawElementLine(element, elementId, subArray, width, line) {
         // Updating extensions
         exts = d3.selectAll("rect#exts").style("stroke", d3.rgb("white"));   
         exts = d3.selectAll("rect#exts").filter(function(ext) { return d.elem.ext == ext.elem.name; });
-        exts.style("stroke", d3.rgb("black")); 
+        exts.style("stroke", hightlightColor); 
       } else if(d.elem.type == "ext") {
         // Updating branches
         branches = d3.selectAll("rect#branches").style("stroke", d3.rgb("white"));
@@ -202,7 +355,7 @@ function drawElementLine(element, elementId, subArray, width, line) {
         // Updating files
         files = d3.selectAll("rect#files").style("stroke", d3.rgb("white"));
         files = d3.selectAll("rect#files").filter(function(file) { return d.elem.name == file.elem.ext; });
-        files.style("stroke", d3.rgb("black")); 
+        files.style("stroke", hightlightColor); 
 
         // Updating extensions
         exts = d3.selectAll("rect#exts").style("stroke", d3.rgb("white"));   

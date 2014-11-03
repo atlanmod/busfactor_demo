@@ -2,434 +2,466 @@
   "dirs": [
     {
       "bus_factor": [
-        [
-          "jlcanovas",
-          90.32
-        ]
+        {
+          "knowledge": 90.32,
+          "author": "jlcanovas"
+        }
       ],
-      "type" : "dir", "name": "css\/jQWidgets\/images\/darkness\/"
+      "type": "dir",
+      "name": "css\/jQWidgets\/images\/darkness\/",
+      "branch": "gh-pages"
     },
     {
       "bus_factor": [
-        [
-          "belenrolandi",
-          93.97
-        ]
+        {
+          "knowledge": 91.43,
+          "author": "jlcanovas"
+        }
       ],
-      "type" : "dir", "name": "web-server\/labelAnalysisServer\/"
+      "type": "dir",
+      "name": "css\/jQWidgets\/images\/lightness\/",
+      "branch": "gh-pages"
     },
     {
       "bus_factor": [
-        [
-          "jlcanovas",
-          94.4
-        ]
+        {
+          "knowledge": 93.97,
+          "author": "belenrolandi"
+        }
       ],
-      "type" : "dir", "name": "css\/jQWidgets\/"
+      "type": "dir",
+      "name": "web-server\/labelAnalysisServer\/",
+      "branch": "master"
     },
     {
       "bus_factor": [
-        [
-          "belenrolandi",
-          100
-        ]
+        {
+          "knowledge": 94.4,
+          "author": "jlcanovas"
+        }
       ],
-      "type" : "dir", "name": "web-server\/labelAnalysisServer\/src\/fr\/inria\/atlanmod\/labelanalysis\/data\/"
+      "type": "dir",
+      "name": "css\/jQWidgets\/",
+      "branch": "gh-pages"
     },
     {
       "bus_factor": [
-        [
-          "jlcanovas",
-          100
-        ]
+        {
+          "knowledge": 90.95,
+          "author": "belenrolandi"
+        }
       ],
-      "type" : "dir", "name": "js\/bootstrap\/"
+      "type": "dir",
+      "name": "web-server\/labelAnalysisServer\/src\/",
+      "branch": "master"
     },
     {
       "bus_factor": [
-        [
-          "jlcanovas",
-          75.04
-        ]
+        {
+          "knowledge": 100,
+          "author": "belenrolandi"
+        }
       ],
-      "type" : "dir", "name": "js\/"
+      "type": "dir",
+      "name": "web-server\/labelAnalysisServer\/src\/fr\/inria\/atlanmod\/labelanalysis\/data\/",
+      "branch": "master"
     },
     {
       "bus_factor": [
-        [
-          "belenrolandi",
-          90.95
-        ]
+        {
+          "knowledge": 73.77,
+          "author": "jlcanovas"
+        }
       ],
-      "type" : "dir", "name": "web-server\/labelAnalysisServer\/src\/fr\/"
+      "type": "dir",
+      "name": "database\/old-scripts\/",
+      "branch": "master"
     },
     {
       "bus_factor": [
-        [
-          "jlcanovas",
-          100
-        ]
+        {
+          "knowledge": 100,
+          "author": "belenrolandi"
+        }
       ],
-      "type" : "dir", "name": "js\/sigma.js\/"
+      "type": "dir",
+      "name": "web-server\/labelAnalysisServer\/labelAnalysisServer\/",
+      "branch": "master"
     },
     {
       "bus_factor": [
-        [
-          "belenrolandi",
-          100
-        ]
+        {
+          "knowledge": 56.19,
+          "author": "jlcanovas"
+        },
+        {
+          "knowledge": 41.05,
+          "author": "belenrolandi"
+        }
       ],
-      "type" : "dir", "name": "web-server\/labelAnalysisServer\/web\/WEB-INF\/lib\/"
+      "type": "dir",
+      "name": "js\/",
+      "branch": "gh-pages"
     },
     {
       "bus_factor": [
-        [
-          "jlcanovas",
-          89.66
-        ]
+        {
+          "knowledge": 90.95,
+          "author": "belenrolandi"
+        }
       ],
-      "type" : "dir", "name": "css\/jQWidgets\/images\/smoothness\/"
+      "type": "dir",
+      "name": "web-server\/labelAnalysisServer\/src\/fr\/",
+      "branch": "master"
     },
     {
       "bus_factor": [
-        [
-          "jlcanovas",
-          94.93
-        ]
+        {
+          "knowledge": 100,
+          "author": "jlcanovas"
+        }
       ],
-      "type" : "dir", "name": "css\/jQWidgets\/images\/"
+      "type": "dir",
+      "name": "js\/sigma.js\/",
+      "branch": "gh-pages"
     },
     {
       "bus_factor": [
-        [
-          "belenrolandi",
-          90.95
-        ]
+        {
+          "knowledge": 93.18,
+          "author": "belenrolandi"
+        }
       ],
-      "type" : "dir", "name": "web-server\/labelAnalysisServer\/src\/fr\/inria\/atlanmod\/labelanalysis\/"
+      "type": "dir",
+      "name": "web-server\/labelAnalysisServer\/web\/",
+      "branch": "master"
     },
     {
       "bus_factor": [
-        [
-          "jlcanovas",
-          100
-        ]
+        {
+          "knowledge": 100,
+          "author": "belenrolandi"
+        }
       ],
-      "type" : "dir", "name": "css\/foundation\/"
+      "type": "dir",
+      "name": "web-server\/labelAnalysisServer\/web\/WEB-INF\/lib\/",
+      "branch": "master"
     },
     {
       "bus_factor": [
-        [
-          "jlcanovas",
-          91.43
-        ]
+        {
+          "knowledge": 93.97,
+          "author": "belenrolandi"
+        }
       ],
-      "type" : "dir", "name": "css\/jQWidgets\/images\/sunny\/"
+      "type": "dir",
+      "name": "web-server\/",
+      "branch": "master"
     },
     {
       "bus_factor": [
-        [
-          "jlcanovas",
-          100
-        ]
+        {
+          "knowledge": 56.25,
+          "author": "belenrolandi"
+        },
+        {
+          "knowledge": 43.75,
+          "author": "valeriocos"
+        }
       ],
-      "type" : "dir", "name": "css\/bootstrap\/"
+      "type": "dir",
+      "name": "web-server\/labelAnalysisServer\/src\/fr\/inria\/atlanmod\/labelanalysis\/servlets\/",
+      "branch": "master"
     },
     {
       "bus_factor": [
-        [
-          "belenrolandi",
-          100
-        ]
+        {
+          "knowledge": 89.66,
+          "author": "jlcanovas"
+        }
       ],
-      "type" : "dir", "name": "web-server\/labelAnalysisServer\/web\/WEB-INF\/"
+      "type": "dir",
+      "name": "css\/jQWidgets\/images\/smoothness\/",
+      "branch": "gh-pages"
     },
     {
       "bus_factor": [
-        [
-          "belenrolandi",
-          100
-        ]
+        {
+          "knowledge": 91.89,
+          "author": "jlcanovas"
+        }
       ],
-      "type" : "dir", "name": "js\/jQWidgets\/"
+      "type": "dir",
+      "name": "css\/jQWidgets\/images\/redmond\/",
+      "branch": "gh-pages"
     },
     {
       "bus_factor": [
-        [
-          "belenrolandi",
-          90.95
-        ]
+        {
+          "knowledge": 90.95,
+          "author": "belenrolandi"
+        }
       ],
-      "type" : "dir", "name": "web-server\/labelAnalysisServer\/src\/"
+      "type": "dir",
+      "name": "web-server\/labelAnalysisServer\/src\/fr\/inria\/atlanmod\/labelanalysis\/",
+      "branch": "master"
     },
     {
       "bus_factor": [
-        [
-          "jlcanovas",
-          100
-        ]
+        {
+          "knowledge": 94.93,
+          "author": "jlcanovas"
+        }
       ],
-      "type" : "dir", "name": "js\/foundation\/"
+      "type": "dir",
+      "name": "css\/jQWidgets\/images\/",
+      "branch": "gh-pages"
     },
     {
       "bus_factor": [
-        [
-          "jlcanovas",
-          65.81
-        ]
+        {
+          "knowledge": 89.66,
+          "author": "jlcanovas"
+        }
       ],
-      "type" : "dir", "name": "database\/"
+      "type": "dir",
+      "name": "css\/jQWidgets\/images\/le-frog\/",
+      "branch": "gh-pages"
     },
     {
       "bus_factor": [
-        [
-          "jlcanovas",
-          73.77
-        ]
+        {
+          "knowledge": 100,
+          "author": "valeriocos"
+        }
       ],
-      "type" : "dir", "name": "database\/old-scripts\/"
+      "type": "dir",
+      "name": "jquery-sticky-notes\/",
+      "branch": "gh-pages"
     },
     {
       "bus_factor": [
-        [
-          "jlcanovas",
-          91.43
-        ]
+        {
+          "knowledge": 94.02,
+          "author": "jlcanovas"
+        }
       ],
-      "type" : "dir", "name": "css\/jQWidgets\/images\/start\/"
+      "type": "dir",
+      "name": "css\/",
+      "branch": "gh-pages"
     },
     {
       "bus_factor": [
-        [
-          "jlcanovas",
-          90.32
-        ]
+        {
+          "knowledge": 91.43,
+          "author": "jlcanovas"
+        }
       ],
-      "type" : "dir", "name": "css\/jQWidgets\/images\/overcast\/"
+      "type": "dir",
+      "name": "css\/jQWidgets\/images\/sunny\/",
+      "branch": "gh-pages"
     },
     {
       "bus_factor": [
-        [
-          "belenrolandi",
-          100
-        ]
+        {
+          "knowledge": 100,
+          "author": "valeriocos"
+        }
       ],
-      "type" : "dir", "name": "web-server\/labelAnalysisServer\/src\/fr\/inria\/atlanmod\/labelanalysis\/model\/"
+      "type": "dir",
+      "name": "database\/current-scripts\/",
+      "branch": "master"
     },
     {
       "bus_factor": [
-        [
-          "belenrolandi",
-          90.95
-        ]
+        {
+          "knowledge": 100,
+          "author": "belenrolandi"
+        }
       ],
-      "type" : "dir", "name": "web-server\/labelAnalysisServer\/src\/fr\/inria\/"
+      "type": "dir",
+      "name": "web-server\/labelAnalysisServer\/web\/WEB-INF\/",
+      "branch": "master"
     },
     {
       "bus_factor": [
-        [
-          "belenrolandi",
-          44.47
-        ],
-        [
-          "jlcanovas",
-          40.24
-        ]
+        {
+          "knowledge": 100,
+          "author": "valeriocos"
+        }
       ],
-      "type" : "dir", "name": "imgs\/"
+      "type": "dir",
+      "name": "jquery-sticky-notes\/images\/",
+      "branch": "gh-pages"
     },
     {
       "bus_factor": [
-        [
-          "jlcanovas",
-          91.43
-        ]
+        {
+          "knowledge": 76.92,
+          "author": "jlcanovas"
+        }
       ],
-      "type" : "dir", "name": "css\/jQWidgets\/images\/lightness\/"
+      "type": "dir",
+      "name": "css\/jQWidgets\/images\/colorpicker\/",
+      "branch": "gh-pages"
     },
     {
       "bus_factor": [
-        [
-          "belenrolandi",
-          93.18
-        ]
+        {
+          "knowledge": 100,
+          "author": "belenrolandi"
+        }
       ],
-      "type" : "dir", "name": "web-server\/labelAnalysisServer\/web\/"
+      "type": "dir",
+      "name": "web-server\/labelAnalysisServer\/web\/data\/",
+      "branch": "master"
     },
     {
       "bus_factor": [
-        [
-          "belenrolandi",
-          100
-        ]
+        {
+          "knowledge": 100,
+          "author": "belenrolandi"
+        }
       ],
-      "type" : "dir", "name": "web-server\/labelAnalysisServer\/labelAnalysisServer\/"
+      "type": "dir",
+      "name": "web-server\/labelAnalysisServer\/web\/META-INF\/",
+      "branch": "master"
     },
     {
       "bus_factor": [
-        [
-          "belenrolandi",
-          93.97
-        ]
+        {
+          "knowledge": 65.81,
+          "author": "jlcanovas"
+        }
       ],
-      "type" : "dir", "name": "web-server\/"
+      "type": "dir",
+      "name": "database\/",
+      "branch": "master"
     },
     {
       "bus_factor": [
-        [
-          "valeriocos",
-          100
-        ]
+        {
+          "knowledge": 63.35,
+          "author": "belenrolandi"
+        }
       ],
-      "type" : "dir", "name": "jquery-sticky-notes\/script\/"
+      "type": "dir",
+      "name": "repository_root",
+      "branch": "gh-pages"
     },
     {
       "bus_factor": [
-        [
-          "jlcanovas",
-          91.89
-        ]
+        {
+          "knowledge": 91.43,
+          "author": "jlcanovas"
+        }
       ],
-      "type" : "dir", "name": "css\/jQWidgets\/images\/redmond\/"
+      "type": "dir",
+      "name": "css\/jQWidgets\/images\/start\/",
+      "branch": "gh-pages"
     },
     {
       "bus_factor": [
-        [
-          "jlcanovas",
-          89.66
-        ]
+        {
+          "knowledge": 100,
+          "author": "valeriocos"
+        }
       ],
-      "type" : "dir", "name": "css\/jQWidgets\/images\/le-frog\/"
+      "type": "dir",
+      "name": "jquery-sticky-notes\/css\/",
+      "branch": "gh-pages"
     },
     {
       "bus_factor": [
-        [
-          "valeriocos",
-          100
-        ]
+        {
+          "knowledge": 100,
+          "author": "belenrolandi"
+        }
       ],
-      "type" : "dir", "name": "database\/current-scripts\/"
+      "type": "dir",
+      "name": "web-server\/labelAnalysisServer\/.settings\/",
+      "branch": "master"
     },
     {
       "bus_factor": [
-        [
-          "jlcanovas",
-          100
-        ]
+        {
+          "knowledge": 90.32,
+          "author": "jlcanovas"
+        }
       ],
-      "type" : "dir", "name": "js\/vendor\/"
+      "type": "dir",
+      "name": "css\/jQWidgets\/images\/overcast\/",
+      "branch": "gh-pages"
     },
     {
       "bus_factor": [
-        [
-          "jlcanovas",
-          94.3
-        ]
+        {
+          "knowledge": 90.95,
+          "author": "belenrolandi"
+        }
       ],
-      "type" : "dir", "name": "css\/"
+      "type": "dir",
+      "name": "web-server\/labelAnalysisServer\/src\/fr\/inria\/atlanmod\/",
+      "branch": "master"
     },
     {
       "bus_factor": [
-        [
-          "valeriocos",
-          100
-        ]
+        {
+          "knowledge": 100,
+          "author": "valeriocos"
+        }
       ],
-      "type" : "dir", "name": "jquery-sticky-notes\/css\/"
+      "type": "dir",
+      "name": "database\/current-scripts\/python\/",
+      "branch": "master"
     },
     {
       "bus_factor": [
-        [
-          "valeriocos",
-          100
-        ]
+        {
+          "knowledge": 100,
+          "author": "belenrolandi"
+        }
       ],
-      "type" : "dir", "name": "jquery-sticky-notes\/images\/"
+      "type": "dir",
+      "name": "web-server\/labelAnalysisServer\/src\/fr\/inria\/atlanmod\/labelanalysis\/model\/",
+      "branch": "master"
     },
     {
       "bus_factor": [
-        [
-          "jlcanovas",
-          76.92
-        ]
+        {
+          "knowledge": 100,
+          "author": "valeriocos"
+        }
       ],
-      "type" : "dir", "name": "css\/jQWidgets\/images\/colorpicker\/"
+      "type": "dir",
+      "name": "jquery-sticky-notes\/script\/",
+      "branch": "gh-pages"
     },
     {
       "bus_factor": [
-        [
-          "valeriocos",
-          100
-        ]
+        {
+          "knowledge": 90.95,
+          "author": "belenrolandi"
+        }
       ],
-      "type" : "dir", "name": "jquery-sticky-notes\/"
+      "type": "dir",
+      "name": "web-server\/labelAnalysisServer\/src\/fr\/inria\/",
+      "branch": "master"
     },
     {
       "bus_factor": [
-        [
-          "belenrolandi",
-          100
-        ]
+        {
+          "knowledge": 44.47,
+          "author": "belenrolandi"
+        },
+        {
+          "knowledge": 40.24,
+          "author": "jlcanovas"
+        }
       ],
-      "type" : "dir", "name": "web-server\/labelAnalysisServer\/web\/data\/"
-    },
-    {
-      "bus_factor": [
-        [
-          "belenrolandi",
-          100
-        ]
-      ],
-      "type" : "dir", "name": "web-server\/labelAnalysisServer\/web\/META-INF\/"
-    },
-    {
-      "bus_factor": [
-        [
-          "belenrolandi",
-          56.45
-        ]
-      ],
-      "type" : "dir", "name": "repository_root"
-    },
-    {
-      "bus_factor": [
-        [
-          "belenrolandi",
-          90.95
-        ]
-      ],
-      "type" : "dir", "name": "web-server\/labelAnalysisServer\/src\/fr\/inria\/atlanmod\/"
-    },
-    {
-      "bus_factor": [
-        [
-          "belenrolandi",
-          100
-        ]
-      ],
-      "type" : "dir", "name": "web-server\/labelAnalysisServer\/.settings\/"
-    },
-    {
-      "bus_factor": [
-        [
-          "belenrolandi",
-          56.25
-        ],
-        [
-          "valeriocos",
-          43.75
-        ]
-      ],
-      "type" : "dir", "name": "web-server\/labelAnalysisServer\/src\/fr\/inria\/atlanmod\/labelanalysis\/servlets\/"
-    },
-    {
-      "bus_factor": [
-        [
-          "valeriocos",
-          100
-        ]
-      ],
-      "type" : "dir", "name": "database\/current-scripts\/python\/"
+      "type": "dir",
+      "name": "imgs\/",
+      "branch": "gh-pages"
     }
   ]
 }
