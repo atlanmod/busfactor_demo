@@ -156,7 +156,6 @@ function drawElementLine(element, elementId, subArray, width, line) {
           var found = false;
           if(file.elem.dirs == undefined) return false;
           file.elem.dirs.forEach(function(fileDir) { 
-            console.log(fileDir + " vs " + d.elem.name);
             if(fileDir == d.elem.name){
               found = true;
             }
