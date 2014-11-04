@@ -27,7 +27,13 @@
 
 .description {
   font-size: 1.15em;
+  display: inline;
 }
+
+.description emph {
+  font-weight: bold;
+}
+
 
 circle {
   fill-opacity: .25;

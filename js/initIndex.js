@@ -24,7 +24,7 @@ window.onload = function() {
 
   var userWidth = $(".userGraph").width();
   var userElement = d3.select(".userGraph").append("svg")
-  drawUsers(userElement, "realUsers.json", userWidth);
+  drawUsers(userElement, "realUsers.json", "users", userWidth);
 
   var branchWidth = $(".branchGraph").width();
   var branchElement = d3.select(".branchGraph").append("svg")
@@ -55,14 +55,40 @@ function initDetails() {
     .style("font-size", "0.75em");
 }
 
-function drawUsers(element, file, width) {
+function drawUsers(element, file, fileAttr, width) {
   element
         .attr("width", width)
-        .attr("height", 35);        
+        .attr("height", 60);        
 
-  svg = element.append("g");
+  svg = element.append("g").attr("transform", "translate(3,0)");
 
-  d3.json(file, function(error, jsonData) {
+  d3.json(file, function(error, data) {
+    jsonData = data[fileAttr];
+    // Updating the factors
+    var knowledgeableUsers = jsonData.filter(function(user) { return +user.knowledge > 0});
+    var factorElement = d3.select(".factor").text(knowledgeableUsers.length);
+
+    var maxKnowledge = d3.max(jsonData.map(function(d) { return d.knowledge; }));
+
+    var importantUsers = jsonData.filter(function(user) { return +user.knowledge == maxKnowledge});
+    var importantUsersElement = d3.select(".importantUsers").text(importantUsers.map(function(user) { return user.name }));
+
+    var relyingUsers = jsonData.filter(function(user) { return +user.knowledge < maxKnowledge && +user.knowledge > 0});
+    if(relyingUsers.length == 1) {
+      var relyingUsersElement = d3.select(".relyingUsers").text(relyingUsers.map(function(user) { return user.name }));
+    } else {
+      subRelyingUsers = relyingUsers.slice(0, relyingUsers.length - 1);
+      lastRelyingUser = relyingUsers[relyingUsers.length - 1];
+      var subtext = subRelyingUsers.map(function(user) { return " " + user.name });
+      var relyingUsersElement = d3.select(".relyingUsers").text(subtext + " and " + lastRelyingUser.name);
+    }
+
+    var notImportantUsers = jsonData.filter(function(user) { return +user.knowledge == 0});
+    var notImportantUsersElement = d3.select(".notImportantUsers").text(notImportantUsers.map(function(user) { return user.name }));
+
+    var contributorsElement = d3.select(".numContributors").text(jsonData.length);
+
+    // Drawing the users
     var scaleWidth = d3.scale.ordinal()
       .domain(jsonData.map(function(d) { return d.name; }))
       .rangeBands([0, width]);
@@ -74,10 +100,23 @@ function drawUsers(element, file, width) {
     rects.append("rect")
       .attr("id", "user")
       .attr("width", scaleWidth.rangeBand() - 10)
-      .attr("height", 30)
+      .attr("height", 45)
       .style("stroke", d3.rgb("white"))
       .style("stroke-width", 3)
       .style("fill", function(d) { return "#EEEEEE" } );
+
+    var knowledgeScale = d3.scale.linear()
+      .domain([0,100])
+      .range([0, scaleWidth.rangeBand() - 10]);
+
+    rects.append("rect")
+      .attr("transform", "translate (3,3)")
+      .attr("id", "knowledge")
+      .attr("width", function(d) { return knowledgeScale(d.knowledge); })
+      .attr("height", 39)
+      .style("stroke-width", 0)
+      .style("fill", function(d) { return "#AAAAAA" } );
+
 
     rects.append("text")
       .attr("dy", "1.65em")
@@ -87,18 +126,25 @@ function drawUsers(element, file, width) {
       .style("font-size", "0.85em")
       .text(function(d) { return d.name; });
 
+    rects.append("text")
+      .attr("dy", "2.95em")
+      .attr("dx", scaleWidth.rangeBand()/2 - 5)
+      .style("fill", d3.rgb("black"))
+      .style("text-anchor", "middle")
+      .style("font-size", "0.85em")
+      .text(function(d) { return d.knowledge + "%"; });
+
     rects.on("click", function(d, index, elem) {
       initDetails();
 
       // Highliting the selected element
-      if(selectedElement)
+      if(selectedElement) {
         d3.select(selectedElement).style("stroke", d3.rgb("white"));
-      if(selectedUser)
+        d3.select(selectedElement).attr("id", "user")
+      }
+      if(selectedUser) 
         selectedUser.style("stroke", d3.rgb("white"));
 
-      d3.select(this).select("rect")
-        .attr("id", "selected")
-        .style("stroke", d3.rgb("purple"));
 
       selectedUser = d3.select(this).select("rect");
 
@@ -149,6 +195,11 @@ function drawUsers(element, file, width) {
 
       // Updating extensions
       exts = d3.selectAll("rect#exts").style("stroke", d3.rgb("white")); 
+
+
+      // We have to do this to override the previous colors
+      d3.select(this).select("rect")
+        .style("stroke", d3.rgb("purple"));
     });
 
   });
@@ -259,10 +310,6 @@ function drawElementLine(element, elementId, subArray, width, line) {
 
       if(selectedUser)
         selectedUser.style("stroke", d3.rgb("white"));
-
-      d3.select(this)
-        .attr("id", "selected")
-        .style("stroke", d3.rgb("purple"));
 
       selectedElement = this;
 
@@ -410,6 +457,10 @@ function drawElementLine(element, elementId, subArray, width, line) {
         exts = d3.selectAll("rect#exts").style("stroke", d3.rgb("white"));   
         
       }
+
+      // We have to do this to override the previous colors
+      d3.select(this)
+        .style("stroke", d3.rgb("purple"));
 
     }
   });

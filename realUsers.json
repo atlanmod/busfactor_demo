@@ -1,6 +1,24 @@
-[
-	{ "name" : "jlcanovas" },
-	{ "name" : "valeriocos" },
-	{ "name" : "belenrolandi" },
-	{ "name" : "Belen Rolandi" }
-]
+{
+  "users": [
+    {
+      "type": "user",
+      "name": "jlcanovas",
+      "knowledge": 74.24
+    },
+    {
+      "type": "user",
+      "name": "belenrolandi",
+      "knowledge": 22.8
+    },
+    {
+      "type": "user",
+      "name": "valeriocos",
+      "knowledge": 2.96
+    },
+    {
+      "type": "user",
+      "name": "Jordi",
+      "knowledge": 0
+    }
+  ]
+}
