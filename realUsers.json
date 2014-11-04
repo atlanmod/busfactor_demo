@@ -1,19 +1,19 @@
 {
-  "users": [
+  "user_relevance": [
     {
       "type": "user",
-      "name": "jlcanovas",
-      "knowledge": 74.24
+      "name": "Belen",
+      "knowledge": 42.76
     },
     {
       "type": "user",
-      "name": "belenrolandi",
-      "knowledge": 22.8
+      "name": "Javi",
+      "knowledge": 40
     },
     {
       "type": "user",
-      "name": "valeriocos",
-      "knowledge": 2.96
+      "name": "Valerio",
+      "knowledge": 17.24
     },
     {
       "type": "user",

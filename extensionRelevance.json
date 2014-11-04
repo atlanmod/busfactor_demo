@@ -1,0 +1,16 @@
+{
+  "extension_relevance": [
+    {
+      "percentage": 35.71,
+      "name": "sql"
+    },
+    {
+      "percentage": 15.71,
+      "name": "png"
+    },
+    {
+      "percentage": 10,
+      "name": "js"
+    }
+  ]
+}

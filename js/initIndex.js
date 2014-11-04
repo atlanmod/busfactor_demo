@@ -24,7 +24,7 @@ window.onload = function() {
 
   var userWidth = $(".userGraph").width();
   var userElement = d3.select(".userGraph").append("svg")
-  drawUsers(userElement, "realUsers.json", "users", userWidth);
+  drawUsers(userElement, "realUsers.json", "user_relevance", userWidth);
 
   var branchWidth = $(".branchGraph").width();
   var branchElement = d3.select(".branchGraph").append("svg")
@@ -41,6 +41,19 @@ window.onload = function() {
   var extensionWidth = $(".extensionGraph").width();
   var extensionElement = d3.select(".extensionGraph").append("svg")
   drawElementGraph(extensionElement, "realExtensions.json", "exts", extensionWidth - 2 * margin);
+
+  d3.json("extensionRelevance.json", function(error, jsonData) {
+    var relExts = jsonData["extension_relevance"];
+    if(relExts.length == 1) {
+      var relevantExtensions = d3.select(".relevantExtensions").text(relyingUsers.map(function(ext) { return ext.name + " (" + ext.percentage + "%)" }));
+    } else {
+      subRelevantExtensions = relExts.slice(0, relExts.length - 1);
+      lastRelevantExtensions = relExts[relExts.length - 1];
+      var subtext = subRelevantExtensions.map(function(ext) { return " " +ext.name + " (" + ext.percentage + "%)" });
+      var relevantExtensions = d3.select(".relevantExtensions").text(subtext + " and " + lastRelevantExtensions.name + " (" + lastRelevantExtensions.percentage + "%)");
+    }
+    
+  });
 
   initDetails();
 };

@@ -5,12 +5,12 @@
       "name": "master",
       "bus_factor": [
         {
-          "knowledge": 47.77,
-          "author": "belenrolandi"
+          "knowledge": 47.59,
+          "author": "Javi"
         },
         {
-          "knowledge": 33.93,
-          "author": "jlcanovas"
+          "knowledge": 43.77,
+          "author": "Belen"
         }
       ]
     },
@@ -19,8 +19,16 @@
       "name": "gh-pages",
       "bus_factor": [
         {
-          "knowledge": 81.21,
-          "author": "jlcanovas"
+          "knowledge": 41.49,
+          "author": "Belen"
+        },
+        {
+          "knowledge": 30.51,
+          "author": "Javi"
+        },
+        {
+          "knowledge": 28,
+          "author": "Valerio"
         }
       ]
     }

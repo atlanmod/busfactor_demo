@@ -2,119 +2,11 @@
   "exts": [
     {
       "type": "ext",
-      "name": "jar",
-      "bus_factor": [
-        {
-          "knowledge": 100,
-          "author": "belenrolandi"
-        }
-      ]
-    },
-    {
-      "type": "ext",
-      "name": "component",
-      "bus_factor": [
-        {
-          "knowledge": 100,
-          "author": "belenrolandi"
-        }
-      ]
-    },
-    {
-      "type": "ext",
-      "name": "jpg",
-      "bus_factor": [
-        {
-          "knowledge": 100,
-          "author": "belenrolandi"
-        }
-      ]
-    },
-    {
-      "type": "ext",
-      "name": "js",
-      "bus_factor": [
-        {
-          "knowledge": 44.85,
-          "author": "jlcanovas"
-        },
-        {
-          "knowledge": 32.76,
-          "author": "belenrolandi"
-        }
-      ]
-    },
-    {
-      "type": "ext",
-      "name": "mf",
-      "bus_factor": [
-        {
-          "knowledge": 100,
-          "author": "belenrolandi"
-        }
-      ]
-    },
-    {
-      "type": "ext",
-      "name": "sql",
-      "bus_factor": [
-        {
-          "knowledge": 68.48,
-          "author": "jlcanovas"
-        }
-      ]
-    },
-    {
-      "type": "ext",
-      "name": "java",
-      "bus_factor": [
-        {
-          "knowledge": 90.95,
-          "author": "belenrolandi"
-        }
-      ]
-    },
-    {
-      "type": "ext",
-      "name": "txt",
-      "bus_factor": [
-        {
-          "knowledge": 100,
-          "author": "belenrolandi"
-        }
-      ]
-    },
-    {
-      "type": "ext",
-      "name": "png",
-      "bus_factor": [
-        {
-          "knowledge": 92.58,
-          "author": "jlcanovas"
-        }
-      ]
-    },
-    {
-      "type": "ext",
-      "name": "gitignore",
-      "bus_factor": [
-        {
-          "knowledge": 50,
-          "author": "Belen Rolandi"
-        },
-        {
-          "knowledge": 50,
-          "author": "belenrolandi"
-        }
-      ]
-    },
-    {
-      "type": "ext",
       "name": "xml",
       "bus_factor": [
         {
           "knowledge": 100,
-          "author": "belenrolandi"
+          "author": "Belen"
         }
       ]
     },
@@ -124,37 +16,17 @@
       "bus_factor": [
         {
           "knowledge": 100,
-          "author": "belenrolandi"
+          "author": "Belen"
         }
       ]
     },
     {
       "type": "ext",
-      "name": "csv",
+      "name": "java",
       "bus_factor": [
         {
-          "knowledge": 100,
-          "author": "belenrolandi"
-        }
-      ]
-    },
-    {
-      "type": "ext",
-      "name": "container",
-      "bus_factor": [
-        {
-          "knowledge": 100,
-          "author": "belenrolandi"
-        }
-      ]
-    },
-    {
-      "type": "ext",
-      "name": "name",
-      "bus_factor": [
-        {
-          "knowledge": 100,
-          "author": "belenrolandi"
+          "knowledge": 90.95,
+          "author": "Belen"
         }
       ]
     },
@@ -164,7 +36,7 @@
       "bus_factor": [
         {
           "knowledge": 100,
-          "author": "jlcanovas"
+          "author": "Javi"
         }
       ]
     },
@@ -174,41 +46,17 @@
       "bus_factor": [
         {
           "knowledge": 100,
-          "author": "valeriocos"
+          "author": "Valerio"
         }
       ]
     },
     {
       "type": "ext",
-      "name": "classpath",
+      "name": "js",
       "bus_factor": [
         {
-          "knowledge": 62.5,
-          "author": "belenrolandi"
-        },
-        {
-          "knowledge": 37.5,
-          "author": "jlcanovas"
-        }
-      ]
-    },
-    {
-      "type": "ext",
-      "name": "jsdtscope",
-      "bus_factor": [
-        {
-          "knowledge": 100,
-          "author": "belenrolandi"
-        }
-      ]
-    },
-    {
-      "type": "ext",
-      "name": "project",
-      "bus_factor": [
-        {
-          "knowledge": 100,
-          "author": "belenrolandi"
+          "knowledge": 78.58,
+          "author": "Belen"
         }
       ]
     },
@@ -217,8 +65,12 @@
       "name": "gif",
       "bus_factor": [
         {
-          "knowledge": 75,
-          "author": "jlcanovas"
+          "knowledge": 50,
+          "author": "Javi"
+        },
+        {
+          "knowledge": 50,
+          "author": "Valerio"
         }
       ]
     },
@@ -227,18 +79,42 @@
       "name": "html",
       "bus_factor": [
         {
-          "knowledge": 56.72,
-          "author": "belenrolandi"
+          "knowledge": 70.4,
+          "author": "Belen"
         }
       ]
     },
     {
       "type": "ext",
-      "name": "prefs",
+      "name": "png",
+      "bus_factor": [
+        {
+          "knowledge": 48.05,
+          "author": "Valerio"
+        },
+        {
+          "knowledge": 35.06,
+          "author": "Javi"
+        }
+      ]
+    },
+    {
+      "type": "ext",
+      "name": "sql",
+      "bus_factor": [
+        {
+          "knowledge": 68.48,
+          "author": "Javi"
+        }
+      ]
+    },
+    {
+      "type": "ext",
+      "name": "txt",
       "bus_factor": [
         {
           "knowledge": 100,
-          "author": "belenrolandi"
+          "author": "Belen"
         }
       ]
     },
@@ -247,12 +123,22 @@
       "name": "css",
       "bus_factor": [
         {
-          "knowledge": 63.47,
-          "author": "belenrolandi"
+          "knowledge": 57.56,
+          "author": "Valerio"
         },
         {
-          "knowledge": 36.53,
-          "author": "valeriocos"
+          "knowledge": 42.44,
+          "author": "Belen"
+        }
+      ]
+    },
+    {
+      "type": "ext",
+      "name": "gitignore",
+      "bus_factor": [
+        {
+          "knowledge": 100,
+          "author": "Belen"
         }
       ]
     }
