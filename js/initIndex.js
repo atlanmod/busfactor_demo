@@ -78,15 +78,15 @@ function drawUsers(element, file, fileAttr, width) {
   d3.json(file, function(error, data) {
     jsonData = data[fileAttr];
     // Updating the factors
-    var knowledgeableUsers = jsonData.filter(function(user) { return +user.knowledge > 0});
+    var knowledgeableUsers = jsonData.filter(function(user) { return user.status.indexOf("not in bus factor") == -1});
     var factorElement = d3.select(".factor").text(knowledgeableUsers.length);
 
     var maxKnowledge = d3.max(jsonData.map(function(d) { return d.knowledge; }));
 
-    var importantUsers = jsonData.filter(function(user) { return +user.knowledge == maxKnowledge});
+    var importantUsers = jsonData.filter(function(user) { return +user.knowledge == maxKnowledge && user.status.indexOf("not in bus factor") == -1});
     var importantUsersElement = d3.select(".importantUsers").text(importantUsers.map(function(user) { return user.name }));
 
-    var relyingUsers = jsonData.filter(function(user) { return +user.knowledge < maxKnowledge && +user.knowledge > 0});
+    var relyingUsers = jsonData.filter(function(user) { return +user.knowledge < maxKnowledge && user.status.indexOf("not in bus factor") == -1});
     if(relyingUsers.length == 1) {
       var relyingUsersElement = d3.select(".relyingUsers").text(relyingUsers.map(function(user) { return user.name }));
     } else {
@@ -96,8 +96,15 @@ function drawUsers(element, file, fileAttr, width) {
       var relyingUsersElement = d3.select(".relyingUsers").text(subtext + " and " + lastRelyingUser.name);
     }
 
-    var notImportantUsers = jsonData.filter(function(user) { return +user.knowledge == 0});
-    var notImportantUsersElement = d3.select(".notImportantUsers").text(notImportantUsers.map(function(user) { return user.name }));
+    var notImportantUsers = jsonData.filter(function(user) { return user.status.indexOf("not in bus factor") > -1});
+    if(notImportantUsers.length == 1) {
+      var notImportantUsersElement = d3.select(".notImportantUsers").text(notImportantUsers.map(function(user) { return user.name }));
+    } else {
+      subNotImportantUsers = notImportantUsers.slice(0, notImportantUsers.length - 1);
+      lastNotImportantUsers = notImportantUsers[notImportantUsers.length - 1];
+      var subtext = subNotImportantUsers.map(function(user) { return " " + user.name });
+      var notImportantUsersElement = d3.select(".notImportantUsers").text(subtext + " and " + lastNotImportantUsers.name);
+    }
 
     var contributorsElement = d3.select(".numContributors").text(jsonData.length);
 
