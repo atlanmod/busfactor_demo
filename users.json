@@ -1,0 +1,28 @@
+{
+  "user_relevance": [
+    {
+      "status": "in bus factor",
+      "type": "user",
+      "name": "Belen",
+      "knowledge": 51.41
+    },
+    {
+      "status": "in bus factor",
+      "type": "user",
+      "name": "Valerio",
+      "knowledge": 26.27
+    },
+    {
+      "status": "not in bus factor",
+      "type": "user",
+      "name": "Javi",
+      "knowledge": 22.33
+    },
+    {
+      "status": "not in bus factor",
+      "type": "user",
+      "name": "Jordi",
+      "knowledge": 0
+    }
+  ]
+}

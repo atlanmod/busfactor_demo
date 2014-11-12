@@ -24,23 +24,23 @@ window.onload = function() {
 
   var userWidth = $(".userGraph").width();
   var userElement = d3.select(".userGraph").append("svg")
-  drawUsers(userElement, "realUsers.json", "user_relevance", userWidth);
+  drawUsers(userElement, "users.json", "user_relevance", userWidth);
 
   var branchWidth = $(".branchGraph").width();
   var branchElement = d3.select(".branchGraph").append("svg")
-  drawElementGraph(branchElement, "realBranches.json", "branches", branchWidth - 2 * margin);
+  drawElementGraph(branchElement, "branches.json", "branches", branchWidth - 2 * margin);
 
   var directoryWidth = $(".directoryGraph").width();
   var directoryElement = d3.select(".directoryGraph").append("svg")
-  drawElementGraph(directoryElement, "realDirs.json", "dirs", directoryWidth - 2 * margin);
+  drawElementGraph(directoryElement, "dirs.json", "dirs", directoryWidth - 2 * margin);
 
   var fileWidth = $(".fileGraph").width();
   var fileElement = d3.select(".fileGraph").append("svg")
-  drawElementGraph(fileElement, "realFiles.json", "files", fileWidth - 2 * margin);
+  drawElementGraph(fileElement, "files.json", "files", fileWidth - 2 * margin);
 
   var extensionWidth = $(".extensionGraph").width();
   var extensionElement = d3.select(".extensionGraph").append("svg")
-  drawElementGraph(extensionElement, "realExtensions.json", "exts", extensionWidth - 2 * margin);
+  drawElementGraph(extensionElement, "exts.json", "exts", extensionWidth - 2 * margin);
 
   d3.json("extensionRelevance.json", function(error, jsonData) {
     var relExts = jsonData["extension_relevance"];
@@ -146,6 +146,40 @@ function drawUsers(element, file, fileAttr, width) {
       .style("text-anchor", "middle")
       .style("font-size", "0.85em")
       .text(function(d) { return d.knowledge + "%"; });
+
+    rects.on("mouseover", function(d, index, elem) {
+      var element = d3.select(this);
+
+      var closeRect = element.append("g")
+        .attr("id", "closeRect")
+        .attr("transform", "translate(" + (scaleWidth.rangeBand() - 27) + ",2)");
+
+      closeRect.append("rect")
+        .attr("width", 14)
+        .attr("height", 14)
+        .style("fill-opacity", 1)
+        .style("z-index", 4)
+        .style("stroke", d3.rgb("black"))
+        .style("fill", d3.rgb("black"));
+
+      closeRect.append("path")
+        .attr("d", "M 2,2 12,12")
+        .style("stroke", d3.rgb("white"))
+        .style("stroke-width", 2)
+        .style("opacity", 1);
+
+
+      closeRect.append("path")
+        .attr("d", "M 2,12 12,2")
+        .style("stroke", d3.rgb("white"))
+        .style("stroke-width", 2)
+        .style("opacity", 1);
+    });
+
+    rects.on("mouseout", function(d, index, elem) {
+      d3.select("#closeRect").remove();
+    });
+
 
     rects.on("click", function(d, index, elem) {
       initDetails();
