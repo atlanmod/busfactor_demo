@@ -1,0 +1,1 @@
+{"branches": [{"type": "branch", "name": "master", "bus_factor": [{"knowledge": 54.53, "author": "Belen"}, {"knowledge": 32.58, "author": "Valerio"}]}, {"type": "branch", "name": "gh-pages", "bus_factor": [{"knowledge": 38.45, "author": "Javi"}, {"knowledge": 34.63, "author": "Valerio"}, {"knowledge": 26.92, "author": "Belen"}]}]}
