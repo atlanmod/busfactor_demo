@@ -16,6 +16,11 @@ var selectedUser = undefined;
 
 var infoTooltip = undefined;
 
+
+var color = d3.scale.ordinal()
+  .range(["#777777", "#AAAAAA", "#EEEEEE"])
+  .domain([1,2,3]);
+
 window.onload = function() {
   infoTooltip = d3.select("body").append("div")
     .attr("class", "infoTooltip")
@@ -154,41 +159,70 @@ function drawUsers(element, file, fileAttr, width) {
       .style("font-size", "0.85em")
       .text(function(d) { return d.knowledge + "%"; });
 
-    rects.on("mouseover", function(d, index, elem) {
-      var element = d3.select(this);
 
-      var closeRect = element.append("g")
+    var busHittingButton = d3.select(".busHittingButton");
+    busHittingButton.on("click", function(d, index, elem) {
+      if($(".busHittingButton").text() == "Undo") {
+        location.reload();
+      } else {
+        $(".busHittingButton").text("Undo");
+      }
+
+      var userRects = d3.selectAll("g#user");
+      userRects.on("click", null);
+
+      var closeRects = userRects.append("g")
         .attr("id", "closeRect")
         .attr("transform", "translate(" + (scaleWidth.rangeBand() - 27) + ",2)");
 
-      closeRect.append("rect")
+      closeRects.append("rect")
         .attr("width", 14)
         .attr("height", 14)
         .style("fill-opacity", 1)
-        .style("z-index", 4)
         .style("stroke", d3.rgb("black"))
         .style("fill", d3.rgb("black"));
 
-      closeRect.append("path")
+      closeRects.append("path")
         .attr("d", "M 2,2 12,12")
         .style("stroke", d3.rgb("white"))
         .style("stroke-width", 2)
         .style("opacity", 1);
 
 
-      closeRect.append("path")
+      closeRects.append("path")
         .attr("d", "M 2,12 12,2")
         .style("stroke", d3.rgb("white"))
         .style("stroke-width", 2)
         .style("opacity", 1);
-    });
 
-    rects.on("mouseout", function(d, index, elem) {
-      d3.select("#closeRect").remove();
-    });
+      closeRects.on("click", function(d, index, elem) {
+        var selectedUser = d3.select(this);
 
+        var userRect = d3.selectAll("g#user").filter(function(user) { return user.name == d.name});
+        userRect.select("#knowledge").remove();
+        userRect.select("rect#user").style("fill", d3.rgb("white"));
+        userRect.select("rect#user").style("stroke", d3.rgb("#EEEEEE"));
+
+        files = d3.selectAll("rect#files");
+        busHittingElements(files, d);
+
+        branches = d3.selectAll("rect#branches");
+        busHittingElements(branches, d);
+
+        dirs = d3.selectAll("rect#dirs");
+        busHittingElements(dirs, d);
+
+        exts = d3.selectAll("rect#exts");
+        busHittingElements(exts, d);
+      });
+    });
 
     rects.on("click", function(d, index, elem) {
+      var selectedUser = d3.select(this);
+      if(selectedUser.attr("id") == "userRemoved") { 
+        console.log("removed");
+        return;
+      }
       initDetails();
 
       // Highliting the selected element
@@ -198,7 +232,6 @@ function drawUsers(element, file, fileAttr, width) {
       }
       if(selectedUser) 
         selectedUser.style("stroke", d3.rgb("white"));
-
 
       selectedUser = d3.select(this).select("rect");
 
@@ -259,6 +292,32 @@ function drawUsers(element, file, fileAttr, width) {
   });
 }
 
+function busHittingElements(elements, user) {
+  filteredElements = elements.filter(function(element) { 
+    var found = false;
+    element.elem.bus_factor.forEach(function(factor) { 
+      if(factor.author == user.name){
+        found = true;
+      }
+    });
+    return found;
+  });
+  filteredElements.each(function(filteredElement) {
+    var foundUser = undefined;
+    filteredElement.elem.bus_factor.forEach(function(factor) {
+      if(factor.author == user.name) {
+        foundUser = factor;
+      }
+    });
+    var index = filteredElement.elem.bus_factor.indexOf(foundUser);
+    filteredElement.elem.bus_factor.splice(index, 1);
+  });
+
+  filteredElements.style("fill", function(d) { return d.elem.bus_factor.length == 0 ? d3.rgb("white") : color(d.elem.bus_factor.length); } );
+  filteredElements.style("stroke", function(d) { return d.elem.bus_factor.length == 0 ? d3.rgb("#EEEEEE") : d3.rgb("white"); } );
+  filteredElements.filter(function(element) { return element.elem.bus_factor.length == 0} ).attr("id", "removed");
+}
+
 
 function drawElementGraph(element, file, fileAttr, width) {
   d3.json(file, function(error, jsonData) {
@@ -311,10 +370,6 @@ function drawElementLine(element, elementId, subArray, width, line) {
 
   var scaleColor = d3.scale.ordinal();
   var red = d3.rgb("grey").darker(2);
-
-  var color = d3.scale.ordinal()
-    .range(["#777777", "#AAAAAA", "#EEEEEE"])
-    .domain([1,2,3]);
 
   var svg = element.append("g")
     .attr("id", "fileLine");
