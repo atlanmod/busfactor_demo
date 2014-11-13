@@ -203,6 +203,10 @@ function drawUsers(element, file, fileAttr, width) {
         userRect.select("rect#user").style("fill", d3.rgb("white"));
         userRect.select("rect#user").style("stroke", d3.rgb("#EEEEEE"));
 
+        if(d.status.indexOf("not in bus factor") == -1) {
+           d3.select(".factor").text(+d3.select(".factor").text() - 1);
+        }
+
         files = d3.selectAll("rect#files");
         busHittingElements(files, d);
 
