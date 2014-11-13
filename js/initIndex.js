@@ -218,15 +218,18 @@ function drawUsers(element, file, fileAttr, width) {
 
         exts = d3.selectAll("rect#exts");
         busHittingElements(exts, d);
+
+        selectedUser.remove();
       });
     });
 
     rects.on("click", function(d, index, elem) {
       var selectedUser = d3.select(this);
+
       if(selectedUser.attr("id") == "userRemoved") { 
-        console.log("removed");
         return;
       }
+
       initDetails();
 
       // Highliting the selected element
@@ -234,8 +237,9 @@ function drawUsers(element, file, fileAttr, width) {
         d3.select(selectedElement).style("stroke", d3.rgb("white"));
         d3.select(selectedElement).attr("id", "user")
       }
-      if(selectedUser) 
-        selectedUser.style("stroke", d3.rgb("white"));
+
+      /*if(selectedUser) 
+        selectedUser.style("stroke", d3.rgb("white"));*/
 
       selectedUser = d3.select(this).select("rect");
 
@@ -297,6 +301,7 @@ function drawUsers(element, file, fileAttr, width) {
 }
 
 function busHittingElements(elements, user) {
+  // Locating the elements including the user
   filteredElements = elements.filter(function(element) { 
     var found = false;
     element.elem.bus_factor.forEach(function(factor) { 
@@ -306,22 +311,40 @@ function busHittingElements(elements, user) {
     });
     return found;
   });
+
+  // Removing the user from the bus factor
   filteredElements.each(function(filteredElement) {
     var foundUser = undefined;
+    var others = undefined
     filteredElement.elem.bus_factor.forEach(function(factor) {
       if(factor.author == user.name) {
         foundUser = factor;
+      } else if(factor.author == "others") {
+        console.log("found");
+        others = factor;
       }
     });
+    // adding the knowledge of the user to others
+    if(others !== undefined)
+      others.knowledge += foundUser.knowledge;
+
     var index = filteredElement.elem.bus_factor.indexOf(foundUser);
     filteredElement.elem.bus_factor.splice(index, 1);
   });
 
-  filteredElements.style("fill", function(d) { return d.elem.bus_factor.length == 0 ? d3.rgb("white") : color(d.elem.bus_factor.length); } );
-  filteredElements.style("stroke", function(d) { return d.elem.bus_factor.length == 0 ? d3.rgb("#EEEEEE") : d3.rgb("white"); } );
-  filteredElements.filter(function(element) { return element.elem.bus_factor.length == 0} ).attr("id", "removed");
+  filteredElements.style("fill", function(d) { return realBusFactor(d.elem.bus_factor) == 0 ? d3.rgb("white") : color(d.elem.bus_factor.length); } );
+  filteredElements.style("stroke", function(d) { return realBusFactor(d.elem.bus_factor) == 0 ? d3.rgb("#EEEEEE") : d3.rgb("white"); } );
+  filteredElements.filter(function(element) { return realBusFactor(element.elem.bus_factor) == 0} ).attr("id", "removed");
 }
 
+function realBusFactor(data) {
+  var result = 0;
+  data.forEach(function(factor) {
+    if(factor.author !== "others")
+      result++;
+  });
+  return result;
+}
 
 function drawElementGraph(element, file, fileAttr, width) {
   d3.json(file, function(error, jsonData) {
@@ -385,7 +408,7 @@ function drawElementLine(element, elementId, subArray, width, line) {
       .attr("height", scaleWidth.rangeBand() - 10)
       .style("stroke", d3.rgb("white"))
       .style("stroke-width", 3)
-      .style("fill", function(d) { return (d.elem.bus_factor.length == 0) ? '#FFFFFF' : color(d.elem.bus_factor.length); } );
+      .style("fill", function(d) { return (realBusFactor(d.elem.bus_factor) == 0) ? '#FFFFFF' : color(d.elem.bus_factor.length); } );
 
   var tooltip = element.append("g")
       .attr("class", "tooltip")
@@ -416,8 +439,10 @@ function drawElementLine(element, elementId, subArray, width, line) {
 
   // Updating highlighted elements
   rects.on("click", function(d, index, elem) {
-    if(d.elem.bus_factor.length != 0) {
-      // Highliting the selected element
+    if(realBusFactor(d.elem.bus_factor) > 0) {
+      console.log(d);
+
+      // Highligting the selected element
       if(selectedElement)
         d3.select(selectedElement).style("stroke", d3.rgb("white"));
 
