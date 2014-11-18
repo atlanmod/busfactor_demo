@@ -440,8 +440,6 @@ function drawElementLine(element, elementId, subArray, width, line) {
   // Updating highlighted elements
   rects.on("click", function(d, index, elem) {
     if(realBusFactor(d.elem.bus_factor) > 0) {
-      console.log(d);
-
       // Highligting the selected element
       if(selectedElement)
         d3.select(selectedElement).style("stroke", d3.rgb("white"));
@@ -608,28 +606,91 @@ function drawDetails(projectElement, pieData, busFactor) {
   $("#detailInstance").remove();
   var detailWidth = $(".detailGraph").width();
   var element = d3.select(".detailGraph").append("svg").attr("id", "detailInstance");
-
-  var width = detailWidth, textHeight = 50, 
-      height = detailWidth + textHeight + 10;
   
   var svg = element
-      .attr("width", width)
-      .attr("height", height);
+      .attr("width", width);
 
   // Main Info
+  var infoy = 20;
+
+  // Element Type
+  var elementType = "unknown";
+  if(projectElement.type == "branch") {
+    elementType = "Branch";
+  } else if (projectElement.type == "dir") {
+    elementType = "Directory";
+  } else if (projectElement.type == "file") {
+    elementType = "File";
+  } else if (projectElement.type == "ext") {
+    elementType = "Extension";
+  }
+
+  var elementTypeLabel = svg.append("text")
+    .attr("transform", "translate(0," + infoy + ")")
+    .text("Type: ")
+    .style("font-size", "1em")
+    .style("font-weight", "bold");
+
+  var elementType = svg.append("text")
+    .attr("transform", "translate(70," + infoy + ")")
+    .text(elementType)
+    .style("font-size", "1em");
+
+  infoy += 20 + 5;
+
+  // Branch Info
+  if (projectElement.type == "dir" || projectElement.type == "file") {
+    var elementBranchLabel = svg.append("text")
+      .attr("transform", "translate(0," + infoy + ")")
+      .text("Branch: ")
+      .style("font-size", "1em")
+      .style("font-weight", "bold");
+
+    var projectElementName = svg.append("text")
+      .attr("transform", "translate(70," + infoy + ")")
+      .text(projectElement.branch)
+      .style("font-size", "1em");
+
+    infoy += 20 + 5;
+  } 
+
+  // Directory Info
+  if (projectElement.type == "file") {
+    var elementDirLabel = svg.append("text")
+      .attr("transform", "translate(0," + infoy + ")")
+      .text("Directory: ")
+      .style("font-size", "1em")
+      .style("font-weight", "bold");
+
+    var projectDirName = svg.append("g");
+    var splitDirElements = splitString(projectDirName, projectElement.dirs[0], 70, infoy);
+
+    infoy += 20 * splitDirElements + 5;
+  } 
+
+  // Element Name
   var projectElementNameLabel = svg.append("text")
-    .attr("transform", "translate(0,20)")
+    .attr("transform", "translate(0," + infoy + ")")
     .text("Name: ")
     .style("font-size", "1em")
     .style("font-weight", "bold");
 
-  var projectElementName = svg.append("text")
-    .attr("transform", "translate(50,20)")
-    .text(projectElement.name)
-    .style("font-size", "1em");
+  var projectElementName = svg.append("g")
+  var splitNameElements = splitString(projectElementName, projectElement.name, 70, infoy);
+  
+  infoy += 20 * splitNameElements + 5;
 
+  var width = detailWidth, 
+      textHeight = infoy + 10, 
+      height = detailWidth + textHeight;
+
+  var svg = element
+      .attr("width", width)
+      .attr("height", height);
+
+  // Info label
   var infoElementLabel = svg.append("text")
-    .attr("transform", "translate(" + (width / 7) + ",50)")
+    .attr("transform", "translate(" + (width / 7) + "," + (textHeight+5) + ")")
     .text("Bus factor and main knowledgeable users")
     .style("font-size", "0.75em");
 
@@ -684,5 +745,25 @@ function drawDetails(projectElement, pieData, busFactor) {
     .attr("dy", + (radius / 5))
     .text(busFactor)
     .style("font-size", "4.5em");
+
+}
+
+function splitString(element, string, x, y) {
+  var substrings = string.match(/.{1,26}/g);
+
+  if(substrings == null || substrings == undefined) {
+    element.append("text")
+      .attr("transform", function(d) { return "translate(" + x + ", " + y + ")"; } )
+      .text("/")
+      .style("font-size", "1em");
+    return 1;
+  } else {
+    var result = element.selectAll("text")  
+      .data(substrings).enter().append("text")
+        .attr("transform", function(d) { return "translate(" + x + "," + (y + (substrings.indexOf(d) * 20)) + ")"; } )
+        .text(function(d) { return d; })
+        .style("font-size", "1em");
+    return substrings.length;
+  }
 
 }
