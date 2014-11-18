@@ -1,22 +1,24 @@
 {
+  "owner" : "atlanmod",
+  "project" : "GiLA",
   "user_relevance": [
     {
       "status": "in bus factor",
       "type": "user",
       "name": "Belen",
-      "knowledge": 51.41
+      "knowledge": 45.92
     },
     {
       "status": "in bus factor",
       "type": "user",
       "name": "Valerio",
-      "knowledge": 26.27
+      "knowledge": 28.43
     },
     {
-      "status": "not in bus factor",
+      "status": "in bus factor",
       "type": "user",
       "name": "Javi",
-      "knowledge": 22.33
+      "knowledge": 25.65
     },
     {
       "status": "not in bus factor",

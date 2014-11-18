@@ -26,28 +26,27 @@ window.onload = function() {
     .attr("class", "infoTooltip")
     .style("opacity", 1e-6);
 
-
   var userWidth = $(".userGraph").width();
   var userElement = d3.select(".userGraph").append("svg")
-  drawUsers(userElement, "users.json", "user_relevance", userWidth);
+  drawUsers(userElement, "data/user_relevance.json", "owner", "project", "user_relevance", userWidth);
 
   var branchWidth = $(".branchGraph").width();
   var branchElement = d3.select(".branchGraph").append("svg")
-  drawElementGraph(branchElement, "branches.json", "branches", branchWidth - 2 * margin);
+  drawElementGraph(branchElement, "data/branches.json", "branches", branchWidth - 2 * margin);
 
   var directoryWidth = $(".directoryGraph").width();
   var directoryElement = d3.select(".directoryGraph").append("svg")
-  drawElementGraph(directoryElement, "dirs.json", "dirs", directoryWidth - 2 * margin);
+  drawElementGraph(directoryElement, "data/dirs.json", "dirs", directoryWidth - 2 * margin);
 
   var fileWidth = $(".fileGraph").width();
   var fileElement = d3.select(".fileGraph").append("svg")
-  drawElementGraph(fileElement, "files.json", "files", fileWidth - 2 * margin);
+  drawElementGraph(fileElement, "data/files.json", "files", fileWidth - 2 * margin);
 
   var extensionWidth = $(".extensionGraph").width();
   var extensionElement = d3.select(".extensionGraph").append("svg")
-  drawElementGraph(extensionElement, "exts.json", "exts", extensionWidth - 2 * margin);
+  drawElementGraph(extensionElement, "data/exts.json", "exts", extensionWidth - 2 * margin);
 
-  d3.json("extensionRelevance.json", function(error, jsonData) {
+  d3.json("data/extension_relevance.json", function(error, jsonData) {
     var relExts = jsonData["extension_relevance"];
     if(relExts.length == 1) {
       var relevantExtensions = d3.select(".relevantExtensions").text(relyingUsers.map(function(ext) { return ext.name + " (" + ext.percentage + "%)" }));
@@ -73,7 +72,7 @@ function initDetails() {
     .style("font-size", "0.75em");
 }
 
-function drawUsers(element, file, fileAttr, width) {
+function drawUsers(element, file, projectOwnerAttr, projectNameAttr, fileAttr, width) {
   element
         .attr("width", width)
         .attr("height", 60);        
@@ -81,6 +80,14 @@ function drawUsers(element, file, fileAttr, width) {
   svg = element.append("g").attr("transform", "translate(3,0)");
 
   d3.json(file, function(error, data) {
+    var projectOwner = data[projectOwnerAttr];
+    var projectName = data[projectNameAttr];
+
+    if(projectOwner != undefined && projectOwner != null) {
+      d3.select(".projectOwner").text(projectOwner + "/");
+    }
+    d3.select(".projectName").text(projectName);
+
     jsonData = data[fileAttr];
     // Updating the factors
     var knowledgeableUsers = jsonData.filter(function(user) { return user.status.indexOf("not in bus factor") == -1});
