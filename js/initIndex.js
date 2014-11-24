@@ -26,6 +26,8 @@ window.onload = function() {
     .attr("class", "infoTooltip")
     .style("opacity", 1e-6);
 
+  drawProjectInfo("data/project_info.json", "project_info");
+
   var userWidth = $(".userGraph").width();
   var userElement = d3.select(".userGraph").append("svg")
   drawUsers(userElement, "data/user_relevance.json", "owner", "project", "user_relevance", userWidth);
@@ -72,6 +74,20 @@ function initDetails() {
     .style("font-size", "0.75em");
 }
 
+function drawProjectInfo(file, projectInfoAttr) {
+  d3.json(file, function(error, data) {
+    var projectInfo = data[projectInfoAttr];
+
+    var projectOwner = projectInfo["owner"];
+    var projectName = projectInfo["name"];
+
+    if(projectOwner != undefined && projectOwner != null) {
+      d3.select(".projectOwner").text(projectOwner + "/");
+    }
+    d3.select(".projectName").text(projectName);
+  })
+}
+
 function drawUsers(element, file, projectOwnerAttr, projectNameAttr, fileAttr, width) {
   element
         .attr("width", width)
@@ -80,15 +96,9 @@ function drawUsers(element, file, projectOwnerAttr, projectNameAttr, fileAttr, w
   svg = element.append("g").attr("transform", "translate(3,0)");
 
   d3.json(file, function(error, data) {
-    var projectOwner = data[projectOwnerAttr];
-    var projectName = data[projectNameAttr];
-
-    if(projectOwner != undefined && projectOwner != null) {
-      d3.select(".projectOwner").text(projectOwner + "/");
-    }
-    d3.select(".projectName").text(projectName);
 
     jsonData = data[fileAttr];
+
     // Updating the factors
     var knowledgeableUsers = jsonData.filter(function(user) { return user.status.indexOf("not in bus factor") == -1});
     var factorElement = d3.select(".factor").text(knowledgeableUsers.length);
@@ -100,22 +110,22 @@ function drawUsers(element, file, projectOwnerAttr, projectNameAttr, fileAttr, w
 
     var relyingUsers = jsonData.filter(function(user) { return +user.knowledge < maxKnowledge && user.status.indexOf("not in bus factor") == -1});
     if(relyingUsers.length == 1) {
-      var relyingUsersElement = d3.select(".relyingUsers").text(relyingUsers.map(function(user) { return user.name }));
-    } else {
+      var relyingUsersElement = d3.select(".relyingUsers").html("The project also relies on <strong>" + relyingUsers.map(function(user) { return user.name }) + "</strong>.");
+    } else if (relyingUsers.length > 1) {
       subRelyingUsers = relyingUsers.slice(0, relyingUsers.length - 1);
       lastRelyingUser = relyingUsers[relyingUsers.length - 1];
       var subtext = subRelyingUsers.map(function(user) { return " " + user.name });
-      var relyingUsersElement = d3.select(".relyingUsers").text(subtext + " and " + lastRelyingUser.name);
+      var relyingUsersElement = d3.select(".relyingUsers").html("The project also relies on <strong>" + subtext + "</strong> and <strong>" + lastRelyingUser.name + "</strong>.");
     }
 
     var notImportantUsers = jsonData.filter(function(user) { return user.status.indexOf("not in bus factor") > -1});
     if(notImportantUsers.length == 1) {
-      var notImportantUsersElement = d3.select(".notImportantUsers").text(notImportantUsers.map(function(user) { return user.name }));
-    } else {
+      var notImportantUsersElement = d3.select(".notImportantUsers").html("In any case, the project can manage without <strong>" + notImportantUsers.map(function(user) { return user.name }) + "</strong>.");
+    } else if (notImportantUsers.length > 1) {
       subNotImportantUsers = notImportantUsers.slice(0, notImportantUsers.length - 1);
       lastNotImportantUsers = notImportantUsers[notImportantUsers.length - 1];
       var subtext = subNotImportantUsers.map(function(user) { return " " + user.name });
-      var notImportantUsersElement = d3.select(".notImportantUsers").text(subtext + " and " + lastNotImportantUsers.name);
+      var notImportantUsersElement = d3.select(".notImportantUsers").html("In any case, the project can manage without <strong>" + subtext + "</strong> and <strong>" + lastNotImportantUsers.name + "</strong>.");
     }
 
     var contributorsElement = d3.select(".numContributors").text(jsonData.length);
