@@ -8,7 +8,7 @@ HowTo:
 
 3) Select one of the projects (gila, collaboro, emftocsp)
 
-4) Select on the level of detail used to analyse the project
+4) Select the level of detail used to analyse the project
 
 5) Select one of the compressed files (one for each metric M1: last change, M2: multiple changes, M3: multiple distinct changes, M4: weighted distinct changes)
 
