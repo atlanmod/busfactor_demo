@@ -10,10 +10,17 @@ var margin = 10;
 var languageGraphWidth = 780;
 var languageGraphHeight = 200;
 
+// Number of element (user) per line
+var userChunk = 5;
+
+// Number of elements per line
 var chunk = 20;
+
+// Temporal variables to store the selected elements
 var selectedElement = undefined;
 var selectedUser = undefined;
 
+// General tooltip
 var infoTooltip = undefined;
 
 
@@ -30,7 +37,7 @@ window.onload = function() {
 
   var userWidth = $(".userGraph").width();
   var userElement = d3.select(".userGraph").append("svg")
-  drawUsers(userElement, "data/user_relevance.json", "owner", "project", "user_relevance", userWidth);
+  drawUsers(userElement, "data/user_relevance.json", "user_relevance", userWidth);
 
   var branchWidth = $(".branchGraph").width();
   var branchElement = d3.select(".branchGraph").append("svg")
@@ -88,27 +95,20 @@ function drawProjectInfo(file, projectInfoAttr) {
   })
 }
 
-function drawUsers(element, file, projectOwnerAttr, projectNameAttr, fileAttr, width) {
-  element
-        .attr("width", width)
-        .attr("height", 60);        
-
-  svg = element.append("g").attr("transform", "translate(3,0)");
-
-  d3.json(file, function(error, data) {
-
-    jsonData = data[fileAttr];
+function drawUsers(element, file, fileAttr, width) {
+  d3.json(file, function(error, jsonData) {
+    var root = jsonData[fileAttr];
 
     // Updating the factors
-    var knowledgeableUsers = jsonData.filter(function(user) { return user.status.indexOf("not in bus factor") == -1});
+    var knowledgeableUsers = root.filter(function(user) { return user.status.indexOf("not in bus factor") == -1});
     var factorElement = d3.select(".factor").text(knowledgeableUsers.length);
 
-    var maxKnowledge = d3.max(jsonData.map(function(d) { return d.knowledge; }));
+    var maxKnowledge = d3.max(root.map(function(d) { return d.knowledge; }));
 
-    var importantUsers = jsonData.filter(function(user) { return +user.knowledge == maxKnowledge && user.status.indexOf("not in bus factor") == -1});
+    var importantUsers = root.filter(function(user) { return +user.knowledge == maxKnowledge && user.status.indexOf("not in bus factor") == -1});
     var importantUsersElement = d3.select(".importantUsers").text(importantUsers.map(function(user) { return user.name }));
 
-    var relyingUsers = jsonData.filter(function(user) { return +user.knowledge < maxKnowledge && user.status.indexOf("not in bus factor") == -1});
+    var relyingUsers = root.filter(function(user) { return +user.knowledge < maxKnowledge && user.status.indexOf("not in bus factor") == -1});
     if(relyingUsers.length == 1) {
       var relyingUsersElement = d3.select(".relyingUsers").html("The project also relies on <strong>" + relyingUsers.map(function(user) { return user.name }) + "</strong>.");
     } else if (relyingUsers.length > 1) {
@@ -118,7 +118,7 @@ function drawUsers(element, file, projectOwnerAttr, projectNameAttr, fileAttr, w
       var relyingUsersElement = d3.select(".relyingUsers").html("The project also relies on <strong>" + subtext + "</strong> and <strong>" + lastRelyingUser.name + "</strong>.");
     }
 
-    var notImportantUsers = jsonData.filter(function(user) { return user.status.indexOf("not in bus factor") > -1});
+    var notImportantUsers = root.filter(function(user) { return user.status.indexOf("not in bus factor") > -1});
     if(notImportantUsers.length == 1) {
       var notImportantUsersElement = d3.select(".notImportantUsers").html("In any case, the project can manage without <strong>" + notImportantUsers.map(function(user) { return user.name }) + "</strong>.");
     } else if (notImportantUsers.length > 1) {
@@ -128,192 +128,229 @@ function drawUsers(element, file, projectOwnerAttr, projectNameAttr, fileAttr, w
       var notImportantUsersElement = d3.select(".notImportantUsers").html("In any case, the project can manage without <strong>" + subtext + "</strong> and <strong>" + lastNotImportantUsers.name + "</strong>.");
     }
 
-    var contributorsElement = d3.select(".numContributors").text(jsonData.length);
+    var contributorsElement = d3.select(".numContributors").text(root.length);
 
-    // Drawing the users
-    var scaleWidth = d3.scale.ordinal()
-      .domain(jsonData.map(function(d) { return d.name; }))
-      .rangeBands([0, width]);
+    // Setting the dimension of the container
+    var extra = (root.length % userChunk > 0) ? 1 : 0;
+    element
+        .attr("width", width)
+        .attr("height", ((root.length / userChunk) + extra) * 60);
 
-    var rects = svg.selectAll("g")
-      .data(jsonData).enter().append("g").attr("id", "user")
-        .attr("transform", function(d) { return "translate(" + (scaleWidth(d.name)) + ", 5)"; })
+    svg = element.append("g")
+      .attr("transform", "translate(5, 5)");
 
-    rects.append("rect")
-      .attr("id", "user")
-      .attr("width", scaleWidth.rangeBand() - 10)
-      .attr("height", 45)
-      .style("stroke", d3.rgb("white"))
-      .style("stroke-width", 3)
-      .style("fill", function(d) { return "#EEEEEE" } );
-
-    var knowledgeScale = d3.scale.linear()
-      .domain([0,100])
-      .range([0, scaleWidth.rangeBand() - 10]);
-
-    rects.append("rect")
-      .attr("transform", "translate (3,3)")
-      .attr("id", "knowledge")
-      .attr("width", function(d) { return knowledgeScale(d.knowledge); })
-      .attr("height", 39)
-      .style("stroke-width", 0)
-      .style("fill", function(d) { return "#AAAAAA" } );
-
-
-    rects.append("text")
-      .attr("dy", "1.65em")
-      .attr("dx", scaleWidth.rangeBand()/2 - 5)
-      .style("fill", d3.rgb("black"))
-      .style("text-anchor", "middle")
-      .style("font-size", "0.85em")
-      .text(function(d) { return d.name; });
-
-    rects.append("text")
-      .attr("dy", "2.95em")
-      .attr("dx", scaleWidth.rangeBand()/2 - 5)
-      .style("fill", d3.rgb("black"))
-      .style("text-anchor", "middle")
-      .style("font-size", "0.85em")
-      .text(function(d) { return d.knowledge + "%"; });
-
-
-    var busHittingButton = d3.select(".busHittingButton");
-    busHittingButton.on("click", function(d, index, elem) {
-      if($(".busHittingButton").text() == "Undo") {
-        location.reload();
-      } else {
-        $(".busHittingButton").text("Undo");
+    // Drawing line by line
+    var line = 0;
+    var i, j;
+    for(i = 0; i < root.length; i += userChunk) {
+      subArray = root.slice(i, i + userChunk);
+      if(i + userChunk > root.length) {
+        for(j = 0; j < ((i + userChunk) - root.length); j++) {
+          subArray.push({ name : "empty" + j});
+        }
       }
 
-      var userRects = d3.selectAll("g#user");
-      userRects.on("click", null);
+      resultArray = [];
+      for(j = 0; j < userChunk; j++) {
+        resultArray.push({ position : j, elem : subArray[j]});
+      }
+      drawUserLine(svg, resultArray, width, line);
+      line++;
+    }
+  });
+}
 
-      var closeRects = userRects.append("g")
-        .attr("id", "closeRect")
-        .attr("transform", "translate(" + (scaleWidth.rangeBand() - 27) + ",2)");
+function drawUserLine(element, subArray, width, line) {
+  element
+        .attr("width", width)
+        .attr("height", 60);        
 
-      closeRects.append("rect")
-        .attr("width", 14)
-        .attr("height", 14)
-        .style("fill-opacity", 1)
-        .style("stroke", d3.rgb("black"))
-        .style("fill", d3.rgb("black"));
+  svg = element.append("g").attr("transform", "translate(0,0)");
+  
+  // Drawing the users
+  var scaleWidth = d3.scale.ordinal()
+    .domain([0,1,2,3,4])
+    .rangeBands([0, width]);
 
-      closeRects.append("path")
-        .attr("d", "M 2,2 12,12")
-        .style("stroke", d3.rgb("white"))
-        .style("stroke-width", 2)
-        .style("opacity", 1);
+  realData = subArray.filter(function(d) { return d.elem.name.indexOf("empty") == -1; } );
+
+  var rects = svg.selectAll("g")
+    .data(realData).enter().append("g").attr("id", "user")
+      .attr("transform", function(d) { return "translate(" + (scaleWidth(d.position)) + "," + (line * 60) + ")"; })
+
+  rects.append("rect")
+    .attr("id", function(d) { return (d.elem.name.indexOf("empty") == -1) ? "user" : "userEmpty"; })
+    .attr("width", scaleWidth.rangeBand() - 10)
+    .attr("height", 45)
+    .style("stroke", d3.rgb("white"))
+    .style("stroke-width", 3)
+    .style("fill", function(d) { return "#EEEEEE";} );
+
+  var knowledgeScale = d3.scale.linear()
+    .domain([0,100])
+    .range([0, scaleWidth.rangeBand() - 10]);
+
+  rects.append("rect")
+    .attr("transform", "translate (3,3)")
+    .attr("id", "knowledge")
+    .attr("width", function(d) { return knowledgeScale(d.elem.knowledge); })
+    .attr("height", 39)
+    .style("stroke-width", 0)
+    .style("fill", function(d) { return "#AAAAAA" } );
 
 
-      closeRects.append("path")
-        .attr("d", "M 2,12 12,2")
-        .style("stroke", d3.rgb("white"))
-        .style("stroke-width", 2)
-        .style("opacity", 1);
+  rects.append("text")
+    .attr("dy", "1.65em")
+    .attr("dx", scaleWidth.rangeBand()/2 - 5)
+    .style("fill", d3.rgb("black"))
+    .style("text-anchor", "middle")
+    .style("font-size", "0.85em")
+    .text(function(d) { return d.elem.name; });
 
-      closeRects.on("click", function(d, index, elem) {
-        var selectedUser = d3.select(this);
+  rects.append("text")
+    .attr("dy", "2.95em")
+    .attr("dx", scaleWidth.rangeBand()/2 - 5)
+    .style("fill", d3.rgb("black"))
+    .style("text-anchor", "middle")
+    .style("font-size", "0.85em")
+    .text(function(d) { return d.elem.knowledge + "%"; });
 
-        var userRect = d3.selectAll("g#user").filter(function(user) { return user.name == d.name});
-        userRect.select("#knowledge").remove();
-        userRect.select("rect#user").style("fill", d3.rgb("white"));
-        userRect.select("rect#user").style("stroke", d3.rgb("#EEEEEE"));
 
-        if(d.status.indexOf("not in bus factor") == -1) {
-           d3.select(".factor").text(+d3.select(".factor").text() - 1);
-        }
+  var busHittingButton = d3.select(".busHittingButton");
+  busHittingButton.on("click", function(d, index, elem) {
+    if($(".busHittingButton").text() == "Undo") {
+      location.reload();
+    } else {
+      $(".busHittingButton").text("Undo");
+    }
 
-        files = d3.selectAll("rect#files");
-        busHittingElements(files, d);
+    var userRects = d3.selectAll("g#user");
+    userRects.on("click", null);
 
-        branches = d3.selectAll("rect#branches");
-        busHittingElements(branches, d);
+    var closeRects = userRects.append("g")
+      .attr("id", "closeRect")
+      .attr("transform", "translate(" + (scaleWidth.rangeBand() - 27) + ",2)");
 
-        dirs = d3.selectAll("rect#dirs");
-        busHittingElements(dirs, d);
+    closeRects.append("rect")
+      .attr("width", 14)
+      .attr("height", 14)
+      .style("fill-opacity", 1)
+      .style("stroke", d3.rgb("black"))
+      .style("fill", d3.rgb("black"));
 
-        exts = d3.selectAll("rect#exts");
-        busHittingElements(exts, d);
+    closeRects.append("path")
+      .attr("d", "M 2,2 12,12")
+      .style("stroke", d3.rgb("white"))
+      .style("stroke-width", 2)
+      .style("opacity", 1);
 
-        selectedUser.remove();
-      });
-    });
 
-    rects.on("click", function(d, index, elem) {
+    closeRects.append("path")
+      .attr("d", "M 2,12 12,2")
+      .style("stroke", d3.rgb("white"))
+      .style("stroke-width", 2)
+      .style("opacity", 1);
+
+    closeRects.on("click", function(d, index, elem) {
       var selectedUser = d3.select(this);
 
-      if(selectedUser.attr("id") == "userRemoved") { 
-        return;
+      var userRect = d3.selectAll("g#user").filter(function(user) { return user.name == d.elem.name});
+      userRect.select("#knowledge").remove();
+      userRect.select("rect#user").style("fill", d3.rgb("white"));
+      userRect.select("rect#user").style("stroke", d3.rgb("#EEEEEE"));
+
+      if(d.elem.status.indexOf("not in bus factor") == -1) {
+         d3.select(".factor").text(+d3.select(".factor").text() - 1);
       }
 
-      initDetails();
+      files = d3.selectAll("rect#files");
+      busHittingElements(files, d);
 
-      // Highliting the selected element
-      if(selectedElement) {
-        d3.select(selectedElement).style("stroke", d3.rgb("white"));
-        d3.select(selectedElement).attr("id", "user")
-      }
+      branches = d3.selectAll("rect#branches");
+      busHittingElements(branches, d);
 
-      /*if(selectedUser) 
-        selectedUser.style("stroke", d3.rgb("white"));*/
+      dirs = d3.selectAll("rect#dirs");
+      busHittingElements(dirs, d);
 
-      selectedUser = d3.select(this).select("rect");
+      exts = d3.selectAll("rect#exts");
+      busHittingElements(exts, d);
 
-      // Updating users
-      users = d3.selectAll("rect#user").style("stroke", d3.rgb("white"));
-
-      // Updating branches
-      branches = d3.selectAll("rect#branches").style("stroke", d3.rgb("white"));
-      branches = d3.selectAll("rect#branches").filter(function(branch) { 
-          var found = false;
-          if(branch.elem.bus_factor == undefined) return false;
-          branch.elem.bus_factor.forEach(function(person) { 
-            if(person.author == d.name){
-              found = true;
-            }
-          });
-          return found;
-        });
-      branches.style("stroke", hightlightColor);
-
-      // Updating dirs
-      dirs = d3.selectAll("rect#dirs").style("stroke", d3.rgb("white"));
-      dirs = d3.selectAll("rect#dirs").filter(function(dir) { 
-          var found = false;
-          if(dir.elem.bus_factor == undefined) return false;
-          dir.elem.bus_factor.forEach(function(person) { 
-            if(person.author == d.name){
-              found = true;
-            }
-          });
-          return found;
-        });
-      dirs.style("stroke", hightlightColor);
-
-      // Updating files
-      files = d3.selectAll("rect#files").style("stroke", d3.rgb("white"));
-      files = d3.selectAll("rect#files").filter(function(file) { 
-          var found = false;
-          if(file.elem.bus_factor == undefined) return false;
-          file.elem.bus_factor.forEach(function(person) { 
-            if(person.author == d.name){
-              found = true;
-            }
-          });
-          return found;
-        });
-      files.style("stroke", hightlightColor);
-
-      // Updating extensions
-      exts = d3.selectAll("rect#exts").style("stroke", d3.rgb("white")); 
-
-
-      // We have to do this to override the previous colors
-      d3.select(this).select("rect")
-        .style("stroke", d3.rgb("purple"));
+      selectedUser.remove();
     });
+  });
 
+  rects.on("click", function(d, index, elem) {
+    var selectedUser = d3.select(this);
+
+    if(selectedUser.attr("id") == "userRemoved") { 
+      return;
+    }
+
+    initDetails();
+
+    // Highliting the selected element
+    if(selectedElement) {
+      d3.select(selectedElement).style("stroke", d3.rgb("white"));
+      d3.select(selectedElement).attr("id", "user")
+    }
+
+    /*if(selectedUser) 
+      selectedUser.style("stroke", d3.rgb("white"));*/
+
+    selectedUser = d3.select(this).select("rect");
+
+    // Updating users
+    users = d3.selectAll("rect#user").style("stroke", d3.rgb("white"));
+
+    // Updating branches
+    branches = d3.selectAll("rect#branches").style("stroke", d3.rgb("white"));
+    branches = d3.selectAll("rect#branches").filter(function(branch) { 
+        var found = false;
+        if(branch.elem.bus_factor == undefined) return false;
+        branch.elem.bus_factor.forEach(function(person) { 
+          if(person.author == d.elem.name){
+            found = true;
+          }
+        });
+        return found;
+      });
+    branches.style("stroke", hightlightColor);
+
+    // Updating dirs
+    dirs = d3.selectAll("rect#dirs").style("stroke", d3.rgb("white"));
+    dirs = d3.selectAll("rect#dirs").filter(function(dir) { 
+        var found = false;
+        if(dir.elem.bus_factor == undefined) return false;
+        dir.elem.bus_factor.forEach(function(person) { 
+          if(person.author == d.elem.name){
+            found = true;
+          }
+        });
+        return found;
+      });
+    dirs.style("stroke", hightlightColor);
+
+    // Updating files
+    files = d3.selectAll("rect#files").style("stroke", d3.rgb("white"));
+    files = d3.selectAll("rect#files").filter(function(file) { 
+        var found = false;
+        if(file.elem.bus_factor == undefined) return false;
+        file.elem.bus_factor.forEach(function(person) { 
+          if(person.author == d.elem.name){
+            found = true;
+          }
+        });
+        return found;
+      });
+    files.style("stroke", hightlightColor);
+
+    // Updating extensions
+    exts = d3.selectAll("rect#exts").style("stroke", d3.rgb("white")); 
+
+
+    // We have to do this to override the previous colors
+    d3.select(this).select("rect")
+      .style("stroke", d3.rgb("purple"));
   });
 }
 
@@ -322,7 +359,7 @@ function busHittingElements(elements, user) {
   filteredElements = elements.filter(function(element) { 
     var found = false;
     element.elem.bus_factor.forEach(function(factor) { 
-      if(factor.author == user.name){
+      if(factor.author == user.elem.name){
         found = true;
       }
     });
@@ -334,7 +371,7 @@ function busHittingElements(elements, user) {
     var foundUser = undefined;
     var others = undefined
     filteredElement.elem.bus_factor.forEach(function(factor) {
-      if(factor.author == user.name) {
+      if(factor.author == user.elem.name) {
         foundUser = factor;
       } else if(factor.author == "others") {
         console.log("found");
@@ -379,9 +416,10 @@ function drawElementGraph(element, file, fileAttr, width) {
     }
 
     // Setting the dimension of the container
+    var extra = (root.length % chunk > 0) ? 1 : 0;
     element
         .attr("width", width)
-        .attr("height", ((root.length / chunk) + 1) * (width / chunk));
+        .attr("height", ((root.length / chunk) + extra) * (width / chunk));
 
     svg = element.append("g")
       .attr("transform", "translate(5, 5)");
@@ -489,7 +527,7 @@ function drawElementLine(element, elementId, subArray, width, line) {
           var found = false;
           if(d.elem.bus_factor == undefined) return false;
           d.elem.bus_factor.forEach(function(factor) { 
-            if(factor.author == user.name){
+            if(factor.author == user.elem.name){
               found = true;
             }
           });
@@ -519,7 +557,7 @@ function drawElementLine(element, elementId, subArray, width, line) {
           var found = false;
           if(d.elem.bus_factor == undefined) return false;
           d.elem.bus_factor.forEach(function(factor) { 
-            if(factor.author == user.name){
+            if(factor.author == user.elem.name){
               found = true;
             }
           });
@@ -558,7 +596,7 @@ function drawElementLine(element, elementId, subArray, width, line) {
           var found = false;
           if(d.elem.bus_factor == undefined) return false;
           d.elem.bus_factor.forEach(function(factor) { 
-            if(factor.author == user.name){
+            if(factor.author == user.elem.name){
               found = true;
             }
           });
