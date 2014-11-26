@@ -131,7 +131,7 @@ function drawUsers(element, file, fileAttr, width) {
     var contributorsElement = d3.select(".numContributors").text(root.length);
 
     // Setting the dimension of the container
-    var extra = (root.length % userChunk > 0) ? 1 : 0;
+    var extra = ((root.length / userChunk > 1) && (root.length % userChunk > 0)) ? 1 : 0;
     element
         .attr("width", width)
         .attr("height", ((root.length / userChunk) + extra) * 60);
@@ -416,10 +416,9 @@ function drawElementGraph(element, file, fileAttr, width) {
     }
 
     // Setting the dimension of the container
-    var extra = (root.length % chunk > 0) ? 1 : 0;
     element
         .attr("width", width)
-        .attr("height", ((root.length / chunk) + extra) * (width / chunk));
+        .attr("height", ((root.length / chunk) + 1) * (width / chunk));
 
     svg = element.append("g")
       .attr("transform", "translate(5, 5)");
