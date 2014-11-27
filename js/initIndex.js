@@ -224,7 +224,6 @@ function drawUserLine(element, subArray, width, line) {
       $(".busHittingButton").text("Undo");
     }
 
-
     // Updating users
     users = d3.selectAll("rect#user").style("stroke", d3.rgb("white"));
     // Updating branches
@@ -265,8 +264,18 @@ function drawUserLine(element, subArray, width, line) {
 
     closeRects.on("click", function(d, index, elem) {
       var selectedUser = d3.select(this);
+      
+      // Updating users
+      users = d3.selectAll("rect#user").style("stroke", d3.rgb("white"));
+      // Updating branches
+      branches = d3.selectAll("rect#branches").style("stroke", d3.rgb("white"));
+      // Updating dirs
+      dirs = d3.selectAll("rect#dirs").style("stroke", d3.rgb("white"));
+      // Updating files
+      files = d3.selectAll("rect#files").style("stroke", d3.rgb("white"));
+      // Updating extensions
+      exts = d3.selectAll("rect#exts").style("stroke", d3.rgb("white"));   
 
-      console.log(d);
       var userRect = d3.selectAll("g#user").filter(function(user) { return user.elem.name == d.elem.name});
       userRect.select("#knowledge").remove();
       userRect.select("rect#user").style("fill", d3.rgb("white"));
@@ -387,7 +396,6 @@ function busHittingElements(elements, user) {
       if(factor.author == user.elem.name) {
         foundUser = factor;
       } else if(factor.author == "others") {
-        console.log("found");
         others = factor;
       }
     });
@@ -399,7 +407,7 @@ function busHittingElements(elements, user) {
     filteredElement.elem.bus_factor.splice(index, 1);
   });
 
-  filteredElements.style("fill", function(d) { return realBusFactor(d.elem.bus_factor) == 0 ? d3.rgb("white") : color(d.elem.bus_factor.length); } );
+  filteredElements.style("fill", function(d) { return realBusFactor(d.elem.bus_factor) == 0 ? d3.rgb("white") : color(realBusFactor(d.elem.bus_factor)); } );
   filteredElements.style("stroke", function(d) { return realBusFactor(d.elem.bus_factor) == 0 ? d3.rgb("#EEEEEE") : d3.rgb("white"); } );
   filteredElements.filter(function(element) { return realBusFactor(element.elem.bus_factor) == 0} ).attr("id", "removed");
 }
@@ -475,7 +483,7 @@ function drawElementLine(element, elementId, subArray, width, line) {
       .attr("height", scaleWidth.rangeBand() - 10)
       .style("stroke", d3.rgb("white"))
       .style("stroke-width", 3)
-      .style("fill", function(d) { return (realBusFactor(d.elem.bus_factor) == 0) ? '#FFFFFF' : color(d.elem.bus_factor.length); } );
+      .style("fill", function(d) { return (realBusFactor(d.elem.bus_factor) == 0) ? '#FFFFFF' : color(realBusFactor(d.elem.bus_factor)); } );
 
   var tooltip = element.append("g")
       .attr("class", "tooltip")
@@ -507,6 +515,7 @@ function drawElementLine(element, elementId, subArray, width, line) {
   // Updating highlighted elements
   rects.on("click", function(d, index, elem) {
     if(realBusFactor(d.elem.bus_factor) > 0) {
+      console.log(d);
       // Highligting the selected element
       if(selectedElement)
         d3.select(selectedElement).style("stroke", d3.rgb("white"));
