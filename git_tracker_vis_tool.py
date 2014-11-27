@@ -7,10 +7,8 @@ import sys
 import time
 import psutil
 from selenium import webdriver
-from git_tracker_gui import GitTracker
 
 pro = None
-gui = None
 
 
 def start_server():
