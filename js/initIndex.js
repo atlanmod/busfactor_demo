@@ -134,7 +134,7 @@ function drawUsers(element, file, fileAttr, width) {
     var extra = ((root.length / userChunk > 1) && (root.length % userChunk > 0)) ? 1 : 0;
     element
         .attr("width", width)
-        .attr("height", ((root.length / userChunk) + extra) * 60);
+        .attr("height", ((root.length / userChunk) + extra) * 65);
 
     svg = element.append("g")
       .attr("transform", "translate(5, 5)");
@@ -163,7 +163,7 @@ function drawUsers(element, file, fileAttr, width) {
 function drawUserLine(element, subArray, width, line) {
   element
         .attr("width", width)
-        .attr("height", 60);        
+        .attr("height", 65);        
 
   svg = element.append("g").attr("transform", "translate(0,0)");
   
@@ -176,7 +176,7 @@ function drawUserLine(element, subArray, width, line) {
 
   var rects = svg.selectAll("g")
     .data(realData).enter().append("g").attr("id", "user")
-      .attr("transform", function(d) { return "translate(" + (scaleWidth(d.position)) + "," + (line * 60) + ")"; })
+      .attr("transform", function(d) { return "translate(" + (scaleWidth(d.position)) + "," + (line * 65) + ")"; })
 
   rects.append("rect")
     .attr("id", function(d) { return (d.elem.name.indexOf("empty") == -1) ? "user" : "userEmpty"; })
@@ -224,6 +224,18 @@ function drawUserLine(element, subArray, width, line) {
       $(".busHittingButton").text("Undo");
     }
 
+
+    // Updating users
+    users = d3.selectAll("rect#user").style("stroke", d3.rgb("white"));
+    // Updating branches
+    branches = d3.selectAll("rect#branches").style("stroke", d3.rgb("white"));
+    // Updating dirs
+    dirs = d3.selectAll("rect#dirs").style("stroke", d3.rgb("white"));
+    // Updating files
+    files = d3.selectAll("rect#files").style("stroke", d3.rgb("white"));
+    // Updating extensions
+    exts = d3.selectAll("rect#exts").style("stroke", d3.rgb("white"));   
+
     var userRects = d3.selectAll("g#user");
     userRects.on("click", null);
 
@@ -254,7 +266,8 @@ function drawUserLine(element, subArray, width, line) {
     closeRects.on("click", function(d, index, elem) {
       var selectedUser = d3.select(this);
 
-      var userRect = d3.selectAll("g#user").filter(function(user) { return user.name == d.elem.name});
+      console.log(d);
+      var userRect = d3.selectAll("g#user").filter(function(user) { return user.elem.name == d.elem.name});
       userRect.select("#knowledge").remove();
       userRect.select("rect#user").style("fill", d3.rgb("white"));
       userRect.select("rect#user").style("stroke", d3.rgb("#EEEEEE"));
