@@ -263,6 +263,8 @@ function drawUserLine(element, subArray, width, line) {
       .style("opacity", 1);
 
     closeRects.on("click", function(d, index, elem) {
+      initDetails();
+      
       var selectedUser = d3.select(this);
       
       // Updating users
@@ -280,6 +282,7 @@ function drawUserLine(element, subArray, width, line) {
       userRect.select("#knowledge").remove();
       userRect.select("rect#user").style("fill", d3.rgb("white"));
       userRect.select("rect#user").style("stroke", d3.rgb("#EEEEEE"));
+      userRect.select("rect#user").attr("id", "removed");
 
       if(d.elem.status.indexOf("not in bus factor") == -1) {
          d3.select(".factor").text(+d3.select(".factor").text() - 1);
@@ -515,7 +518,6 @@ function drawElementLine(element, elementId, subArray, width, line) {
   // Updating highlighted elements
   rects.on("click", function(d, index, elem) {
     if(realBusFactor(d.elem.bus_factor) > 0) {
-      console.log(d);
       // Highligting the selected element
       if(selectedElement)
         d3.select(selectedElement).style("stroke", d3.rgb("white"));
