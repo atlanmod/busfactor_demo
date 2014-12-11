@@ -1,1 +1,1 @@
-{"branches": [{"type": "branch", "name": "master", "bus_factor": [{"knowledge": 64.67, "author": "Belen"}]}, {"type": "branch", "name": "gh-pages", "bus_factor": [{"knowledge": 38.17, "author": "Belen"}, {"knowledge": 33.54, "author": "Javi"}, {"knowledge": 28.29, "author": "Valerio"}]}]}
+{"branches": [{"type": "branch", "name": "master", "bus_factor": [{"knowledge": 64.48, "author": "Belen"}]}, {"type": "branch", "name": "gh-pages", "bus_factor": [{"knowledge": 39.05, "author": "Javi"}, {"knowledge": 31.84, "author": "Belen"}, {"knowledge": 29.12, "author": "Valerio"}]}]}
