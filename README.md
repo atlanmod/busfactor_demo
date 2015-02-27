@@ -1,6 +1,6 @@
-Bus Factor Analyzer
+Bus Factor Analyzer Demo
 ===========================
-HowTo:
+#####How to launch the demo:
 
 1) Go to gh-pages branch
 
@@ -17,8 +17,13 @@ HowTo:
 7) Launch the script in gh-pages/git_tracker_vis_tool.py
 
 
-Requirements:
+#####Requirements:
 ===========================
 Python 2.7
 
 Selenium for Python (https://pypi.python.org/pypi/selenium)
+
+
+Bus factor for your repositories
+===========================
+You would like to check the bus factor for your repository, take a look at https://github.com/valeriocos/BusFactor
