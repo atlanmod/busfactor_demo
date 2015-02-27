@@ -16,14 +16,13 @@ Bus Factor Analyzer Demo
 
 7) Launch the script in gh-pages/git_tracker_vis_tool.py
 
-
 #####Requirements:
-===========================
-Python 2.7
 
-Selenium for Python (https://pypi.python.org/pypi/selenium)
+- Python 2.7
+
+- Selenium for Python (https://pypi.python.org/pypi/selenium)
 
 
-Bus factor for your repositories
-===========================
+#####Bus factor for your repositories
+
 If you would like to check the bus factor for your repository, take a look at https://github.com/valeriocos/BusFactor
