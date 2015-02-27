@@ -26,4 +26,4 @@ Selenium for Python (https://pypi.python.org/pypi/selenium)
 
 Bus factor for your repositories
 ===========================
-You would like to check the bus factor for your repository, take a look at https://github.com/valeriocos/BusFactor
+If you would like to check the bus factor for your repository, take a look at https://github.com/valeriocos/BusFactor
