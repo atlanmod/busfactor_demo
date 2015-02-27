@@ -23,6 +23,6 @@ Bus Factor Analyzer Demo
 - Selenium for Python (https://pypi.python.org/pypi/selenium)
 
 
-#####Bus factor for your repositories
-
+Bus factor for your repositories
+===========================
 If you would like to check the bus factor for your repository, take a look at https://github.com/valeriocos/BusFactor
